@@ -1,0 +1,6 @@
+@FitnessAppBackend2__HostAddress = http://localhost:5063
+
+GET {{FitnessAppBackend2__HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

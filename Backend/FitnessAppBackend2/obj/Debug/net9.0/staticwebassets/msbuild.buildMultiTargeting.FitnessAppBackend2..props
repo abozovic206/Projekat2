@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FitnessAppBackend2..props" />
+</Project>
