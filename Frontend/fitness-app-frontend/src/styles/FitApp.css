@@ -1,0 +1,91 @@
+/* FitApp.css */
+
+/* Plavi-ljubičasti gradijent za pozadinu */
+.app {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Plavi i ljubičasti gradijent */
+    height: 100vh;
+  }
+  
+  /* Navigaciona linija */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a2a44; /* Tamna boja za gornju liniju koja se slaže sa gradijentom */
+    padding: 15px;
+    color: white;
+  }
+  
+  /* Naziv aplikacije */
+  .app-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Dugmadi za login i registraciju */
+  .nav-buttons button {
+    background-color: #3a4e69;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #5a6b84;
+  }
+  
+  /* Stilizacija forme */
+  form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background-color: #1a2a44;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3a4e69;
+  }
+  
+  button[type="button"] {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #2980b9;
+  }
+  
+
+  
