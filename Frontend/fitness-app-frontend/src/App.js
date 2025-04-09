@@ -29,10 +29,10 @@ const App = () => {
       </div>
 
       {/* Prikazuje RegisterForm ako je stanje true */}
-      {showRegisterForm && <RegisterForm />}
+      {showRegisterForm && <RegisterForm onCancel={()=>setShowRegisterForm(false)}/>}
 
       {/* Prikazuje LoginForm ako je stanje true */}
-      {showLoginForm && <LoginForm />}
+      {showLoginForm && <LoginForm onCancel={()=>setShowLoginForm(false)} />}
 
       {/* Ostali sadržaj aplikacije */}
     </div>
