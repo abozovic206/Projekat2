@@ -162,3 +162,12 @@ C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\AutoMapper.Exte
 C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\obj\Debug\net9.0\FitnessAppBackend2..sourcelink.json
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll

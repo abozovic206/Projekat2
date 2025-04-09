@@ -21,6 +21,7 @@ namespace FitnessAppBackend2_.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDTO registerDto)
         {
+            //Ako podaci koje je korisnik unio nisu validni onda API vraca BadRequest--->400
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -28,10 +29,19 @@ namespace FitnessAppBackend2_.Controllers
 
             try
             {
+                //Seed-ovanje role
+                var newUser = new User
+                {
+                    UserName = registerDto.UserName,
+                    Email = registerDto.Email,
+                };
+
+
+
                 // Pozivanje UserService za registraciju korisnika
                 var user = await _userService.RegisterAsync(registerDto);
 
-                // Vraćanje uspeha sa novoregistrovanim korisnikom
+                // Vraćanje uspjeha sa novoregistrovanim korisnikom
                 return Ok(user);
             }
             catch (System.Exception ex)
@@ -40,6 +50,44 @@ namespace FitnessAppBackend2_.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
+
+
+        //Dodavanje role
+        [HttpPost("seed-roles")]
+        public async Task<IActionResult> SeedRoles()
+        {
+            await _userService.SeedRolesAsync();
+            return Ok(new { message = "Roles seeded successfully!" });
+        }
+
+
+       [HttpPost("login")]
+       public async Task<IActionResult>Login([FromBody]LoginDTO loginDTO)
+       {
+        if(!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        try
+        {
+            var token=await _userService.LoginAsync(loginDTO);
+            return Ok(new{token});
+        }
+
+        catch(UnauthorizedAccessException ex)
+        {
+            return Unauthorized(new {message=ex.Message});
+
+        }
+
+        catch(Exception ex)
+        {
+             return BadRequest(new { message = ex.Message });
+        }
+
+
+       }
+
     }
 }
- 

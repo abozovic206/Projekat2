@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using FitnessAppBackend2_.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
+
+
 
 namespace FitnessAppBackend2_.Data
 {
@@ -14,8 +17,12 @@ namespace FitnessAppBackend2_.Data
         //dodati dbSet za druge modele ako su potrebni
         //prop za to
 
-    }
 
+        //Role seed-ujem preko OnModelCreating metode ali ja necu tako 
+
+       
+
+}
 }
 
 

@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import RegisterForm from './Components/RegisterForm'; // Importuj formu za registraciju
+import LoginForm from './Components/LoginForm'; // Importuj formu za login
 import './styles/FitApp.css'; // Stilizuj aplikaciju
 
 const App = () => {
   const [showRegisterForm, setShowRegisterForm] = useState(false);
+  const [showLoginForm, setShowLoginForm] = useState(false); // Stanje za login formu
 
   const handleRegisterClick = () => {
     setShowRegisterForm(true);
+    setShowLoginForm(false); // Sakrij login formu ako je registracija izabrana
+  };
+
+  const handleLoginClick = () => {
+    setShowLoginForm(true);
+    setShowRegisterForm(false); // Sakrij registraciju ako je login izabran
   };
 
   return (
@@ -16,16 +24,17 @@ const App = () => {
         <div className="app-name">FitnessAppAndreja</div>
         <div className="nav-buttons">
           <button onClick={handleRegisterClick}>Register</button>
-          <button>Login</button>
+          <button onClick={handleLoginClick}>Login</button> {/* Dugme za login */}
         </div>
       </div>
 
-      
-
-      {/* Display RegisterForm if showRegisterForm is true */}
+      {/* Prikazuje RegisterForm ako je stanje true */}
       {showRegisterForm && <RegisterForm />}
 
-      {/* Other content of the app */}
+      {/* Prikazuje LoginForm ako je stanje true */}
+      {showLoginForm && <LoginForm />}
+
+      {/* Ostali sadržaj aplikacije */}
     </div>
   );
 };

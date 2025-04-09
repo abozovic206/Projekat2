@@ -1,39 +1,19 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const RegisterForm = ({ onCancel }) => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+const LoginForm = ({ onCancel }) => {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
-  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
 
-  const [firstNameError, setFirstNameError] = useState(false);
-  const [lastNameError, setLastNameError] = useState(false);
   const [userNameError, setUserNameError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
-  const [emailError, setEmailError] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     setError('');
     let formValid = true;
-
-    if (!firstName) {
-      setFirstNameError(true);
-      formValid = false;
-    } else {
-      setFirstNameError(false);
-    }
-
-    if (!lastName) {
-      setLastNameError(true);
-      formValid = false;
-    } else {
-      setLastNameError(false);
-    }
 
     if (!userName) {
       setUserNameError(true);
@@ -49,61 +29,34 @@ const RegisterForm = ({ onCancel }) => {
       setPasswordError(false);
     }
 
-    if (!email) {
-      setEmailError(true);
-      formValid = false;
-    } else {
-      setEmailError(false);
-    }
-
     if (!formValid) {
       setError('All fields are required!');
       return;
     }
 
     const data = {
-      firstName,
-      lastName,
       userName,
-      passwordHash: password,
-      email,
+      password: password,   //ZNACI OVDE OBAVEZNO PASSWORD UMJESTO PASSWORDHASH
     };
 
     try {
-      const response = await axios.post('http://localhost:5063/api/User/register', data);
-      console.log('Registration successful', response);
+      const response = await axios.post('http://localhost:5063/api/User/login', data);
+      console.log('Login successful', response);
 
-      // Resetovanje polja nakon uspešne registracije
-      setFirstName('');
-      setLastName('');
+      // Resetovanje polja nakon uspešnog logovanja
       setUserName('');
       setPassword('');
-      setEmail('');
     } catch (error) {
-      setError('There was an error with registration');
+      setError('There was an error with login');
       console.error('There was an error!', error);
     }
   };
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>Register</h2>
+      <h2 style={styles.title}>Login</h2>
       {error && <p style={styles.error}>{error}</p>}
       <form onSubmit={handleSubmit} style={styles.form}>
-        <input
-          type="text"
-          placeholder="First Name"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          style={firstNameError ? styles.inputError : styles.input}
-        />
-        <input
-          type="text"
-          placeholder="Last Name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          style={lastNameError ? styles.inputError : styles.input}
-        />
         <input
           type="text"
           placeholder="Username"
@@ -118,14 +71,7 @@ const RegisterForm = ({ onCancel }) => {
           onChange={(e) => setPassword(e.target.value)}
           style={passwordError ? styles.inputError : styles.input}
         />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={emailError ? styles.inputError : styles.input}
-        />
-        <button type="submit" style={styles.button}>Register</button>
+        <button type="submit" style={styles.button}>Login</button>
         <button type="button" onClick={onCancel} style={styles.cancelButton}>Cancel</button>
       </form>
     </div>
@@ -201,4 +147,4 @@ const styles = {
   }
 };
 
-export default RegisterForm;
+export default LoginForm;
