@@ -86,9 +86,9 @@ const RegisterForm = ({ onCancel }) => {
   };
 
   return (
-    <div style={styles.container}>
+    <div style={styles.overlay}>
       <div style={styles.formContainer}>
-        <h2 style={styles.title}>Register</h2> {/* Ovdje se naslov nalazi unutar forme */}
+        <h2 style={styles.title}>Register</h2>
         {error && <p style={styles.error}>{error}</p>}
         <form onSubmit={handleSubmit} style={styles.form}>
           <input
@@ -135,24 +135,30 @@ const RegisterForm = ({ onCancel }) => {
 };
 
 const styles = {
-  container: {
-    maxWidth: '400px',
-    margin: '40px auto',
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Poluprovidna pozadina
+    zIndex: 1000, // Postavlja overlay iznad drugih elemenata
+    overflow: 'hidden', // Sprečava skrol
+  },
+  formContainer: {
+    backgroundColor: 'white',
     padding: '20px',
     borderRadius: '10px',
-    backgroundColor: '#f2f2f2',
     boxShadow: '0 0 10px rgba(0,0,0,0.1)',
-    fontFamily: 'Arial, sans-serif',
-    position: 'relative',
+    width: '100%',
+    maxWidth: '400px', // Maksimalna širina forme
   },
   title: {
     textAlign: 'center',
     marginBottom: '20px',
-    color: '#333',
-  },
-  formContainer: {
-    position: 'relative',
-    paddingTop: '20px',  // Razmak između naslova i forme
   },
   form: {
     display: 'flex',
@@ -164,7 +170,6 @@ const styles = {
     padding: '10px',
     borderRadius: '5px',
     border: '1px solid #ccc',
-    fontSize: '14px',
     width: '100%',
     maxWidth: '350px',
   },
@@ -172,38 +177,31 @@ const styles = {
     padding: '10px',
     borderRadius: '5px',
     border: '1px solid red',
-    fontSize: '14px',
     width: '100%',
     maxWidth: '350px',
   },
   button: {
     padding: '10px',
-    borderRadius: '5px',
     backgroundColor: '#5a67d8',
     color: 'white',
+    borderRadius: '5px',
     border: 'none',
-    cursor: 'pointer',
-    fontSize: '16px',
-    transition: 'background-color 0.3s ease',
     width: '100%',
     maxWidth: '350px',
+    cursor: 'pointer',
   },
   cancelButton: {
     padding: '10px',
-    borderRadius: '5px',
     backgroundColor: '#e74c3c',
     color: 'white',
+    borderRadius: '5px',
     border: 'none',
-    cursor: 'pointer',
-    fontSize: '16px',
-    transition: 'background-color 0.3s ease',
     width: '100%',
     maxWidth: '350px',
     marginTop: '10px',
   },
   error: {
     color: 'red',
-    marginBottom: '10px',
     textAlign: 'center',
   }
 };
