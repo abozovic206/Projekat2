@@ -21,12 +21,22 @@ const App = () => {
     <div className="app">
       {/* Top navigation bar */}
       <div className="navbar">
-        <div className="app-name">FitnessAppAndreja</div>
+      <div className="logo-container">
+          <div className="logo-circle">A</div>
+          <span className="logo-text">FitnessAppAndreja</span>
+        </div>
         <div className="nav-buttons">
           <button onClick={handleRegisterClick}>Register</button>
           <button onClick={handleLoginClick}>Login</button> {/* Dugme za login */}
         </div>
       </div>
+      <div class="containter">
+      <div class="title">Welcome to FitnessAppAndreja</div>
+      </div>
+      
+      
+    
+
 
       {/* Prikazuje RegisterForm ako je stanje true */}
       {showRegisterForm && <RegisterForm onCancel={()=>setShowRegisterForm(false)}/>}

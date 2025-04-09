@@ -87,47 +87,49 @@ const RegisterForm = ({ onCancel }) => {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>Register</h2>
-      {error && <p style={styles.error}>{error}</p>}
-      <form onSubmit={handleSubmit} style={styles.form}>
-        <input
-          type="text"
-          placeholder="First Name"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          style={firstNameError ? styles.inputError : styles.input}
-        />
-        <input
-          type="text"
-          placeholder="Last Name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          style={lastNameError ? styles.inputError : styles.input}
-        />
-        <input
-          type="text"
-          placeholder="Username"
-          value={userName}
-          onChange={(e) => setUserName(e.target.value)}
-          style={userNameError ? styles.inputError : styles.input}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          style={passwordError ? styles.inputError : styles.input}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={emailError ? styles.inputError : styles.input}
-        />
-        <button type="submit" style={styles.button}>Register</button>
-        <button type="button" onClick={onCancel} style={styles.cancelButton}>Cancel</button>
-      </form>
+      <div style={styles.formContainer}>
+        <h2 style={styles.title}>Register</h2> {/* Ovdje se naslov nalazi unutar forme */}
+        {error && <p style={styles.error}>{error}</p>}
+        <form onSubmit={handleSubmit} style={styles.form}>
+          <input
+            type="text"
+            placeholder="First Name"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            style={firstNameError ? styles.inputError : styles.input}
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            style={lastNameError ? styles.inputError : styles.input}
+          />
+          <input
+            type="text"
+            placeholder="Username"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+            style={userNameError ? styles.inputError : styles.input}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            style={passwordError ? styles.inputError : styles.input}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            style={emailError ? styles.inputError : styles.input}
+          />
+          <button type="submit" style={styles.button}>Register</button>
+          <button type="button" onClick={onCancel} style={styles.cancelButton}>Cancel</button>
+        </form>
+      </div>
     </div>
   );
 };
@@ -141,11 +143,16 @@ const styles = {
     backgroundColor: '#f2f2f2',
     boxShadow: '0 0 10px rgba(0,0,0,0.1)',
     fontFamily: 'Arial, sans-serif',
+    position: 'relative',
   },
   title: {
     textAlign: 'center',
     marginBottom: '20px',
     color: '#333',
+  },
+  formContainer: {
+    position: 'relative',
+    paddingTop: '20px',  // Razmak između naslova i forme
   },
   form: {
     display: 'flex',

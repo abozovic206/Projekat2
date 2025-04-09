@@ -22,6 +22,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  cursor: default;
+  outline: none;
 }
 
 .App-link {
@@ -36,3 +38,11 @@
     transform: rotate(360deg);
   }
 }
+
+form
+{
+  cursor: default;
+  outline: none;
+  overflow: hidden;
+}
+
