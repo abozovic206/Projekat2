@@ -30,7 +30,15 @@ const App = () => {
         </div>
       </div>
       <div className="containter">
-        <div className="title">Welcome to FitnessAppAndreja</div>
+        <div className="title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="dumbbell-icon">
+        <path d="M4 12h16M12 4l4 4-4 4M12 16l-4-4 4-4"/>
+        </svg>
+          Welcome to FitnessAppAndreja
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="dumbbell-icon">
+            <path d="M4 12h16M12 4l4 4-4 4M12 16l-4-4 4-4"/>
+          </svg>
+        </div>
       </div>
 
       {/* Prikazuje RegisterForm ako je stanje true */}
