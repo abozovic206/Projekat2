@@ -1,0 +1,116 @@
+
+.overlay-login
+{
+    position: fixed; /*Element ostaje na istom mjestu na ekranu bez obzira na skrol*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;/*horizontalno poravnanje*/
+    align-items: center;/*vertikalno poravnanje*/
+    background-color: rgba(0,0,0,0);
+    z-index: 1000;
+    overflow: hidden;/*sadrzaj koji izlazi izvan ivica kontenjera*/
+    
+}
+
+
+.form-containter-login
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px; /*Prostor izmedju sadrzaja unutar elementa i ivica*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);/*Sjenka oko elementa*/
+    width: 100%; /*Postavlja sirinu elementa na sirinu roditeljskog elementa*/
+    max-width: 400px;/*Ovaj stil predstavlja maksimalnu sirinu elementa cak iako roditeljski element siri od 400px*/
+    height: 400px;
+    
+}
+
+.title-login
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-login 
+{
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column; /*Raspored flex elemenata na vertikali*/
+    gap:15px; /*Raspored izmedju flex elemenata*/
+    align-items: center;/*vertikalno poravnanje*/
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.input-login
+{
+    background-color: rgba(0, 0, 0, 0.8);
+
+    padding: 10px;/*Prostor izmedju sadrzaja i ivica elementa*/
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 350px;
+    color: rgb(202, 202, 202);
+}
+
+.input-error-login
+{
+    background-color: rgb(0, 0, 0, 0.8);
+
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+    width: 100%;
+    max-width: 350px;
+}
+
+.submit-login
+{
+    padding: 10px;
+    background-color: #1e2b33; 
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.submit-login:hover
+{
+    background-color: #344651; 
+    
+}
+
+.cancel-login
+{
+    padding: 10px;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.cancel-login:hover
+{
+    background-color:#242323;
+}
+
+.error
+{
+    color:red;
+    text-align: center;
+}

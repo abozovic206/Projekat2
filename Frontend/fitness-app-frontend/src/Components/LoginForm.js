@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/LoginFormInterface.css';
 
 const LoginForm = ({ onCancel }) => {
   const [userName, setUserName] = useState('');
@@ -46,27 +47,27 @@ const LoginForm = ({ onCancel }) => {
   };
 
   return (
-    <div style={styles.overlay}>
-      <div style={styles.container}>
-        <h2 style={styles.title}>Login</h2>
-        {error && <p style={styles.error}>{error}</p>}
-        <form onSubmit={handleSubmit} style={styles.form}>
-          <input
+    <div className='overlay-login' onClick={onCancel}>
+      <div className='form-containter-login' onClick={(e)=>e.stopPropagation()}>
+        <h2 className='title-login'>Login</h2>
+        {error && <p className='error'>{error}</p>}
+        <form onSubmit={handleSubmit} className='form-login'>
+          <input 
             type="text"
             placeholder="Username"
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
-            style={userNameError ? styles.inputError : styles.input}
+            className={userNameError ? 'input-error-login': 'input-login'}
           />
-          <input
+          <input 
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            style={passwordError ? styles.inputError : styles.input}
+            className={passwordError?'input-error-login':'input-login'}
           />
-          <button type="submit" style={styles.button}>Login</button>
-          <button type="button" onClick={onCancel} style={styles.cancelButton}>Cancel</button>
+          <button type="submit" className='submit-login'>Login</button>
+          <button type="button" className='cancel-login' onClick={onCancel}>Cancel</button>
         </form>
       </div>
     </div>
@@ -74,72 +75,7 @@ const LoginForm = ({ onCancel }) => {
 };
 
 const styles = {
-  overlay: {
-    position: 'fixed',
-    top: 0, left: 0,
-    width: '100%', height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 1000,
-  },
-  container: {
-    width: '100%',
-    maxWidth: '400px',
-    backgroundColor: '#f2f2f2',
-    padding: '20px',
-    borderRadius: '10px',
-    boxShadow: '0 0 10px rgba(0,0,0,0.2)',
-    fontFamily: 'Arial, sans-serif',
-  },
-  title: {
-    textAlign: 'center',
-    marginBottom: '20px',
-    color: '#333',
-  },
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '15px',
-  },
-  input: {
-    padding: '10px',
-    borderRadius: '5px',
-    border: '1px solid #ccc',
-    fontSize: '14px',
-  },
-  inputError: {
-    padding: '10px',
-    borderRadius: '5px',
-    border: '1px solid red',
-    fontSize: '14px',
-  },
-  button: {
-    padding: '10px',
-    borderRadius: '5px',
-    backgroundColor: '#5a67d8',
-    color: 'white',
-    border: 'none',
-    cursor: 'pointer',
-    fontSize: '16px',
-    width: '100%',
-  },
-  cancelButton: {
-    padding: '10px',
-    borderRadius: '5px',
-    backgroundColor: '#e74c3c',
-    color: 'white',
-    border: 'none',
-    cursor: 'pointer',
-    fontSize: '16px',
-    width: '100%',
-  },
-  error: {
-    color: 'red',
-    textAlign: 'center',
-    marginBottom: '10px',
-  },
+
 };
 
 export default LoginForm;

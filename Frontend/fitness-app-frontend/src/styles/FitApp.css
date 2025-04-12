@@ -7,9 +7,11 @@
 }
 
 
+
+
 /* Plavi-ljubičasti gradijent za pozadinu */
 .app {
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Plavi i ljubičasti gradijent */
+    background: linear-gradient(to right, #530018, #190000); /* Plavi i ljubičasti gradijent */
     height: 100vh;
   }
   
@@ -18,11 +20,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1a2a44; /* Tamna boja za gornju liniju koja se slaže sa gradijentom */
+    background-color: #1e2b33; /* Tamna boja za gornju liniju koja se slaže sa gradijentom */
     padding: 10px;
     margin: 0 auto;
     color: white;
     height: 50px;
+    
   }
   
   /* Naziv aplikacije */
@@ -32,19 +35,7 @@
   }
   
   /* Dugmadi za login i registraciju */
-  .nav-buttons button {
-    background-color: #3a4e69;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-left: 10px;
-    border-radius: 5px;
-  }
   
-  .nav-buttons button:hover {
-    background-color: #5a6b84;
-  }
   
   /* Stilizacija forme */
   form {
@@ -61,47 +52,50 @@
     text-align: center;
   }
   
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+
   
-  button[type="submit"] {
-    width: 100%;
-    background-color: #1a2a44;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    
-  }
+ 
   
-  button[type="submit"]:hover {
-    background-color: #3a4e69;
-  }
-  
-  button[type="button"] {
-    width: 100%;
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    
-  }
-  
-  button[type="button"]:hover {
-    background-color: #2980b9;
-  }
-  
-  button
+
+  .nav-buttons
   {
-    cursor:default;
-    outline: none;
+    display: flex; /*da budu u istom redu*/
+    gap: 12px;
   }
+  
+  .LRButton
+  {
+    width: 100%;
+    background-color:  #530018;
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(208, 203, 203);
+    border-radius: 30px;
+    cursor: default;
+    outline: none;
+    width: 80px;
+    font-size: 14px;
+    
+  }
+
+  .LButton
+  {
+    background-color: rgb(0, 0, 0,0.3);
+
+    
+  }
+
+  .LRButton:hover
+  {
+
+    background-color:#690924 ;
+    border: 1px solid #c33333;
+    
+  }
+  
+  
+  
+ 
 
   .logo-container
   {
@@ -115,8 +109,9 @@
   {
     width: 50px;
     height: 50px;
-    background-color: #3b82f6;
-    color: white;
+    background-color:  #530018;
+    border: 2px solid white;
+    color:rgb(217, 215, 215);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -129,6 +124,7 @@
   {
     font-size: 20px;
     font-weight: 600;
+    color:rgb(217, 215, 215);
   }
 
   .container
@@ -139,16 +135,7 @@
     height: 100vh;/*Puni visinu ekrana*/
   }
 
-  .title
-  {
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;/*Tekst se centrira unutar div*/
-    font-family: 'Dancing Script', cursive;
-    color: white;
-    margin-top: 200px;
-    
-  }
+
 
   .dumbbell-icon {
     width: 30px;
@@ -157,4 +144,3 @@
     vertical-align: middle; /* Poravnanje sa tekstom */
   }
   
- 
