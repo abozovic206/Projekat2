@@ -26,6 +26,7 @@
     width: 100%; /*Postavlja sirinu elementa na sirinu roditeljskog elementa*/
     max-width: 400px;/*Ovaj stil predstavlja maksimalnu sirinu elementa cak iako roditeljski element siri od 400px*/
     height: 550px;
+    backdrop-filter: blur(10px); /*Bluruje sve iza ovog kontenjera*/
 }
 
 .titleRegister

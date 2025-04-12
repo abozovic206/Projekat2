@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import RegisterForm from './Components/RegisterForm';
 import LoginForm from './Components/LoginForm';
 import './styles/FitApp.css'; // Stilizuj aplikaciju
-import avatarImage from './Images/LOGO.png'; // Importuj sliku
+
 
 const App = () => {
   const [showRegisterForm, setShowRegisterForm] = useState(false);
@@ -26,7 +26,7 @@ const App = () => {
           <span className="logo-text">FitnessAppAndreja</span>
         </div>
         <div className="nav-buttons">
-          <button className="LRButton"onClick={handleRegisterClick}>Register</button>
+          <button className="RButton LRButton"onClick={handleRegisterClick}>Register</button>
           <button className="LButton LRButton"  onClick={handleLoginClick}>Login</button>
         </div>
       </div>

@@ -13,6 +13,7 @@
     z-index: 1000;
     overflow: hidden;/*sadrzaj koji izlazi izvan ivica kontenjera*/
     
+    
 }
 
 
@@ -25,6 +26,7 @@
     width: 100%; /*Postavlja sirinu elementa na sirinu roditeljskog elementa*/
     max-width: 400px;/*Ovaj stil predstavlja maksimalnu sirinu elementa cak iako roditeljski element siri od 400px*/
     height: 400px;
+    backdrop-filter: blur(3px);
     
 }
 
