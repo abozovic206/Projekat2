@@ -78,7 +78,7 @@
 .buttonRegister
 {
     padding: 10px;
-    background-color: #1e2b33; 
+    background-color: #530018; 
     color: white;
     border-radius: 5px;
     border: 1px solid white;
@@ -106,6 +106,8 @@
     max-width: 350px;
     margin-top: 10px;
     font-size: 14px;
+    
+    
 }
 
 .ButtonCancelRegister:hover

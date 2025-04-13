@@ -3,6 +3,7 @@ using FitnessAppBackend2_.DTO;
 using FitnessAppBackend2_.Services;
 using FitnessAppBackend2_.Models;
 using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace FitnessAppBackend2_.Controllers
 {
@@ -70,9 +71,21 @@ namespace FitnessAppBackend2_.Controllers
         }
 
         try
-        {
+        { //OVDE SAM MIJENJALA
             var token=await _userService.LoginAsync(loginDTO);
-            return Ok(new{token});
+
+           
+            Console.WriteLine($"Token: {token}");
+            Console.WriteLine($"Returned UserName: {User.Identity.Name}");
+
+            return Ok(new{
+                token=token,
+                //U ovom trenutku jos niko nije autentifikovann zato vraca NULL!!!!
+                userName= User.FindFirst(ClaimTypes.Name)?.Value //<====OVDE JE NULL
+                });
+
+             //TESTNI KOD
+            
         }
 
         catch(UnauthorizedAccessException ex)

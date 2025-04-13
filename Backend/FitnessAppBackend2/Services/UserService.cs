@@ -100,13 +100,19 @@ namespace FitnessAppBackend2_.Services
 
         public async Task<string> LoginAsync(LoginDTO loginDTO)
         {
-            var user = await _userManager.FindByNameAsync(loginDTO.UserName);
+            var user = await _userManager.FindByNameAsync(loginDTO.UserName); //cuva podatke o korisniku na osnovu korisnickog imena
+
+             //Debug ispis
+             Console.WriteLine($"User found: {user?.UserName}"); //<===OVO RADI
 
             if (user == null)
             {
                 Console.WriteLine("User not found!");
                 throw new UnauthorizedAccessException("Invalid username or password.");
             }
+
+            //PROVJERA
+             Console.WriteLine($"User Name: {user.UserName}"); // Ovo će ispisati korisničko ime u konzolu
 
             var isPasswordCorrect = await _userManager.CheckPasswordAsync(user, loginDTO.Password);
             if (!isPasswordCorrect)
@@ -125,7 +131,7 @@ namespace FitnessAppBackend2_.Services
         {
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.Name, user.UserName),//ovo bi trebalo da je dobro
                 new Claim(ClaimTypes.NameIdentifier, user.Id)
             };
 
