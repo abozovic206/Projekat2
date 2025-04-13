@@ -72,19 +72,19 @@ namespace FitnessAppBackend2_.Controllers
 
         try
         { //OVDE SAM MIJENJALA
-            var token=await _userService.LoginAsync(loginDTO);
+            var token=await _userService.LoginAsync(loginDTO);//RESULT
 
            
             Console.WriteLine($"Token: {token}");
             Console.WriteLine($"Returned UserName: {User.Identity.Name}");
 
-            return Ok(new{
-                token=token,
-                //U ovom trenutku jos niko nije autentifikovann zato vraca NULL!!!!
-                userName= User.FindFirst(ClaimTypes.Name)?.Value //<====OVDE JE NULL
-                });
-
-             //TESTNI KOD
+           
+             return Ok(new{
+                token=token.Token,
+                userName=token.UserName //Kljucevi koje vracam iz kontrolera
+                //znaci vraca se token:... i userName:... na backendu
+                
+             });
             
         }
 

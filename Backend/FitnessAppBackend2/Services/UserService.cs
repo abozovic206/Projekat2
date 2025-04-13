@@ -9,6 +9,7 @@ using System.Security.Claims;  // Ovo je potrebno za asinhrone EF metode kao št
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
+using System.Data;
 
 namespace FitnessAppBackend2_.Services
 {
@@ -16,7 +17,7 @@ namespace FitnessAppBackend2_.Services
     {
         Task<User> RegisterAsync(RegisterDTO registerDto); //MetodA RegisterAsync prima RegisterDTO i vraca jednog korisnika
         Task SeedRolesAsync();//Metoda koja omogucava dodavanje role
-        Task<string> LoginAsync(LoginDTO loginDTO);
+        Task<AuthResult> LoginAsync(LoginDTO loginDTO);
     }
 
     public class UserService : IUserService
@@ -98,7 +99,7 @@ namespace FitnessAppBackend2_.Services
             return user;
         }
 
-        public async Task<string> LoginAsync(LoginDTO loginDTO)
+        public async Task<AuthResult> LoginAsync(LoginDTO loginDTO)
         {
             var user = await _userManager.FindByNameAsync(loginDTO.UserName); //cuva podatke o korisniku na osnovu korisnickog imena
 
@@ -124,7 +125,11 @@ namespace FitnessAppBackend2_.Services
             var roles = await _userManager.GetRolesAsync(user);
             var token = GenerateJwtToken(user, roles);
 
-            return token;
+            return new AuthResult
+            {
+                Token=token,
+                UserName=user.UserName
+            };
         }
 
         private string GenerateJwtToken(User user, IList<string> roles)
