@@ -1,10 +1,10 @@
-// src/App.js
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom'; // Dodaj Routes i Route iz React Router-a
+import { Routes, Route } from 'react-router-dom';
 import RegisterForm from './Components/RegisterForm';
 import LoginForm from './Components/LoginForm';
-import Home from './Home'; // Importuj Home komponentu
-import './styles/FitApp.css'; // Stilizuj aplikaciju
+import Home from './Home';
+import './styles/FitApp.css';
+import ProtectedRoute from './protected/ProtectedRoute';
 
 const App = () => {
   const [showRegisterForm, setShowRegisterForm] = useState(false);
@@ -22,36 +22,42 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path='/' element={
-            <div className="app">
+      <Route
+        path="/"
+        element={
+          <div className="app">
             <div className="navbar">
               <div className="logo-container">
                 <div className="logo-circle">A</div>
                 <span className="logo-text">FitnessAppAndreja</span>
               </div>
               <div className="nav-buttons">
-                <button className="RButton LRButton" onClick={handleRegisterClick}>Register</button>
-                <button className="LButton LRButton" onClick={handleLoginClick}>Login</button>
+                <button className="RButton LRButton" onClick={handleRegisterClick}>
+                  Register
+                </button>
+                <button className="LButton LRButton" onClick={handleLoginClick}>
+                  Login
+                </button>
               </div>
             </div>
             <div className="containter"></div>
-      
-            {/* Prikazuje RegisterForm kao je stanje true */}
+
+            {/* Prikazivanje formi za registraciju ili login ako su aktivna */}
             {showRegisterForm && <RegisterForm onCancel={() => setShowRegisterForm(false)} />}
-      
-            {/* Prikazuje LoginForm ako je stanje true */}
             {showLoginForm && <LoginForm onCancel={() => setShowLoginForm(false)} />}
-      
-            {/* Definiši rute */}
-            <Routes>
-              <Route path="/home" element={<Home />} /> {/* Ruta za Home stranicu */}
-            </Routes>
           </div>
-
-      }/>
-      <Route path='/Home' element={<Home/>}></Route>
+        }
+      />
       
-
+      {/* Zaštićena ruta za Home */}
+      <Route
+        path="/home"
+        element={
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
   );
 };

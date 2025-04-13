@@ -21,8 +21,15 @@ const authSlice=createSlice({
             //payload ono sto se salje u akciji
             state.userName=action.payload.userName; 
         },
+
+        //Za odjavljivanje
+        logout:(state)=>
+            {
+                state.token=null;
+                state.userName=null;
+            }
     },
 });
 
-export const {loginSuccess}=authSlice.actions;
+export const {loginSuccess, logout}=authSlice.actions;
 export default authSlice.reducer;

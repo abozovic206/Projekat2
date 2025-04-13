@@ -74,11 +74,6 @@ namespace FitnessAppBackend2_.Controllers
         { //OVDE SAM MIJENJALA
             var token=await _userService.LoginAsync(loginDTO);//RESULT
 
-           
-            Console.WriteLine($"Token: {token}");
-            Console.WriteLine($"Returned UserName: {User.Identity.Name}");
-
-           
              return Ok(new{
                 token=token.Token,
                 userName=token.UserName //Kljucevi koje vracam iz kontrolera

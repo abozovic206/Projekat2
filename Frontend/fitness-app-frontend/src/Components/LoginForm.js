@@ -3,7 +3,7 @@ import '../styles/LoginFormInterface.css';
 // Odavde pocinjem REDUX
 import { useDispatch } from 'react-redux';
 import { loginSuccess } from '../redux/authSlice';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const LoginForm = ({ onCancel }) => {
   const [userName, setUserName] = useState('');
@@ -15,6 +15,7 @@ const LoginForm = ({ onCancel }) => {
   // REDUX
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation(); // Ispravno pozivanje useLocation()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,8 +47,8 @@ const LoginForm = ({ onCancel }) => {
     try {
       const response = await fetch('http://localhost:5063/api/User/login', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' }, //salje podatke u json formatu
-        body: JSON.stringify(data),//pretvara podatke iz forme u json format
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data), // Pretvara podatke u JSON format
       });
 
       console.log('Login successful', response);
@@ -59,9 +60,12 @@ const LoginForm = ({ onCancel }) => {
         console.log("Odgovor sa servera:", dataToken);
         dispatch(loginSuccess({
           token: dataToken.token,
-          userName:dataToken.userName
+          userName: dataToken.userName,
         })); // Cuva token u reduxu
-        navigate('/home'); // Redirect to home page
+
+        const from = location.state?.from || "/home"; // Ispravno preusmeravanje
+        navigate(from, { replace: true }); // Preusmjeri korisnika na originalnu stranicu
+        onCancel(); // Zatvori formu nakon uspešne prijave
       } else {
         alert('Pogrešan login');
       }
@@ -69,8 +73,6 @@ const LoginForm = ({ onCancel }) => {
       setError('There was an error with login');
       console.error('Login error:', error);
     }
-
-    
   };
 
   return (
