@@ -63,7 +63,8 @@ const LoginForm = ({ onCancel }) => {
           userName: dataToken.userName,
         })); // Cuva token u reduxu
 
-        const from = location.state?.from || "/home"; // Ispravno preusmeravanje
+        //OVDE SAM MIJENJALA
+        const from = '/home'; // Ispravno preusmeravanje
         navigate(from, { replace: true }); // Preusmjeri korisnika na originalnu stranicu
         onCancel(); // Zatvori formu nakon uspešne prijave
       } else {

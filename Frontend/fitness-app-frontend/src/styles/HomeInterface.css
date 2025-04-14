@@ -1,0 +1,71 @@
+.home-container
+{
+    display: flex;
+    height: 100vh;/*Postavlja visinu na 100% visine ekrana*/
+}
+
+.gender-button
+{
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;/*velicina fonta dva puta veca od root font size*/
+    font-weight: bold;
+    color: white;
+    position: relative;
+    background-color: rgb(247, 241, 241);
+    background-size: cover;/*Pozadinska slika pokriva cio element*/
+    background-position: center;
+  
+    
+    
+}
+
+
+.gender-button::after
+{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0,0, 0); /*Nevidljivo*/
+    transition: background-color 0.3s ease-in-out;
+}
+
+.gender-button:hover::after {
+    background-color: rgba(0, 0, 0, 0.5); /* zatamni kad hover */
+  }
+
+.gender-button span
+{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0,0,0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+
+.gender-button span {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /*Kad se transform i background promijene promjena traje 0.3s i glatka je*/
+  }
+  
+  .gender-button:hover span {
+    transform: scale(1.1); /*10% uveca*/
+    background-color: rgba(0, 0, 0, 0.7); /*Mijenja se pozadina span teksta u tamniju*/
+  }
+  
+
+.female
+{
+    background-image: url('../Images/fitnessWoman.jpg');
+    
+
+}
+
+.man
+{
+    background-image: url('../Images/fitnessMan.jpg');
+}

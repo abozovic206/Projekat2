@@ -3,8 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import RegisterForm from './Components/RegisterForm';
 import LoginForm from './Components/LoginForm';
 import Home from './Home';
+import FemaleDashboard from './gender/FemaleDashboard';
+import ManDashboard from './gender/ManDashboard'; //OVE DVIJE RUTE OBAVEZNE!
 import './styles/FitApp.css';
 import ProtectedRoute from './protected/ProtectedRoute';
+
 
 const App = () => {
   const [showRegisterForm, setShowRegisterForm] = useState(false);
@@ -49,15 +52,10 @@ const App = () => {
         }
       />
       
-      {/* Zaštićena ruta za Home */}
-      <Route
-        path="/home"
-        element={
-          <ProtectedRoute>
-            <Home />
-          </ProtectedRoute>
-        }
-      />
+      {/* Zašticene rute*/}
+      <Route path="/home" element={<ProtectedRoute><Home /> </ProtectedRoute>}/>
+      <Route path="/gender/FemaleDashboard" element={<ProtectedRoute><FemaleDashboard /></ProtectedRoute>} />
+      <Route path="/gender/ManDashboard" element={<ProtectedRoute><ManDashboard /></ProtectedRoute>} />
     </Routes>
   );
 };
