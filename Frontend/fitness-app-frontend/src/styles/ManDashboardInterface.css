@@ -1,0 +1,7 @@
+.man-dashboard-wraper
+{
+    
+    background-color: #23313a;
+    min-height: calc(100vh - 80px); /* prilagodi ako ti navbar nije 80px */
+    padding: 40px;
+}

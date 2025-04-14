@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { logout } from '../redux/authSlice'; //OVO JE OBAVEZNO jer ne mogu drugaciji pristupiti
 import '../styles/FemaleDashboardInterface.css';
 import '../styles/HomeInterface.css';
+import '../styles/Exercises.css';
 
 
 const FemaleDashboard=()=>
@@ -35,6 +36,18 @@ const FemaleDashboard=()=>
           <button onClick={handleLogout} className="LRButton RButton">Logout</button>
         </div>
       </div>
+      {/*Ovde dodajem button-e na koje kad se klikne on mi otvori formu u kojoj su slike vjezbi plus objasnjenja */}
+     <div className='female-dashboard-wrapper'>
+     <div className='exercises-button'>
+        <button className='day1-button woman'><span>DAY1</span></button>
+        <button className='day2-button woman'><span>DAY2</span></button>
+        <button className='day3-button woman'><span>DAY3</span></button>
+        <button className='day4-button woman'><span>DAY4</span></button>
+        <button className='day5-button woman'><span>DAY5</span></button>
+        <button className='day6-button woman'><span>DAY6</span></button>
+        <button className='day7-button woman'><span>DAY7</span></button>
+      </div>
+     </div>
      
       </div>
     );

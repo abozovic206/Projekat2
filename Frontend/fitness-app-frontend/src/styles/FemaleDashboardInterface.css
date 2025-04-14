@@ -1,1 +1,6 @@
-
+.female-dashboard-wrapper
+{
+    background-color: #5b041c;
+    min-height: calc(100vh - 80px); /*-80px navbar*/
+    padding: 40px;
+}
