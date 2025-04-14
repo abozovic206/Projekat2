@@ -6,4 +6,7 @@ namespace FitnessAppBackend2_.Models;
 public class User:IdentityUser
 {
 
+    //Poslije svakog dodatog polja treba izvrsiti migraciju!!!!
+    
+
 }

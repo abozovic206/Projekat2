@@ -11,6 +11,9 @@ import TrainingHomePage from './training/TrainingHomePage';
 import { useDispatch } from 'react-redux';  // Treba da importujete useDispatch
 import { loginSuccess } from './redux/authSlice';  // Treba da importujete loginSuccess
 
+/* FontAwesome ikone */
+import 'font-awesome/css/font-awesome.min.css'; // Dodajemo FontAwesome ikone
+
 const App = () => {
   const [showRegisterForm, setShowRegisterForm] = useState(false);
   const [showLoginForm, setShowLoginForm] = useState(false);

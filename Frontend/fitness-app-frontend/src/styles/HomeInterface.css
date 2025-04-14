@@ -25,8 +25,8 @@
 {
     width: 50px;
     height: 50px;
-    background-color: transparent;
-    border: none;
+    background-color:  #530018;
+    border: 1px solid white;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -35,32 +35,35 @@
     border-radius: 300px;
     
 }
-
-
-.training-button
-{
-    background-image: url('../Images/training.png');
-    
-
-}
-
-.training-button {
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
 
-.training-button img
-{
-    width: 50%;
-    height: auto;
-}
+
+
+
+.training-button i {
+    font-size: 24px; /* Povećava veličinu ikone */
+    margin-right: 8px; /* Razmak između ikone i teksta */
+    margin-left: 8px;
+    color: white;
+  }
+  
+  .profile-button i
+  {
+    font-size: 24px; /* Povećava veličinu ikone */
+    margin-right: 8px; /* Razmak između ikone i teksta */
+    margin-left: 8px;
+    color: white;
+  }
+
+  .motivation-button i
+  {
+    font-size: 24px; /* Povećava veličinu ikone */
+    margin-right: 8px; /* Razmak između ikone i teksta */
+    margin-left: 8px;
+    color: white;
+    margin-top: 9px;
+
+  }
 
 
 
@@ -137,3 +140,116 @@
 {
     background-image: url('../Images/fitnessMan.jpg');
 }
+
+
+
+/*DODATO NOVO*/
+/* Welcome poruka */
+/* Welcome poruka */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 38px;
+    color: #1e2b33;  /* Tamno plava boja */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Glavna sekcija sa karticama */
+  .home-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Kontejner za kartice */
+  .card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Osnovni stil za karticu */
+  .home-card {
+    background-color: #530018;  /* Tvoja boja */
+    color: #ffffff;  /* Tekst u beloj */
+    border-radius: 16px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Hover efekat na kartici */
+  .home-card:hover {
+    transform: translateY(-5px);
+    background-color: #720021;
+  }
+  
+  /* Ikonice unutar kartice */
+  .home-card .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Unutrašnji naslov kartice */
+  .home-card h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  /* Lista saveta za nutrition */
+  .nutrition-card ul {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  
+  /*JOS NOVIJE*/
+  .home-card {
+    background-color: #1e2b33;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .home-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #530018; /* Ovo je boja koju koristiš za ikone */
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .welcome-text {
+    color: #530018;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  

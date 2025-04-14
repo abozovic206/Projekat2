@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/* FontAwesome ikone */
+import 'font-awesome/css/font-awesome.min.css'; // Dodajemo FontAwesome ikone
+
 // REDUX
 import { Provider } from 'react-redux';
 import { store } from './redux/Store';

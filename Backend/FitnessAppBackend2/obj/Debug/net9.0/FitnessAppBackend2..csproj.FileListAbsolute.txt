@@ -171,3 +171,4 @@ C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.Ident
 C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\FitnessAppAndreja\Backend\FitnessAppBackend2\bin\Debug\net9.0\FitnessAppBackend2..staticwebassets.runtime.json
