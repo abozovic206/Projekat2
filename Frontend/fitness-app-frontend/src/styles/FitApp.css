@@ -60,7 +60,9 @@
   .nav-buttons
   {
     display: flex; /*da budu u istom redu*/
+    justify-content: flex-end;
     gap: 12px;
+    flex: 1;
   }
   
   .LRButton
@@ -109,7 +111,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 20px;
+    flex: 1;
   }
 
   .logo-circle

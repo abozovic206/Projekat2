@@ -20,6 +20,9 @@ const authSlice=createSlice({
             //state trenutna vrijednost
             //payload ono sto se salje u akciji
             state.userName=action.payload.userName; 
+            //spremanje tokena u localStorage
+            localStorage.setItem('token', action.payload.token);
+            localStorage.setItem('userName', action.payload.userName);
         },
 
         //Za odjavljivanje
