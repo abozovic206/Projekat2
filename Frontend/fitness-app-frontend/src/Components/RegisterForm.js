@@ -66,12 +66,12 @@ const RegisterForm = ({ onCancel }) => {
       firstName,
       lastName,
       userName,
-      passwordHash: password,
+      password,
       email,
     };
 
     try {
-      const response = await axios.post('http://localhost:5063/api/User/register', data);
+      const response = await axios.post('http://localhost:5063/api/Auth/register', data);
       console.log('Registration successful', response);
 
       // Resetovanje polja nakon uspešne registracije

@@ -6,6 +6,9 @@ using FitnessAppBackend2_.Services;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using FitnessAppBackend2_.Services.Auth;
+using FitnessAppBackend.AutoMapper;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +25,7 @@ builder.Services.AddIdentity<User, IdentityRole>()
     .AddDefaultTokenProviders();
 
 // Dodaj JWT autentifikaciju
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+/*builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
@@ -34,7 +37,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidAudience = "FitnessAppUser", // Tvoja audience
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)) // Tajni ključ za potpisivanje tokena
         };
-    });
+    });*/
 
 // Dodaj autorizaciju
 builder.Services.AddAuthorization();
@@ -47,10 +50,12 @@ builder.Services.AddEndpointsApiExplorer(); // Za OpenAPI/Swagger podršku
 builder.Services.AddSwaggerGen(); // Dodaj SwaggerGen za generisanje dokumentacije
 
 // Registruj UserService
-builder.Services.AddScoped<IUserService, UserService>(); // Registrovanje UserService servisa
+//builder.Services.AddScoped<IUserService, UserService>(); // Registrovanje UserService servisa
+//Registrovanje AuthService-a
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 // AutoMapper
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // Dodaj CORS podršku
 builder.Services.AddCors(options =>
@@ -65,10 +70,10 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Pozovi metodu za seedovanje rola prilikom startovanja aplikacije
+//Ovde se dodaje rola
 using (var scope = app.Services.CreateScope())
 {
-    var userService = scope.ServiceProvider.GetRequiredService<IUserService>();
+    var userService = scope.ServiceProvider.GetRequiredService<IAuthService>();
     await userService.SeedRolesAsync();  // Seeduje Admin i Member role
 }
 
@@ -78,6 +83,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger(); // Omogućava Swagger
     app.UseSwaggerUI(); // Omogućava interfejs za korišćenje Swagger-a
 }
+
 
 app.UseHttpsRedirection();
 

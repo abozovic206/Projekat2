@@ -13,6 +13,8 @@ import 'font-awesome/css/font-awesome.min.css'; // Dodajemo FontAwesome ikone
 
 const Home = () => {
   const userName = useSelector((state) => state.auth.userName);
+  const firstName=useSelector((state)=>state.auth.firstName);
+  const lastName=useSelector((state)=>state.auth.lastName);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -41,7 +43,7 @@ const Home = () => {
       </div>
 
       {/* Welcome poruka */}
-      <h1 className="welcome-text">Welcome {userName}!</h1>
+      <h1 className="welcome-text">Welcome {firstName} {lastName}!</h1>
 
       {/* Novi sadržaj ispod */}
       <div className="home-content">

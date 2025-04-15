@@ -33,9 +33,16 @@
     justify-content: center;
     cursor: pointer;
     border-radius: 300px;
+   
     
 }
   
+.option-container button:hover
+{
+  transform: scale(1.1);/*Uveca se za 10 posto*/
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 
 

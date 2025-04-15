@@ -45,7 +45,7 @@ const LoginForm = ({ onCancel }) => {
 
     // Use fetch for login
     try {
-      const response = await fetch('http://localhost:5063/api/User/login', {
+      const response = await fetch('http://localhost:5063/api/Auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data), // Pretvara podatke u JSON format
@@ -54,13 +54,16 @@ const LoginForm = ({ onCancel }) => {
       console.log('Login successful', response);
       setUserName('');
       setPassword('');
+      
 
       if (response.ok) {
-        const dataToken = await response.json();
+        const dataToken = await response.json(); //ODGOVOR KOJI DOBIJA SA BACKENDA
         console.log("Odgovor sa servera:", dataToken);
         dispatch(loginSuccess({
           token: dataToken.token,
           userName: dataToken.userName,
+          firstName: dataToken.firstName,
+          lastName:dataToken.lastName //OVDE GLEDAJJJJJ!!!
         })); // Cuva token u reduxu
 
         //OVDE SAM MIJENJALA

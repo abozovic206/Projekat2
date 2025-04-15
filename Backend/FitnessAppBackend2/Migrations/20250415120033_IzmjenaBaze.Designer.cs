@@ -3,6 +3,7 @@ using System;
 using FitnessAppBackend2_.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FitnessAppBackend2_.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250415120033_IzmjenaBaze")]
+    partial class IzmjenaBaze
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
@@ -24,12 +27,6 @@ namespace FitnessAppBackend2_.Migrations
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("INTEGER");
-
-                    b.Property<int?>("Age")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<double?>("BodyFatPercentage")
-                        .HasColumnType("REAL");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -45,18 +42,6 @@ namespace FitnessAppBackend2_.Migrations
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("TEXT");
-
-                    b.Property<string>("Gender")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Goal")
-                        .HasColumnType("TEXT");
-
-                    b.Property<float?>("Height")
-                        .HasColumnType("REAL");
-
-                    b.Property<double?>("Hips")
-                        .HasColumnType("REAL");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -85,9 +70,6 @@ namespace FitnessAppBackend2_.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("ProfilePicture")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("TEXT");
 
@@ -97,12 +79,6 @@ namespace FitnessAppBackend2_.Migrations
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("TEXT");
-
-                    b.Property<double?>("Waist")
-                        .HasColumnType("REAL");
-
-                    b.Property<float?>("Weight")
-                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 

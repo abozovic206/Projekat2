@@ -13,6 +13,10 @@ const authSlice=createSlice({
     initialState:{
         token:null, //token je prazan na pocetku
         userName:null,//Cuva i userName korisnika
+        firstName:null,
+        lastName:null
+
+        //ZNACI INICIJALNA STANJA SU NA NULL NA POCETKU
     },
     reducers:{
         loginSuccess:(state, action)=>{
@@ -20,6 +24,11 @@ const authSlice=createSlice({
             //state trenutna vrijednost
             //payload ono sto se salje u akciji
             state.userName=action.payload.userName; 
+            state.firstName=action.payload.firstName;
+            state.lastName=action.payload.lastName
+
+            //Dodjeljuju im se neke vrijednosti
+
             //spremanje tokena u localStorage
             localStorage.setItem('token', action.payload.token);
             localStorage.setItem('userName', action.payload.userName);
@@ -30,6 +39,9 @@ const authSlice=createSlice({
             {
                 state.token=null;
                 state.userName=null;
+                state.firstName=null;
+                state.lastName=null;
+                //Prilikom logout-a se brisu te vrijednosti koje su dodjeljenje a prilikom logina se postavljaju logicno
             }
     },
 });
