@@ -93,6 +93,29 @@ namespace FitnessAppBackend2_.Controllers{
 
        }
 
+       [HttpGet("getCurrentUser")]
+        public async Task<IActionResult> GetCurrentUser()
+        {
+            try
+            {
+                var userDto = await _authService.GetCurrentUser();
+                return Ok(userDto);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(new { message = ex.Message });
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
+        }
+
+
        //Dodavanje podataka o tjelesnim parametrima
 
 

@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
+using FitnessAppBackend2_.Services;
 
 
 
@@ -21,15 +22,17 @@ namespace FitnessAppBackend2_.Services.Auth
         private readonly IMapper _mapper;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly TokenService _tokenService;
 
 
-        public AuthService(UserManager<User> userManager, AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor, RoleManager<IdentityRole> roleManager)
+        public AuthService(UserManager<User> userManager, AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor, RoleManager<IdentityRole> roleManager,TokenService tokenService)
         {
             _userManager = userManager;
             _context = context;
             _mapper = mapper;
             _httpContextAccessor = httpContextAccessor;
             _roleManager = roleManager;
+            _tokenService=tokenService;
 
         }
 
@@ -123,7 +126,7 @@ namespace FitnessAppBackend2_.Services.Auth
             //Provjera
             Console.WriteLine($"User Name:{user.UserName}");
 
-            
+
 
             var isPasswordCorrect = await _userManager.CheckPasswordAsync(user, loginDTO.Password);
             if (!isPasswordCorrect)
@@ -135,11 +138,12 @@ namespace FitnessAppBackend2_.Services.Auth
 
             //ova varijabla cuva rolu ako je dodjeljena korisniku 
             var roles = await _userManager.GetRolesAsync(user);
-            var token = GenerateJwtToken(user, roles);
+            var Token = _tokenService.CreateToken(user, roles);
+
 
             return new AuthResult
             {
-                Token = token,
+                Token = Token,
                 UserName = user.UserName,
                 FirstName = user.FirstName,
                 LastName = user.LastName
@@ -148,36 +152,33 @@ namespace FitnessAppBackend2_.Services.Auth
 
         }
 
-        private string GenerateJwtToken(User user, IList<string> roles)
-        {
-            var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name,user.UserName),
-                new Claim(ClaimTypes.NameIdentifier, user.Id),
-                new Claim(ClaimTypes.Name,user.FirstName),
-                new Claim(ClaimTypes.Name,user.LastName)
-                //Claim cuva korisnicko ime i user id al dacu mu da cuva jos neke podatke
-            };
 
-            foreach (var role in roles)
+         public async Task<User> GetCurrentUser()
+        {
+            
+            var token = _httpContextAccessor.HttpContext?.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");//cuva string token
+
+            if (string.IsNullOrEmpty(token))
             {
-                claims.Add(new Claim(ClaimTypes.Role, role));
+                throw new UnauthorizedAccessException("Token is missing");//provjerava da li je string null
             }
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your_super_secret_very_secure_key12345"));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var userId = _tokenService.GetUserIdFromToken(token); //userId cita id user-a iz tokena
 
-            var token = new JwtSecurityToken(
-                issuer: "FitnessAppBackend",
-                audience: "FitnessAppUser",
-                claims: claims,
-                expires: DateTime.Now.AddHours(1),
-                signingCredentials: creds
-            );
+            if (string.IsNullOrEmpty(userId))
+            {
+                throw new UnauthorizedAccessException("Invalid token"); //provjerava da li je id null 
+            }
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            var user = await _userManager.FindByIdAsync(userId); //trazi objekat user na osnovu id user-a
 
+            if (user == null)
+            {
+                throw new KeyNotFoundException("User not found"); //provjerava da li je takav korisnik nadjen
+            }
 
+            
+            return user;
         }
 
 

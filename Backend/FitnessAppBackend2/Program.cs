@@ -9,94 +9,110 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using FitnessAppBackend2_.Services.Auth;
 using FitnessAppBackend.AutoMapper;
 using Microsoft.Extensions.FileProviders;
+using FitnessAppBackend2_.Controllers;
+using FitnessAppBackend2_.Services.Information;
+using Microsoft.OpenApi.Models;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Učitavanje tajnog ključa za JWT iz appsettings.json
-var secretKey = builder.Configuration["JwtSettings:SecretKey"];
-
-// Registruj DbContext (za povezivanje sa bazom)
+// Registracija DbContext-a i Identity
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Registruj Identity (za rad sa korisnicima i autentifikaciju)
-builder.Services.AddIdentity<User, IdentityRole>()
-    .AddEntityFrameworkStores<AppDbContext>()
-    .AddDefaultTokenProviders();
+// Registracija Identity
 
-// Dodaj JWT autentifikaciju
-/*builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+
+// JWT autentifikacija
+builder.Services.AddAuthorization();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidIssuer = "FitnessAppBackend", // Tvoj issuer
-            ValidAudience = "FitnessAppUser", // Tvoja audience
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)) // Tajni ključ za potpisivanje tokena
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["AppSettings:Token"]!)),
+            ValidateIssuer = false,
+            ValidateAudience = false
         };
-    });*/
+    });
 
-// Dodaj autorizaciju
-builder.Services.AddAuthorization();
 
-// Dodaj servis za kontrolere
-builder.Services.AddControllers();
+// Dodavanje drugih servisa
+builder.Services.AddScoped<TokenService>();
+  // Registrovanje AuthService direktno
 
-// Dodaj OpenAPI/Swagger podršku (ako koristiš za dokumentaciju)
-builder.Services.AddEndpointsApiExplorer(); // Za OpenAPI/Swagger podršku
-builder.Services.AddSwaggerGen(); // Dodaj SwaggerGen za generisanje dokumentacije
-
-// Registruj UserService
-//builder.Services.AddScoped<IUserService, UserService>(); // Registrovanje UserService servisa
-//Registrovanje AuthService-a
 builder.Services.AddScoped<IAuthService, AuthService>();
 
-// AutoMapper
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped<IUInformationService, UInformationService>();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
+
+
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-// Dodaj CORS podršku
+// Swagger konfiguracija
+builder.Services.AddSwaggerGen(c =>
+{
+    var jwtSecurityScheme=new OpenApiSecurityScheme
+    {
+        Description = "JWT Authorization header using the Bearer scheme.",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = JwtBearerDefaults.AuthenticationScheme,
+        Reference= new OpenApiReference{
+            Id=JwtBearerDefaults.AuthenticationScheme,
+            Type=ReferenceType.SecurityScheme
+        }
+    };
+    c.AddSecurityDefinition(jwtSecurityScheme.Reference.Id, jwtSecurityScheme);
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+         jwtSecurityScheme,Array.Empty<string>()   
+        }
+    });
+});
+// CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.AllowAnyOrigin() // Dozvoljava bilo koji izvor
-              .AllowAnyMethod() // Dozvoljava bilo koji HTTP metod (GET, POST, PUT, DELETE...)
-              .AllowAnyHeader(); // Dozvoljava bilo koji HTTP header
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
     });
 });
 
+// Dodavanje kontrolera
+builder.Services.AddControllers();
+
 var app = builder.Build();
 
-//Ovde se dodaje rola
+// Pokretanje seeding-a uloga
 using (var scope = app.Services.CreateScope())
 {
     var userService = scope.ServiceProvider.GetRequiredService<IAuthService>();
-    await userService.SeedRolesAsync();  // Seeduje Admin i Member role
+    await userService.SeedRolesAsync();
 }
 
-// Configure the HTTP request pipeline.
+// HTTP pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger(); // Omogućava Swagger
-    app.UseSwaggerUI(); // Omogućava interfejs za korišćenje Swagger-a
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-
 app.UseHttpsRedirection();
-
-// Omogućava CORS pre autorizacije
-app.UseCors("AllowAll"); // Dodaj CORS politiku
-
-// Omogućava autentifikaciju
-app.UseAuthentication(); // Omogućava autentifikaciju putem JWT-a
-
-// Omogućava autorizaciju
-app.UseAuthorization(); // Omogućava autorizaciju
-
-// Mapira kontrolere
+app.UseCors("AllowAll");
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 
 app.Run();

@@ -9,6 +9,8 @@ public class MappingProfile:Profile
     public MappingProfile()
     {
         CreateMap<RegisterDTO, User>();
-        
+        CreateMap<User, AuthResult>();
+        CreateMap<User, UserParameterDTO>();
+
     }
 }
