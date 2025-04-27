@@ -26,7 +26,7 @@ namespace FitnessAppBackend2_.Controllers
 
         // Endpoint za ažuriranje informacija o korisniku
         [HttpPut("update")]
-        public async Task<IActionResult> UpdateUserInformation([FromBody] UserParameterDTO userParameterDTO)
+        public async Task<IActionResult> UpdateUserInformation([FromForm] UserParameterDTO userParameterDTO)
         {
             if (userParameterDTO == null)
             {

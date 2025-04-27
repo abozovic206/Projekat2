@@ -153,7 +153,7 @@ namespace FitnessAppBackend2_.Services.Auth
         }
 
 
-         public async Task<User> GetCurrentUser()
+         public async Task<User> GetCurrentUser() //Vraca korisnika
         {
             
             var token = _httpContextAccessor.HttpContext?.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");//cuva string token

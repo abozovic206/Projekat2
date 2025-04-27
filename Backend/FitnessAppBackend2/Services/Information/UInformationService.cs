@@ -53,7 +53,41 @@ namespace FitnessAppBackend2_.Services.Information
       user.Waist = userParameterDTO.Waist;
       user.Hips = userParameterDTO.Hips;
       user.Goal = userParameterDTO.Goal;
-      user.ProfilePicture = user.ProfilePicture;
+      
+
+      //Ako je korisnik poslao novu sliku, sacuvaj je
+      if(userParameterDTO.ProfilePicture!=null)
+      {
+        var uploadsFolder=Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/images");
+
+        //provjerava da li folder postoji, ako ne napravi ga
+        if(!Directory.Exists(uploadsFolder))
+        {
+          Directory.CreateDirectory(uploadsFolder);
+        }
+
+        //provjerava ekstenziju fajla
+        var allowedExtensions=new[]{".jpg",".jpeg",".png",".gif"};
+        var fileExtension=Path.GetExtension(userParameterDTO.ProfilePicture.FileName);//uzima ekstenziju sa slike
+
+        if(!allowedExtensions.Contains(fileExtension))//provjerava da li pripada nekom od elemenata niza 
+        {
+          throw new Exception("Unsupported file format.");
+        }
+
+        var uniqueFileName=Guid.NewGuid().ToString()+Path.GetExtension(userParameterDTO.ProfilePicture.FileName);
+        var filePath=Path.Combine(uploadsFolder, uniqueFileName);
+
+        //snima sliku na server
+        using(var fileStream=new FileStream(filePath, FileMode.Create))
+        {
+          await userParameterDTO.ProfilePicture.CopyToAsync(fileStream);
+        }
+
+        //Azurira putanju u bazi
+        user.ProfilePicture=$"images/{uniqueFileName}";
+
+      }
 
 
 

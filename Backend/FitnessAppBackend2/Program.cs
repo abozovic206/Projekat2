@@ -41,7 +41,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 // Dodavanje drugih servisa
 builder.Services.AddScoped<TokenService>();
-  // Registrovanje AuthService direktno
+// Registrovanje AuthService direktno
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 
@@ -58,16 +58,17 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 // Swagger konfiguracija
 builder.Services.AddSwaggerGen(c =>
 {
-    var jwtSecurityScheme=new OpenApiSecurityScheme
+    var jwtSecurityScheme = new OpenApiSecurityScheme
     {
         Description = "JWT Authorization header using the Bearer scheme.",
         Name = "Authorization",
         In = ParameterLocation.Header,
         Type = SecuritySchemeType.ApiKey,
         Scheme = JwtBearerDefaults.AuthenticationScheme,
-        Reference= new OpenApiReference{
-            Id=JwtBearerDefaults.AuthenticationScheme,
-            Type=ReferenceType.SecurityScheme
+        Reference = new OpenApiReference
+        {
+            Id = JwtBearerDefaults.AuthenticationScheme,
+            Type = ReferenceType.SecurityScheme
         }
     };
     c.AddSecurityDefinition(jwtSecurityScheme.Reference.Id, jwtSecurityScheme);
@@ -75,7 +76,7 @@ builder.Services.AddSwaggerGen(c =>
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
-         jwtSecurityScheme,Array.Empty<string>()   
+         jwtSecurityScheme,Array.Empty<string>()
         }
     });
 });

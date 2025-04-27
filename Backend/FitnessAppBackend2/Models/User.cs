@@ -22,7 +22,7 @@ public class User:IdentityUser
     public double? Hips { get; set; }
     public string ? Goal{get; set;}//cilj mrsavljenje, povecanje mase..
 
-    public string? ProfilePicture {get; set;}
+    public string? ProfilePicture {get; set;} //Cuva putanju do slike i to je string 
 
     
     

@@ -11,5 +11,5 @@ public class UserParameterDTO
     public double Waist { get; set; }
     public double Hips { get; set; }
     public string? Goal { get; set; }
-    public string? ProfilePicture { get; set; }
+    public IFormFile? ProfilePicture { get; set; }
 }
