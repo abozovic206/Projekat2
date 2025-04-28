@@ -136,6 +136,12 @@ namespace FitnessAppBackend2_.Services.Auth
             }
 
 
+
+            //TESTIRAM JEL HVATA SLIKU IZ BAZE KAKO TREBA I HVATA STO JE NAJCRNJE
+
+            Console.WriteLine($"PROFILEPICTURE:{user.ProfilePicture}");
+
+
             //ova varijabla cuva rolu ako je dodjeljena korisniku 
             var roles = await _userManager.GetRolesAsync(user);
             var Token = _tokenService.CreateToken(user, roles);
@@ -146,7 +152,9 @@ namespace FitnessAppBackend2_.Services.Auth
                 Token = Token,
                 UserName = user.UserName,
                 FirstName = user.FirstName,
-                LastName = user.LastName
+                LastName = user.LastName,
+                ProfilePicture=user.ProfilePicture
+                
             };
 
 

@@ -115,5 +115,7 @@ app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+app.UseStaticFiles();  // Ova linija omogućava pristup statičkim fajlovima u wwwroot direktorijumu
+
 
 app.Run();

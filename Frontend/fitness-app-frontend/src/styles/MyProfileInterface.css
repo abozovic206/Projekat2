@@ -1,0 +1,51 @@
+/* Profilna slika */
+.profile-picture-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 700px;
+    margin-right: 700px;
+    cursor: pointer;
+    gap: 10px; /* Razmak između slike i dugmeta */
+}
+
+/* Profilna slika */
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #530018;
+    background-color: #fff;
+}
+
+/* Dugme pored profilne slike */
+.submit-button {
+    padding: 5px 10px; /* Manje dugme */
+    background-color: #530018;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button:hover {
+    background-color: #701c2c;
+}
+
+.submit-button svg {
+    margin-right: 8px;  /* Razmak između ikone i teksta */
+}
+
+.profile-page-scroll {
+    max-height: 90vh; /* Ograniči visinu do 80% ekrana */
+    overflow-y: auto; /* Omogućava vertikalno skrolovanje */
+    padding-right: 10px; /* Daje prostora za scroll bar */
+}

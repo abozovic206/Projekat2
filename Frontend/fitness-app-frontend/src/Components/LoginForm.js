@@ -63,7 +63,8 @@ const LoginForm = ({ onCancel }) => {
           token: dataToken.token,
           userName: dataToken.userName,
           firstName: dataToken.firstName,
-          lastName:dataToken.lastName //OVDE GLEDAJJJJJ!!!
+          lastName:dataToken.lastName, //OVDE GLEDAJJJJJ!!!
+          profilePicture:dataToken.profilePicture
         })); // Cuva token u reduxu
 
         //OVDE SAM MIJENJALA

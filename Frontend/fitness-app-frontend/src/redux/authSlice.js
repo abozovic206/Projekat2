@@ -14,7 +14,10 @@ const authSlice=createSlice({
         token:null, //token je prazan na pocetku
         userName:null,//Cuva i userName korisnika
         firstName:null,
-        lastName:null
+        lastName:null,
+
+        //PARAMETRI I INFORMACIJE
+        profilePicture:null
 
         //ZNACI INICIJALNA STANJA SU NA NULL NA POCETKU
     },
@@ -25,13 +28,17 @@ const authSlice=createSlice({
             //payload ono sto se salje u akciji
             state.userName=action.payload.userName; 
             state.firstName=action.payload.firstName;
-            state.lastName=action.payload.lastName
+            state.lastName=action.payload.lastName;
+
+            state.profilePicture=action.payload.profilePicture;
 
             //Dodjeljuju im se neke vrijednosti
 
             //spremanje tokena u localStorage
             localStorage.setItem('token', action.payload.token);
             localStorage.setItem('userName', action.payload.userName);
+
+            localStorage.setItem('profilePicture', action.payload.profilePicture);
         },
 
         //Za odjavljivanje
@@ -48,3 +55,7 @@ const authSlice=createSlice({
 
 export const {loginSuccess, logout}=authSlice.actions;
 export default authSlice.reducer;
+export const updateProfilePicture=(profilePicture)=>({
+    type:'UPDATE-PROFILE-PICTURE',
+    payload:profilePicture,
+});

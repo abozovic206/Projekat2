@@ -73,7 +73,8 @@ namespace FitnessAppBackend2_.Controllers{
                 userName=token.UserName, //Kljucevi koje vracam iz kontrolera
                 //znaci vraca se token:... i userName:... na backendu
                 firstName=token.FirstName,
-                lastName=token.LastName
+                lastName=token.LastName,
+                profilePicture=token.ProfilePicture
                 
              });
             

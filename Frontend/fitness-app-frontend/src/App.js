@@ -8,11 +8,14 @@ import ManDashboard from './gender/ManDashboard';
 import './styles/FitApp.css';
 import ProtectedRoute from './protected/ProtectedRoute';
 import TrainingHomePage from './training/TrainingHomePage';
+import MyProfile from './button/MyProfile';
+
 import { useDispatch } from 'react-redux';  // Treba da importujete useDispatch
 import { loginSuccess } from './redux/authSlice';  // Treba da importujete loginSuccess
 
 /* FontAwesome ikone */
 import 'font-awesome/css/font-awesome.min.css'; // Dodajemo FontAwesome ikone
+
 
 const App = () => {
   const [showRegisterForm, setShowRegisterForm] = useState(false);
@@ -74,6 +77,9 @@ const App = () => {
       <Route path="/training/TrainingHomePage" element={<ProtectedRoute><TrainingHomePage /></ProtectedRoute>} />
       <Route path="/gender/FemaleDashboard" element={<ProtectedRoute><FemaleDashboard /></ProtectedRoute>} />
       <Route path="/gender/ManDashboard" element={<ProtectedRoute><ManDashboard /></ProtectedRoute>} />
+      <Route path="button/MyProfile" element={<ProtectedRoute><MyProfile /></ProtectedRoute>} />
+
+      
     </Routes>
   );
 };

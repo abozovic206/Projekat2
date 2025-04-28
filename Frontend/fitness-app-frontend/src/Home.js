@@ -6,6 +6,8 @@ import './styles/HomeInterface.css'; // Uveri se da imaš odgovarajući CSS
 import FemaleDashboard from './gender/FemaleDashboard.js';
 import ManDashboard from './gender/ManDashboard.js';
 import TrainingHomePage from './training/TrainingHomePage.js';
+import MyProfile from './button/MyProfile.js';
+
 
 
 /* FontAwesome ikone */
@@ -48,6 +50,12 @@ const Home = () => {
       {/* Novi sadržaj ispod */}
       <div className="home-content">
         <div className="card-container">
+          {/* Moj profil */}
+          <div className="home-card profile-card" onClick={()=>navigate('/button/MyProfile')}>
+            <i className="fa fa-user icon"></i> {/* Ikonica za BMI */}
+            <h2>My Profile</h2>
+            </div>
+
           {/* BMI Calculator */}
           <div className="home-card bmi-card" onClick={() => navigate('/bmi')}>
             <i className="fa fa-weight icon"></i> {/* Ikonica za BMI */}

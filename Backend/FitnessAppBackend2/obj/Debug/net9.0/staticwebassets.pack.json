@@ -1,8 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\LOGO.png",
-      "PackagePath": "staticwebassets\\images\\LOGO.png"
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\20b8241e-07ae-4e82-bb35-b5b34bd0d0a4.png",
+      "PackagePath": "staticwebassets\\images\\20b8241e-07ae-4e82-bb35-b5b34bd0d0a4.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\5b92c5e6-db37-4e2b-bbb2-69d9ffb8dd84.png",
+      "PackagePath": "staticwebassets\\images\\5b92c5e6-db37-4e2b-bbb2-69d9ffb8dd84.png"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.FitnessAppBackend2..Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
