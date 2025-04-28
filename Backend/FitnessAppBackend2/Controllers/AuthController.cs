@@ -74,7 +74,11 @@ namespace FitnessAppBackend2_.Controllers{
                 //znaci vraca se token:... i userName:... na backendu
                 firstName=token.FirstName,
                 lastName=token.LastName,
-                profilePicture=token.ProfilePicture
+                profilePicture=token.ProfilePicture,
+                weight=token.Weight,
+                height=token.Height,
+                age=token.Age,
+                gender=token.Gender
                 
              });
             

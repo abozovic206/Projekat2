@@ -1,12 +1,88 @@
 {
   "Files": [
     {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\03d0d66c-4578-4781-b4c7-991f5500b3c1.png",
+      "PackagePath": "staticwebassets\\images\\03d0d66c-4578-4781-b4c7-991f5500b3c1.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\0bb71f96-4ba3-46bf-81c8-ca1ba3771de4.png",
+      "PackagePath": "staticwebassets\\images\\0bb71f96-4ba3-46bf-81c8-ca1ba3771de4.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\0e9639db-7cf5-4720-889c-9360f28b32e9.png",
+      "PackagePath": "staticwebassets\\images\\0e9639db-7cf5-4720-889c-9360f28b32e9.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\0faef078-b282-4faf-a0ec-1d19bf9a5a2b.png",
+      "PackagePath": "staticwebassets\\images\\0faef078-b282-4faf-a0ec-1d19bf9a5a2b.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1b86157c-29da-47e2-812e-bb701a22f1ed.jpg",
+      "PackagePath": "staticwebassets\\images\\1b86157c-29da-47e2-812e-bb701a22f1ed.jpg"
+    },
+    {
       "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\20b8241e-07ae-4e82-bb35-b5b34bd0d0a4.png",
       "PackagePath": "staticwebassets\\images\\20b8241e-07ae-4e82-bb35-b5b34bd0d0a4.png"
     },
     {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\24184e40-60ff-420d-a1cd-e485f0cae7bd.png",
+      "PackagePath": "staticwebassets\\images\\24184e40-60ff-420d-a1cd-e485f0cae7bd.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\2a6c08c6-26e8-49c3-bd96-7a1f787b4ec1.png",
+      "PackagePath": "staticwebassets\\images\\2a6c08c6-26e8-49c3-bd96-7a1f787b4ec1.png"
+    },
+    {
       "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\5b92c5e6-db37-4e2b-bbb2-69d9ffb8dd84.png",
       "PackagePath": "staticwebassets\\images\\5b92c5e6-db37-4e2b-bbb2-69d9ffb8dd84.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\5c84c222-e162-4e90-bf4e-9d67f1f6d180.png",
+      "PackagePath": "staticwebassets\\images\\5c84c222-e162-4e90-bf4e-9d67f1f6d180.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\605e912c-cfad-48b3-b2cd-50c1a272f3c7.png",
+      "PackagePath": "staticwebassets\\images\\605e912c-cfad-48b3-b2cd-50c1a272f3c7.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\68ca6260-e8d2-41f6-80e9-d667a3cc83aa.png",
+      "PackagePath": "staticwebassets\\images\\68ca6260-e8d2-41f6-80e9-d667a3cc83aa.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\6eb3f41e-c9f7-415b-a05b-9037f81859c0.png",
+      "PackagePath": "staticwebassets\\images\\6eb3f41e-c9f7-415b-a05b-9037f81859c0.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a764ccbb-5785-4079-b61a-0da38bef076c.jpg",
+      "PackagePath": "staticwebassets\\images\\a764ccbb-5785-4079-b61a-0da38bef076c.jpg"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ad0482cb-13ab-4075-be45-6c4371130335.png",
+      "PackagePath": "staticwebassets\\images\\ad0482cb-13ab-4075-be45-6c4371130335.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\b5d60b58-1379-4c53-ac05-51d567f9c7bf.png",
+      "PackagePath": "staticwebassets\\images\\b5d60b58-1379-4c53-ac05-51d567f9c7bf.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\b6d6afb5-d948-4f6b-9336-1372e47aed22.png",
+      "PackagePath": "staticwebassets\\images\\b6d6afb5-d948-4f6b-9336-1372e47aed22.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\d644d4be-32ba-4fc2-b9aa-392272e5f178.png",
+      "PackagePath": "staticwebassets\\images\\d644d4be-32ba-4fc2-b9aa-392272e5f178.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\f124046c-661f-4b77-bd86-9668fb5cc38c.jpg",
+      "PackagePath": "staticwebassets\\images\\f124046c-661f-4b77-bd86-9668fb5cc38c.jpg"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\f53b33f7-7314-443e-b00d-b2e0f81927cd.png",
+      "PackagePath": "staticwebassets\\images\\f53b33f7-7314-443e-b00d-b2e0f81927cd.png"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\fb8e7fc6-7033-4577-9602-48a1f68f3d10.png",
+      "PackagePath": "staticwebassets\\images\\fb8e7fc6-7033-4577-9602-48a1f68f3d10.png"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.FitnessAppBackend2..Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -9,12 +9,13 @@
     margin-right: 700px;
     cursor: pointer;
     gap: 10px; /* Razmak između slike i dugmeta */
+    border-radius: 100px;
 }
 
 /* Profilna slika */
 .profile-picture {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #530018;
@@ -44,8 +45,34 @@
     margin-right: 8px;  /* Razmak između ikone i teksta */
 }
 
-.profile-page-scroll {
-    max-height: 90vh; /* Ograniči visinu do 80% ekrana */
-    overflow-y: auto; /* Omogućava vertikalno skrolovanje */
-    padding-right: 10px; /* Daje prostora za scroll bar */
+
+.profile-picture-container
+{
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+.profile-page-scroll
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.card-content-profile
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.naslov
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+  

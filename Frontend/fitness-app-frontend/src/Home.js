@@ -17,6 +17,7 @@ const Home = () => {
   const userName = useSelector((state) => state.auth.userName);
   const firstName=useSelector((state)=>state.auth.firstName);
   const lastName=useSelector((state)=>state.auth.lastName);
+  
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

@@ -6,6 +6,7 @@ dijelovi aplikacije mogu da koriste (npr. da znamo da li je korisnik ulogovan) *
 
 //OVAJ FAJL JE NACIN NA KOJI SE CUVAJU PODACI
 import { createSlice } from '@reduxjs/toolkit';
+import { Weight } from 'lucide-react';
 
 
 const authSlice=createSlice({
@@ -17,7 +18,11 @@ const authSlice=createSlice({
         lastName:null,
 
         //PARAMETRI I INFORMACIJE
-        profilePicture:null
+        profilePicture:null,
+        weight:null,
+        height:null,
+        age:null,
+        gender:null
 
         //ZNACI INICIJALNA STANJA SU NA NULL NA POCETKU
     },
@@ -31,6 +36,10 @@ const authSlice=createSlice({
             state.lastName=action.payload.lastName;
 
             state.profilePicture=action.payload.profilePicture;
+            state.weight=action.payload.weight;
+            state.height=action.payload.height;
+            state.age=action.payload.age;
+            state.gender=action.payload.gender
 
             //Dodjeljuju im se neke vrijednosti
 
@@ -39,6 +48,10 @@ const authSlice=createSlice({
             localStorage.setItem('userName', action.payload.userName);
 
             localStorage.setItem('profilePicture', action.payload.profilePicture);
+            localStorage.setItem('weight',action.payload.weight);
+            localStorage.setItem('height',action.payload.height);
+            localStorage.setItem('age',action.payload.age);
+            localStorage.setItem('gender',action.payload.gender);
         },
 
         //Za odjavljivanje

@@ -140,6 +140,7 @@ namespace FitnessAppBackend2_.Services.Auth
             //TESTIRAM JEL HVATA SLIKU IZ BAZE KAKO TREBA I HVATA STO JE NAJCRNJE
 
             Console.WriteLine($"PROFILEPICTURE:{user.ProfilePicture}");
+            Console.WriteLine($"Weight:{user.Weight}");
 
 
             //ova varijabla cuva rolu ako je dodjeljena korisniku 
@@ -153,7 +154,12 @@ namespace FitnessAppBackend2_.Services.Auth
                 UserName = user.UserName,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
-                ProfilePicture=user.ProfilePicture
+                ProfilePicture=user.ProfilePicture,
+                Weight=user.Weight,
+                Height=user.Height,
+                Age=user.Age,
+                Gender=user.Gender
+
                 
             };
 

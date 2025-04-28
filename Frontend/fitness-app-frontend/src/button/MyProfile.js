@@ -7,13 +7,20 @@ import { useSelector } from 'react-redux';
 import axios from 'axios';
 import { updateProfilePicture } from '../redux/authSlice';
 import { FaSave } from 'react-icons/fa';  // Ovdje importujete ikonu
+import '../styles/HomeInterface.css'; // Uveri se da imaš odgovarajući CSS
 
 
 const MyProfile = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
+    
     const profilePicture = useSelector((state) => state.auth.profilePicture);
+    const weight=useSelector((state)=>state.auth.weight);
+    const height=useSelector((state)=>state.auth.height);
+    const age=useSelector((state)=>state.auth.age);
+    const gender=useSelector((state)=>state.auth.gender);
+    const username=useSelector((state)=>state.auth.username);
 
     const [profileData, setProfileData] = useState({
         profilePicture: null
@@ -93,6 +100,11 @@ const MyProfile = () => {
                     <div className="logo-circle">A</div>
                     <span className="logo-text">FitnessAppAndreja</span>
                 </div>
+                <div className='option-container'>
+          <button className='profile-button' onClick={() => navigate('/home')}><i className='fa fa-home'></i></button>
+          <button className='training-button' onClick={() => navigate('/training/TrainingHomePage')}><i className='fas fa-dumbbell'></i></button>
+          <button className='motivation-button'><i className='fa fa-apple-alt icon'></i></button>
+        </div>
                 <div className="nav-buttons">
                     <button onClick={handleLogout} className="LRButton RButton">Logout</button>
                 </div>
@@ -131,7 +143,38 @@ const MyProfile = () => {
                         <FaSave size={24} /> {/* Ikona sa veličinom 24 */}
                     </button>
                 </div>
+                <h3 className='naslov'>Tvoji podaci {username}</h3>
             </div>
+
+          <div className='home-content'>
+            <div className='card-content-profile'>
+                 {/* Moj profil */}
+          <div className="home-card profile-card" >
+          <i className="fa fa-balance-scale icon"></i> {/* Ikonica za balans vagu */}
+          <h2 style={{ fontSize: '28px', fontWeight: 'bold' }}>{weight}(kg)</h2>
+            <h2>Tezina</h2>
+            </div>
+            <div className="home-card profile-card" >
+            <i className="fa fa-ruler-vertical icon"></i> {/* Ikonica za visinu */}
+            <h2 style={{ fontSize: '28px', fontWeight: 'bold' }}>{height}(cm)</h2>
+            <h2>Visina</h2>
+            </div>
+            <div className="home-card profile-card">
+            <i className="fa fa-calendar icon"></i> {/* Ikonica za godine */}
+            <h2 style={{ fontSize: '28px', fontWeight: 'bold' }}>{age}</h2>
+            <h2>Godine</h2>
+            </div>
+            <div className="home-card profile-card">
+            <i className="fa fa-venus-mars icon"></i> {/* Ikonica za pol */}
+            <h2 style={{ fontSize: '28px', fontWeight: 'bold' }}>{gender}</h2>
+            <h2>Pol</h2>
+            </div>
+
+            </div>
+
+          </div>
+
+
         </div>
     );
 };

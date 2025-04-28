@@ -4,6 +4,7 @@ import '../styles/LoginFormInterface.css';
 import { useDispatch } from 'react-redux';
 import { loginSuccess } from '../redux/authSlice';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { Weight } from 'lucide-react';
 
 const LoginForm = ({ onCancel }) => {
   const [userName, setUserName] = useState('');
@@ -64,9 +65,13 @@ const LoginForm = ({ onCancel }) => {
           userName: dataToken.userName,
           firstName: dataToken.firstName,
           lastName:dataToken.lastName, //OVDE GLEDAJJJJJ!!!
-          profilePicture:dataToken.profilePicture
+          profilePicture:dataToken.profilePicture,
+          weight:dataToken.weight,
+          height:dataToken.height,
+          age:dataToken.age,
+          gender:dataToken.gender
         })); // Cuva token u reduxu
-
+          //AKO NEKAD BUDU VRIJEDNOSTI NULL OVDE POGLEDAJJJJ DA LI SI DODALA
         //OVDE SAM MIJENJALA
         const from = '/home'; // Ispravno preusmeravanje
         navigate(from, { replace: true }); // Preusmjeri korisnika na originalnu stranicu
