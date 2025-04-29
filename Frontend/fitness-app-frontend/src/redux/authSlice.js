@@ -79,13 +79,23 @@ const authSlice=createSlice({
             updateHeight:(state, action)=>{
                 state.height=action.payload;
                 localStorage.setItem('height', action.payload);
+            },
+
+            updateAge:(state, action)=>{
+                state.age=action.payload;
+                localStorage.setItem('age',action.payload);
+            },
+
+            updateGender:(state, action)=>{
+                state.gender=action.payload;
+                localStorage.setItem('gender', action.payload);
             }
 
             
     },
 });
 
-export const {loginSuccess, logout, updateWeight, updateProfilePicture, updateHeight}=authSlice.actions;
+export const {loginSuccess, logout, updateWeight, updateProfilePicture, updateHeight,updateAge,updateGender}=authSlice.actions;
 export default authSlice.reducer;
 /*export const updateProfilePicture=(profilePicture)=>({
     type:'UPDATE-PROFILE-PICTURE',

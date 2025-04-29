@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'; 
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { logout, updateWeight, updateProfilePicture, updateHeight} from '../redux/authSlice';
+import { logout, updateWeight, updateProfilePicture, updateHeight, updateAge,updateGender} from '../redux/authSlice';
 import "../styles/MyProfileInterface.css";
 import { useSelector } from 'react-redux';
 import axios from 'axios';
@@ -26,7 +26,8 @@ const MyProfile = () => {
     const [profileData, setProfileData] = useState({
         profilePicture: null,
         weight:null, 
-        height:null
+        height:null, 
+        age:null
     });
 
     //Weight
@@ -36,6 +37,15 @@ const MyProfile = () => {
     //Height
     const [isHeightInputVisible, setIsHeightInputVisible]=useState(false);
     const[newHeight, setNewHeight]=useState(height); //pocetni state je tezina iz baze koju dobijemo preko redux-a
+
+
+    //AGE
+    const[isAgeInputVisible, setIsAgeInputVisible]=useState(false);
+    const[newAge, setNewAge]=useState(age);
+
+    //GENDER
+    const[isGenderInputVisible, setIsGenderInputVisible]=useState(false);
+    const[newGender, setNewGender]=useState(gender);
 
     const fileInputRef = useRef(null);
 
@@ -51,6 +61,13 @@ const MyProfile = () => {
         if (newHeight !== "") {
             formData.append("height", parseFloat(newHeight));
         }
+        if(newAge!==""){
+            formData.append("age",parseInt(newAge));
+        }
+        if (newGender !== "") {
+            formData.append("gender", newGender);
+        }
+        
         return formData;
     };
     
@@ -116,6 +133,18 @@ const MyProfile = () => {
 
     }
 
+    //AGE
+    const handleBlurAge=()=>{
+        handleSaveAge();
+        setIsAgeInputVisible(false);
+    }
+
+    //GENDER
+    const handleBlurGender=()=>{
+        handleSaveGender();
+        setIsGenderInputVisible(false);
+    }
+
 
     // Funkcija koja menja stanje inputa za težinu
     const handleWeightClick = () => {
@@ -129,6 +158,19 @@ const MyProfile = () => {
         setIsHeightInputVisible(true); //omogucava vidljivost input-a
     }
 
+    //Funkcija koja mijenja input za godine
+    const handleAgeClick=()=>{
+        setNewAge(age);//setuje se ova vrijednost na vrijednost iz baze
+        setIsAgeInputVisible(true);//omogucava vidljivost age input-a
+    }
+
+
+    //Funkcija koja mijenja input za pol
+    const handleGenderClick=()=>{
+        setNewGender(gender);
+        setIsGenderInputVisible(true);
+    }
+
     // Funkcija za unos nove težine
     const handleWeightChange = (e) => {
         setNewWeight(e.target.value);
@@ -137,6 +179,16 @@ const MyProfile = () => {
     //Funkcija za unos nove visine
     const handleHeightChange=(e)=>{
         setNewHeight(e.target.value);
+    }
+
+    //Funkcija za unos godina
+    const handleAgeChange=(e)=>{
+        setNewAge(e.target.value);
+    }
+
+    //Funkcija za unos pola
+    const handleGenderChange=(e)=>{
+        setNewGender(e.target.value);
     }
 
     // Funkcija za potvrdu unosa nove težine
@@ -195,6 +247,65 @@ const handleSaveHeight = async () => {
         console.error("Greška prilikom ažuriranja težine:", error);
     }
 };
+
+
+    // Funkcija za potvrdu unosa novih godina
+    const handleSaveAge = async () => {
+        try {
+            const formData=createFormData();
+    
+            console.log("Podaci koji se šalju za težinu:", formData);
+    
+            const response = await axios.put(
+                'http://localhost:5063/api/userprofile/update',
+                formData,
+                {
+                    headers: {
+                        'Content-Type': 'multipart/form-data',
+                        'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    }
+                }
+            );
+    
+            if (response.data.success) {
+                dispatch(updateAge(response.data.age));
+                setIsWeightInputVisible(false);
+            }
+        } catch (error) {
+            console.error("Greška prilikom ažuriranja težine:", error);
+        }
+    };
+
+
+        // Funkcija za potvrdu unos pola
+        const handleSaveGender = async () => {
+            try {
+                const formData=createFormData();
+        
+                console.log("Podaci koji se šalju za težinu:", formData);
+        
+                const response = await axios.put(
+                    'http://localhost:5063/api/userprofile/update',
+                    formData,
+                    {
+                        headers: {
+                            'Content-Type': 'multipart/form-data',
+                            'Authorization': `Bearer ${localStorage.getItem('token')}`
+                        }
+                    }
+                );
+        
+                if (response.data.success) {
+                    dispatch(updateGender(response.data.gender));
+                    console.log("Podaci se uspjesno salju");
+                    setIsWeightInputVisible(false);
+                }
+            } catch (error) {
+                console.error("Greška prilikom ažuriranja težine:", error);
+            }
+        };
+        
+    
 
 
     return (
@@ -287,14 +398,40 @@ const handleSaveHeight = async () => {
                     </div>
                     <div className="home-card profile-card">
                         <i className="fa fa-calendar icon"></i>
-                        <h2 style={{ fontSize: '25px', fontWeight: 'bold' }}>{age}</h2>
+                        <h2 style={{ fontSize: '25px', fontWeight: 'bold' }}>
+                        {isAgeInputVisible ? (
+                                <input
+                                    type="number"
+                                    value={newAge}
+                                    onChange={handleAgeChange}
+                                    onBlur={handleBlurAge} // Spremi i sakrij kada korisnik klikne van inputa
+                                    autoFocus
+                                />
+                            ) : (
+                                <span onClick={handleAgeClick}>{age}</span>
+                            )}
+                        </h2>
                         <h2>Godine</h2>
                     </div>
                     <div className="home-card profile-card">
-                        <i className="fa fa-venus-mars icon"></i>
-                        <h2 style={{ fontSize: '25px', fontWeight: 'bold' }}>{gender}</h2>
-                        <h2>Pol</h2>
-                    </div>
+    <i className="fa fa-venus-mars icon"></i>
+    <h2 style={{ fontSize: '25px', fontWeight: 'bold' }}>
+        {isGenderInputVisible ? (
+            <select
+                value={newGender}
+                onChange={handleGenderChange}
+                onBlur={handleBlurGender} // Spremi i sakrij kada korisnik klikne van inputa
+                autoFocus
+            >
+                <option value="M">M</option>
+                <option value="Ž">Ž</option>
+            </select>
+        ) : (
+            <span onClick={handleGenderClick}>{newGender || "gender"}</span>
+        )}
+    </h2>
+    <h2>Pol</h2>
+</div>
                 </div>
             </div>
         </div>
