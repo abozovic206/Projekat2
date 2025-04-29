@@ -8,6 +8,8 @@
     margin-left: 700px;
     margin-right: 700px;
     cursor: pointer;
+    background-color: #1e2b33; /* Tamna boja za gornju liniju koja se slaže sa gradijentom */
+    
     gap: 10px; /* Razmak između slike i dugmeta */
     border-radius: 100px;
 }
@@ -25,7 +27,8 @@
 /* Dugme pored profilne slike */
 .submit-button {
     padding: 5px 10px; /* Manje dugme */
-    background-color: #530018;
+    background-color: #1e2b33; /* Tamna boja za gornju liniju koja se slaže sa gradijentom */
+
     color: white;
     border: none;
     border-radius: 8px;
@@ -74,5 +77,3 @@
     justify-content: center;
     margin-bottom: 5px;
 }
-
-  

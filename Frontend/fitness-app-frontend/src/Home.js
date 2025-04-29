@@ -7,6 +7,8 @@ import FemaleDashboard from './gender/FemaleDashboard.js';
 import ManDashboard from './gender/ManDashboard.js';
 import TrainingHomePage from './training/TrainingHomePage.js';
 import MyProfile from './button/MyProfile.js';
+import BMIKalkulator from './kalkulator/BMIKalkulator.js';
+import BMRKalkulator from './kalkulator/BMRKalkulator.js';
 
 
 
@@ -21,6 +23,13 @@ const Home = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  
+      //Dodavanje BMI forme
+      const[isBMICalculatorVisible,setIsBMICalculatorVisible]=useState(false);
+
+      //Dodavanje BMR forme
+      const[isBMRCalculatorVisible, setIsBMRCalculatorVisible]=useState(false);
+
   //LISTA SAVJETA ZA ISHRANU
   const nutritionTips=[
     "Pijte najmanje 8 čaša vode dnevno.",
@@ -34,12 +43,29 @@ const Home = () => {
 
   //Stanje za prikaz nasumičnih savjeta
   const[randomTip, setRandomTip]=useState("");
-
+  const[randomTip2, setRandomTip2]=useState("");
+  const[randomTip3, setRandomTip3]=useState("");
   //Funkcija za nasumicni odabir
   const generateRandomTip=()=>{
     const randomIndex=Math.floor(Math.random()*nutritionTips.length);
+    const randomIndex2=Math.floor(Math.random()*nutritionTips.length);
+    const randomIndex3=Math.floor(Math.random()*nutritionTips.length);
     setRandomTip(nutritionTips[randomIndex]);
+    setRandomTip2(nutritionTips[randomIndex2]);
+    setRandomTip3(nutritionTips[randomIndex3]);
   }
+
+    //HANDLE ZA BMI
+    const handleBMIClick=()=>
+      {
+          setIsBMICalculatorVisible(!isBMICalculatorVisible);
+      }
+
+      //HANDLE ZA BMR
+      const handleBMRClick=()=>
+        {
+          setIsBMRCalculatorVisible(!isBMRCalculatorVisible);//kad se klikne promijeni se stanje
+        }
 
 
   const handleLogout = () => {
@@ -76,18 +102,24 @@ const Home = () => {
           <div className="home-card profile-card" onClick={()=>navigate('/button/MyProfile')}>
             <i className="fa fa-user icon"></i> {/* Ikonica za BMI */}
             <h2>My Profile</h2>
+            <p style={{fontSize:20}}><strong>Username:{userName}</strong></p>
             </div>
 
           {/* BMI Calculator */}
-          <div className="home-card bmi-card" onClick={() => navigate('/bmi')}>
+          <div className="home-card bmi-card" >
             <i className="fa fa-weight icon"></i> {/* Ikonica za BMI */}
+            <button onClick={handleBMIClick}>BMI Izracun</button>
             <h2>BMI Calculator</h2>
+            {isBMICalculatorVisible && <BMIKalkulator />} {/* Prikazuje BMI kalkulator ako je true */}
           </div>
 
           {/* Workout Tracker */}
-          <div className="home-card workout-card" onClick={() => navigate('/training/TrainingHomePage')}>
-            <i className="fa fa-dumbbell icon"></i> {/* Ikonica za Workout */}
-            <h2>Workout Tracker</h2>
+          <div className="home-card workout-card" >
+            <i className="fa fa-heartbeat icon"></i> {/* Ikonica za Workout */}
+            <button onClick={handleBMRClick}BMR Kalkulator>BMR Izracun</button>
+            <h2>BMR Kalkulator</h2>
+            {isBMRCalculatorVisible && <BMRKalkulator/>}
+            
           </div>
 
           {/* Nutrition Tips */}
@@ -96,6 +128,8 @@ const Home = () => {
             <h2>Nutrition Tips</h2>
             <ul>
               <p>{randomTip || "Click to get a nutrition tip"}</p>
+              <p>{randomTip2 || "Click to get a nutrition tip"}</p>
+              
             </ul>
           </div>
         </div>

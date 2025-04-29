@@ -9,6 +9,7 @@ import axios from 'axios';
 import { FaSave } from 'react-icons/fa';  
 import '../styles/HomeInterface.css';
 import { useEffect } from 'react';
+//mport {BMIKalkulator} from '../kalkulator/BMIKalkulator';
 
 
 const MyProfile = () => {
@@ -49,10 +50,24 @@ const MyProfile = () => {
     const[isGenderInputVisible, setIsGenderInputVisible]=useState(false);
     const[newGender, setNewGender]=useState(gender);
 
+
+
+
+
     
     useEffect(() => {
         setNewWeight(weight);
     }, [weight]);
+
+    useEffect(() => {
+        setNewHeight(height);
+    }, [gender]);
+
+    useEffect(() => {
+        setNewGender(gender);
+    }, [gender]);
+    
+    
     
 
     const fileInputRef = useRef(null);
@@ -79,6 +94,8 @@ const MyProfile = () => {
         return formData;
     };
 
+
+  
 
     
 
@@ -337,6 +354,7 @@ const handleSaveHeight = async () => {
             </div>
 
             <div className="profile-page-scroll">
+            
                 <div className="profile-picture-preview" onClick={handleClickProfilePicture}>
                     {profileData.profilePicture ? (
                         <img
@@ -383,7 +401,7 @@ const handleSaveHeight = async () => {
                                     autoFocus
                                 />
                             ) : (
-                                <span onClick={handleWeightClick}>{newWeight}(kg)</span>
+                                <span onClick={handleWeightClick}>{newWeight?newWeight:0}(kg)</span>
                             )}
                         </h2>
                         <h2>Tezina</h2>
@@ -401,7 +419,7 @@ const handleSaveHeight = async () => {
                                     autoFocus
                                 />
                             ) : (
-                                <span onClick={handleHeightClick}>{newHeight}(kg)</span>
+                                <span onClick={handleHeightClick}>{newHeight?newHeight:0}(cm)</span>
                             )}
                         </h2>
                         
@@ -419,7 +437,7 @@ const handleSaveHeight = async () => {
                                     autoFocus
                                 />
                             ) : (
-                                <span onClick={handleAgeClick}>{newAge}</span>
+                                <span onClick={handleAgeClick}>{newAge?newAge:0}(god)</span>
                             )}
                         </h2>
                         <h2>Godine</h2>
@@ -434,11 +452,12 @@ const handleSaveHeight = async () => {
                 onBlur={handleBlurGender} // Spremi i sakrij kada korisnik klikne van inputa
                 autoFocus
             >
-                <option value="M">M</option>
+                <option value="Izaberi">Izaberi</option>
                 <option value="Ž">Ž</option>
+                <option value="M">M</option>
             </select>
         ) : (
-            <span onClick={handleGenderClick}>{newGender || "gender"}</span>
+            <span onClick={handleGenderClick}>{newGender?newGender:"Pol"}</span>
         )}
     </h2>
     <h2>Pol</h2>
