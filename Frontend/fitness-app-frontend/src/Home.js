@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logout } from './redux/authSlice';
@@ -20,6 +20,27 @@ const Home = () => {
   
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  //LISTA SAVJETA ZA ISHRANU
+  const nutritionTips=[
+    "Pijte najmanje 8 čaša vode dnevno.",
+    "Uključite voće uz svaki doručak.",
+    "Izbjegavajte gazirana pića - izaberite prirodne sokove",
+    "Jedine balansirano, unosite voće i povrće",
+    "Ne preskačite doručak, to je najvažniji obrok!",
+    "Izbjegavajte užine kasno u veče",
+    "Jedite pomalo i izbalansirano u toku dana."
+  ]
+
+  //Stanje za prikaz nasumičnih savjeta
+  const[randomTip, setRandomTip]=useState("");
+
+  //Funkcija za nasumicni odabir
+  const generateRandomTip=()=>{
+    const randomIndex=Math.floor(Math.random()*nutritionTips.length);
+    setRandomTip(nutritionTips[randomIndex]);
+  }
+
 
   const handleLogout = () => {
     dispatch(logout());
@@ -70,13 +91,11 @@ const Home = () => {
           </div>
 
           {/* Nutrition Tips */}
-          <div className="home-card nutrition-card">
+          <div className="home-card nutrition-card" onClick={generateRandomTip}>
             <i className="fa fa-apple-alt icon"></i> {/* Ikonica za Nutrition Tips */}
             <h2>Nutrition Tips</h2>
             <ul>
-              <li>Drink at least 8 glasses of water.</li>
-              <li>Include a fruit with every breakfast.</li>
-              <li>Avoid sugary drinks – choose natural juices.</li>
+              <p>{randomTip || "Click to get a nutrition tip"}</p>
             </ul>
           </div>
         </div>
