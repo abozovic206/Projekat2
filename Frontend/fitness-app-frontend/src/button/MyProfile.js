@@ -25,7 +25,8 @@ const MyProfile = () => {
 
     const [profileData, setProfileData] = useState({
         profilePicture: null,
-        weight:null
+        weight:null, 
+        height:null
     });
 
     //Weight
@@ -37,6 +38,23 @@ const MyProfile = () => {
     const[newHeight, setNewHeight]=useState(height); //pocetni state je tezina iz baze koju dobijemo preko redux-a
 
     const fileInputRef = useRef(null);
+
+    //KREIRAM FUNKCIJU
+    const createFormData = () => {
+        const formData = new FormData();
+        if (profileData.profilePicture) {
+            formData.append("profilePicture", profileData.profilePicture);
+        }
+        if (newWeight !== "") {
+            formData.append("weight", parseFloat(newWeight));
+        }
+        if (newHeight !== "") {
+            formData.append("height", parseFloat(newHeight));
+        }
+        return formData;
+    };
+    
+    
 
     const handleChange = (e) => {
         const { name, value, type, files } = e.target;
@@ -59,7 +77,9 @@ const MyProfile = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        formData.append('profilePicture', profileData.profilePicture);
+        const formData=createFormData();
+
+        console.log("STA SE SALJE KAD POZOVEM sliku:",formData);
         
 
        
@@ -122,9 +142,9 @@ const MyProfile = () => {
     // Funkcija za potvrdu unosa nove težine
     const handleSaveWeight = async () => {
     try {
-        const weightAsFloat = parseFloat(newWeight);
+        const formData=createFormData();
 
-        formData.append('weight', weightAsFloat);
+        console.log("Podaci koji se šalju za težinu:", formData);
 
         const response = await axios.put(
             'http://localhost:5063/api/userprofile/update',
@@ -148,13 +168,13 @@ const MyProfile = () => {
 
 
 //funkcija za potvrdu nove visine
-const handleSaveHeight = async (e) => {
+const handleSaveHeight = async () => {
     try {
 
-        e.preventDefault();
-        const heightAsFloat = parseFloat(newHeight);
+        
+        const formData=createFormData();
 
-        formData.append('height', heightAsFloat);
+        console.log("STA SE SALJE KAD POZOVEM VISINU:",formData);
 
         const response = await axios.put(
             'http://localhost:5063/api/userprofile/update',
