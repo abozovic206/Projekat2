@@ -62,13 +62,32 @@ const authSlice=createSlice({
                 state.firstName=null;
                 state.lastName=null;
                 //Prilikom logout-a se brisu te vrijednosti koje su dodjeljenje a prilikom logina se postavljaju logicno
+            },
+
+            //Akcija za azuriranje tezine
+            updateWeight:(state, action)=>{
+                state.weight=action.payload;
+                localStorage.setItem('weight', action.payload);//cuvamo tezinu
+            },
+
+            //Akcija za azuriranje slike
+            updateProfilePicture:(state,action)=>{
+                state.profilePicture=action.payload;
+                localStorage.setItem('profilePicture', action.payload);
+            },
+
+            updateHeight:(state, action)=>{
+                state.height=action.payload;
+                localStorage.setItem('height', action.payload);
             }
+
+            
     },
 });
 
-export const {loginSuccess, logout}=authSlice.actions;
+export const {loginSuccess, logout, updateWeight, updateProfilePicture, updateHeight}=authSlice.actions;
 export default authSlice.reducer;
-export const updateProfilePicture=(profilePicture)=>({
+/*export const updateProfilePicture=(profilePicture)=>({
     type:'UPDATE-PROFILE-PICTURE',
     payload:profilePicture,
-});
+});*/
