@@ -8,6 +8,8 @@ import axios from 'axios';
 //import { updateProfilePicture } from '../redux/authSlice';
 import { FaSave } from 'react-icons/fa';  
 import '../styles/HomeInterface.css';
+import { useEffect } from 'react';
+
 
 const MyProfile = () => {
     const dispatch = useDispatch();
@@ -47,6 +49,12 @@ const MyProfile = () => {
     const[isGenderInputVisible, setIsGenderInputVisible]=useState(false);
     const[newGender, setNewGender]=useState(gender);
 
+    
+    useEffect(() => {
+        setNewWeight(weight);
+    }, [weight]);
+    
+
     const fileInputRef = useRef(null);
 
     //KREIRAM FUNKCIJU
@@ -70,7 +78,8 @@ const MyProfile = () => {
         
         return formData;
     };
-    
+
+
     
 
     const handleChange = (e) => {
@@ -209,10 +218,12 @@ const MyProfile = () => {
             }
         );
 
-        if (response.data.success) {
+        if (response.data.weight !== undefined) {
             dispatch(updateWeight(response.data.weight));
+            setNewWeight(response.data.weight);  // <-- dodaj ovo
             setIsWeightInputVisible(false);
         }
+        
     } catch (error) {
         console.error("Greška prilikom ažuriranja težine:", error);
     }
@@ -238,9 +249,9 @@ const handleSaveHeight = async () => {
                 }
             }
         );
-
-        if (response.data.success) {
-            dispatch(updateHeight(response.data.height)); ///OVO BI TREBALO BITI ODGOVORNO ZA AUTOMATSKO AZURIRANJE
+        if (response.data.height !== undefined) {
+            dispatch(updateHeight(response.data.height));
+            setNewHeight(response.data.height);  // <-- dodaj ovo
             setIsHeightInputVisible(false);
         }
     } catch (error) {
@@ -266,10 +277,10 @@ const handleSaveHeight = async () => {
                     }
                 }
             );
-    
-            if (response.data.success) {
+            if (response.data.age !== undefined) {
                 dispatch(updateAge(response.data.age));
-                setIsWeightInputVisible(false);
+                setNewAge(response.data.age);  // <-- dodaj ovo
+                setIsAgeInputVisible(false);
             }
         } catch (error) {
             console.error("Greška prilikom ažuriranja težine:", error);
@@ -372,7 +383,7 @@ const handleSaveHeight = async () => {
                                     autoFocus
                                 />
                             ) : (
-                                <span onClick={handleWeightClick}>{weight}(kg)</span>
+                                <span onClick={handleWeightClick}>{newWeight}(kg)</span>
                             )}
                         </h2>
                         <h2>Tezina</h2>
@@ -390,7 +401,7 @@ const handleSaveHeight = async () => {
                                     autoFocus
                                 />
                             ) : (
-                                <span onClick={handleHeightClick}>{height}(kg)</span>
+                                <span onClick={handleHeightClick}>{newHeight}(kg)</span>
                             )}
                         </h2>
                         
@@ -408,7 +419,7 @@ const handleSaveHeight = async () => {
                                     autoFocus
                                 />
                             ) : (
-                                <span onClick={handleAgeClick}>{age}</span>
+                                <span onClick={handleAgeClick}>{newAge}</span>
                             )}
                         </h2>
                         <h2>Godine</h2>
