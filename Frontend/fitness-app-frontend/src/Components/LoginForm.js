@@ -58,14 +58,14 @@ const LoginForm = ({ onCancel }) => {
       
 
       if (response.ok) {
-        const dataToken = await response.json(); //ODGOVOR KOJI DOBIJA SA BACKENDA
+        const dataToken = await response.json(); //ODGOVOR KOJI DOBIJA SA BACKENDA u json formatu
         console.log("Odgovor sa servera:", dataToken);
-        dispatch(loginSuccess({
+        dispatch(loginSuccess({//POZIVA LOGINSUCCESS AKCIJU I SALJE PODATKE U REDUX STORE
           token: dataToken.token,
           userName: dataToken.userName,
           firstName: dataToken.firstName,
           lastName:dataToken.lastName, //OVDE GLEDAJJJJJ!!!
-          profilePicture:dataToken.profilePicture,
+        profilePicture:dataToken.profilePicture,
           weight:dataToken.weight,
           height:dataToken.height,
           age:dataToken.age,

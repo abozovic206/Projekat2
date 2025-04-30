@@ -31,23 +31,26 @@ const authSlice=createSlice({
             state.token=action.payload.token; //cuvamo token 
             //state trenutna vrijednost
             //payload ono sto se salje u akciji
-            state.userName=action.payload.userName; 
+            //STATE predstavlja trenutno stanje REDUX-a
+            //(STATE=MEMORIJA APLIKACIJE)
+            state.userName=action.payload.userName; //action.payload sadrzi podatke koji dolaze iz dispatch loginSuccess JAKO BITNO*****
             state.firstName=action.payload.firstName;
             state.lastName=action.payload.lastName;
 
-            state.profilePicture=action.payload.profilePicture;
+           state.profilePicture=action.payload.profilePicture; //NAZIV MORA BITI ISTI KAO ONAJ STO BACKEND SALJE U JSON FORMATU(CASE SENSITIVE)
             state.weight=action.payload.weight;
             state.height=action.payload.height;
             state.age=action.payload.age;
-            state.gender=action.payload.gender
+            state.gender=action.payload.gender;
 
             //Dodjeljuju im se neke vrijednosti
 
             //spremanje tokena u localStorage
+            //LOCALSTORAGE=DA PODACI OSTANU SACUVANI I KAD SE STRANICA OSVJEZI  
             localStorage.setItem('token', action.payload.token);
             localStorage.setItem('userName', action.payload.userName);
 
-            localStorage.setItem('profilePicture', action.payload.profilePicture);
+           localStorage.setItem('profilePicture', action.payload.profilePicture);
             localStorage.setItem('weight',action.payload.weight);
             localStorage.setItem('height',action.payload.height);
             localStorage.setItem('age',action.payload.age);

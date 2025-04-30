@@ -61,7 +61,12 @@ const MyProfile = () => {
 
     useEffect(() => {
         setNewHeight(height);
-    }, [gender]);
+    }, [height]);
+
+    useEffect(() => {
+        setNewAge(age);
+    }, [age]);
+
 
     useEffect(() => {
         setNewGender(gender);
@@ -174,47 +179,51 @@ const MyProfile = () => {
 
     // Funkcija koja menja stanje inputa za težinu
     const handleWeightClick = () => {
-        setNewWeight(weight); // Prikazuje trenutnu težinu u inputu
+        setNewWeight(newWeight); // Prikazuje trenutnu težinu u inputu
         setIsWeightInputVisible(true);
     };
 
     //Funkcija koja mijenja stanje inputa za visinu
-    const handleHeightClick=()=>{
-        setNewHeight(height);//PRIKAZUJE TRENUTNU VISINU INPUTA
-        setIsHeightInputVisible(true); //omogucava vidljivost input-a
-    }
+    const handleHeightClick = () => {
+        setNewHeight(newHeight); // Prikazuje trenutnu težinu u inputu
+        setIsHeightInputVisible(true);
+    };
 
     //Funkcija koja mijenja input za godine
     const handleAgeClick=()=>{
-        setNewAge(age);//setuje se ova vrijednost na vrijednost iz baze
+        setNewAge(newAge);//setuje se ova vrijednost na vrijednost iz baze
         setIsAgeInputVisible(true);//omogucava vidljivost age input-a
     }
 
 
     //Funkcija koja mijenja input za pol
     const handleGenderClick=()=>{
-        setNewGender(gender);
+        setNewGender(newGender);
         setIsGenderInputVisible(true);
     }
 
     // Funkcija za unos nove težine
     const handleWeightChange = (e) => {
-        setNewWeight(e.target.value);
+        const newWeight=e.target.value;
+        dispatch(updateWeight(newWeight)); // updateWeight je tvoja akcija
     };
 
     //Funkcija za unos nove visine
-    const handleHeightChange=(e)=>{
-        setNewHeight(e.target.value);
-    }
+    const handleHeightChange = (e) => {
+        const newHeight=e.target.value;
+        dispatch(updateHeight(newHeight)); // updateHeight je tvoja akcija
+    };
 
     //Funkcija za unos godina
     const handleAgeChange=(e)=>{
-        setNewAge(e.target.value);
+        const newAge=e.target.value;
+        dispatch(updateAge(newAge));
     }
 
     //Funkcija za unos pola
     const handleGenderChange=(e)=>{
-        setNewGender(e.target.value);
+        const newGender=e.target.value;
+        dispatch(updateGender(newGender));
     }
 
     // Funkcija za potvrdu unosa nove težine
@@ -237,7 +246,6 @@ const MyProfile = () => {
 
         if (response.data.weight !== undefined) {
             dispatch(updateWeight(response.data.weight));
-            setNewWeight(response.data.weight);  // <-- dodaj ovo
             setIsWeightInputVisible(false);
         }
         
@@ -250,11 +258,9 @@ const MyProfile = () => {
 //funkcija za potvrdu nove visine
 const handleSaveHeight = async () => {
     try {
-
-        
         const formData=createFormData();
 
-        console.log("STA SE SALJE KAD POZOVEM VISINU:",formData);
+        console.log("Podaci koji se šalju za težinu:", formData);
 
         const response = await axios.put(
             'http://localhost:5063/api/userprofile/update',
@@ -266,11 +272,12 @@ const handleSaveHeight = async () => {
                 }
             }
         );
+
         if (response.data.height !== undefined) {
             dispatch(updateHeight(response.data.height));
-            setNewHeight(response.data.height);  // <-- dodaj ovo
             setIsHeightInputVisible(false);
         }
+        
     } catch (error) {
         console.error("Greška prilikom ažuriranja težine:", error);
     }
@@ -296,7 +303,6 @@ const handleSaveHeight = async () => {
             );
             if (response.data.age !== undefined) {
                 dispatch(updateAge(response.data.age));
-                setNewAge(response.data.age);  // <-- dodaj ovo
                 setIsAgeInputVisible(false);
             }
         } catch (error) {

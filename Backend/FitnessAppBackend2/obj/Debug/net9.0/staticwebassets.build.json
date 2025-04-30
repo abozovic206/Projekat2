@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JyMgfjJD3FizAox8bielbn1SwctmOsqdL88on5psUQI=",
+  "Hash": "hvQg5e45I5XBqNhsgC+Wn8Omlwh2LV5EoK8aPj5wB3U=",
   "Source": "FitnessAppBackend2.",
   "BasePath": "_content/FitnessAppBackend2.",
   "Mode": "Default",
@@ -185,6 +185,27 @@
       "OriginalItemSpec": "wwwroot\\images\\0faef078-b282-4faf-a0ec-1d19bf9a5a2b.png"
     },
     {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1a046169-2cc4-4c23-956b-89d4138ed642.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/1a046169-2cc4-4c23-956b-89d4138ed642#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m08dkli0li",
+      "Integrity": "Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1a046169-2cc4-4c23-956b-89d4138ed642.jpg"
+    },
+    {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1ad52cb1-6f5c-41f7-81df-ba733895dc60.jpg",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
@@ -227,6 +248,27 @@
       "OriginalItemSpec": "wwwroot\\images\\1b86157c-29da-47e2-812e-bb701a22f1ed.jpg"
     },
     {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1bd9002d-6e60-4663-8870-77ecf2e363bc.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/1bd9002d-6e60-4663-8870-77ecf2e363bc#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ufpz9ic2t",
+      "Integrity": "bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1bd9002d-6e60-4663-8870-77ecf2e363bc.png"
+    },
+    {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1d6313a2-b2c8-4908-a101-24bbfe72d951.png",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
@@ -246,6 +288,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\1d6313a2-b2c8-4908-a101-24bbfe72d951.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1ecf9db8-e0f4-451f-8ab0-a3fa340e43f5.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/1ecf9db8-e0f4-451f-8ab0-a3fa340e43f5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "skfxateisq",
+      "Integrity": "5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1ecf9db8-e0f4-451f-8ab0-a3fa340e43f5.png"
     },
     {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\20b8241e-07ae-4e82-bb35-b5b34bd0d0a4.png",
@@ -332,6 +395,27 @@
       "OriginalItemSpec": "wwwroot\\images\\2a6c08c6-26e8-49c3-bd96-7a1f787b4ec1.png"
     },
     {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\2aa32b6b-a444-4059-bdb4-e3d871269c7a.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/2aa32b6b-a444-4059-bdb4-e3d871269c7a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ls6bg4yjmo",
+      "Integrity": "JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2aa32b6b-a444-4059-bdb4-e3d871269c7a.png"
+    },
+    {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\2c6d52a7-09cd-42fe-9f9b-a923c75409f1.jpg",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
@@ -351,6 +435,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\2c6d52a7-09cd-42fe-9f9b-a923c75409f1.jpg"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\3240683f-635b-4652-abe9-2f3de8c47ce6.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/3240683f-635b-4652-abe9-2f3de8c47ce6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ls6bg4yjmo",
+      "Integrity": "JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3240683f-635b-4652-abe9-2f3de8c47ce6.png"
     },
     {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\35e92492-0691-412c-ad3b-055d9199f576.png",
@@ -395,6 +500,48 @@
       "OriginalItemSpec": "wwwroot\\images\\37651e4c-1f24-4f2e-9937-2782a5ffd57a.jpg"
     },
     {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\391477d0-ef8c-4471-ad2f-871424aef9bc.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/391477d0-ef8c-4471-ad2f-871424aef9bc#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xysksp87a8",
+      "Integrity": "qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\391477d0-ef8c-4471-ad2f-871424aef9bc.jpg"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\3f928bb7-afc4-46e9-a2f1-6f27843a6b62.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/3f928bb7-afc4-46e9-a2f1-6f27843a6b62#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "chbe5w3zx7",
+      "Integrity": "YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3f928bb7-afc4-46e9-a2f1-6f27843a6b62.jpg"
+    },
+    {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\3fa535c7-68b8-4ab1-8b76-5967ea7ab370.jpg",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
@@ -416,6 +563,27 @@
       "OriginalItemSpec": "wwwroot\\images\\3fa535c7-68b8-4ab1-8b76-5967ea7ab370.jpg"
     },
     {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4513f8c1-cb76-4327-8b6a-99d750d5644a.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/4513f8c1-cb76-4327-8b6a-99d750d5644a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ls6bg4yjmo",
+      "Integrity": "JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4513f8c1-cb76-4327-8b6a-99d750d5644a.png"
+    },
+    {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\46b9ceee-f51b-4461-bf6a-b2a457bf6639.png",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
@@ -435,6 +603,132 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\46b9ceee-f51b-4461-bf6a-b2a457bf6639.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\47a8d5fa-24ee-444e-b969-107f924bb0ab.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/47a8d5fa-24ee-444e-b969-107f924bb0ab#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ufpz9ic2t",
+      "Integrity": "bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\47a8d5fa-24ee-444e-b969-107f924bb0ab.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4876776f-0bc3-4a87-b747-bb5e04d2c7ee.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/4876776f-0bc3-4a87-b747-bb5e04d2c7ee#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xysksp87a8",
+      "Integrity": "qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4876776f-0bc3-4a87-b747-bb5e04d2c7ee.jpg"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4b617b56-50e6-4c23-915d-e660c2f1b2f4.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/4b617b56-50e6-4c23-915d-e660c2f1b2f4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ufpz9ic2t",
+      "Integrity": "bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4b617b56-50e6-4c23-915d-e660c2f1b2f4.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4d2e1386-4afd-40a1-aac2-82d22825a955.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/4d2e1386-4afd-40a1-aac2-82d22825a955#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xysksp87a8",
+      "Integrity": "qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4d2e1386-4afd-40a1-aac2-82d22825a955.jpg"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4e228693-ecb5-4ce4-8542-d9fe747981fa.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/4e228693-ecb5-4ce4-8542-d9fe747981fa#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ufpz9ic2t",
+      "Integrity": "bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4e228693-ecb5-4ce4-8542-d9fe747981fa.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4fd7cc00-658b-4c10-8fdf-f26d0da36ec1.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/4fd7cc00-658b-4c10-8fdf-f26d0da36ec1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ufpz9ic2t",
+      "Integrity": "bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4fd7cc00-658b-4c10-8fdf-f26d0da36ec1.png"
     },
     {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\56331538-ddda-47cd-ae22-c2248e22dc43.jpg",
@@ -563,6 +857,27 @@
       "OriginalItemSpec": "wwwroot\\images\\6711d3c4-5210-4881-87d7-d652f9652383.jpg"
     },
     {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\673f8946-1960-4a5a-a646-389ff5b73d74.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/673f8946-1960-4a5a-a646-389ff5b73d74#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m08dkli0li",
+      "Integrity": "Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\673f8946-1960-4a5a-a646-389ff5b73d74.jpg"
+    },
+    {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\68ca6260-e8d2-41f6-80e9-d667a3cc83aa.png",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
@@ -626,6 +941,69 @@
       "OriginalItemSpec": "wwwroot\\images\\77f1d882-bb6e-409e-ae65-1088dbccbfc5.png"
     },
     {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\78402c12-5d2d-495f-99a9-89efd7c91991.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/78402c12-5d2d-495f-99a9-89efd7c91991#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ls6bg4yjmo",
+      "Integrity": "JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\78402c12-5d2d-495f-99a9-89efd7c91991.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\7ca9b65e-7875-4b7f-ae84-9fc6738abaeb.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/7ca9b65e-7875-4b7f-ae84-9fc6738abaeb#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ufpz9ic2t",
+      "Integrity": "bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7ca9b65e-7875-4b7f-ae84-9fc6738abaeb.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\7d020e52-9943-4b34-af73-7a36cee7a2d3.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/7d020e52-9943-4b34-af73-7a36cee7a2d3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ls6bg4yjmo",
+      "Integrity": "JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7d020e52-9943-4b34-af73-7a36cee7a2d3.png"
+    },
+    {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\80469b8f-3913-4fae-a078-9d35ff5891a4.png",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
@@ -666,6 +1044,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\82df1e7c-1e89-4c9a-8da3-467f0098946b.jpg"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\8503720e-7679-4aad-8f60-91a00ac25bf0.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/8503720e-7679-4aad-8f60-91a00ac25bf0#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ls6bg4yjmo",
+      "Integrity": "JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8503720e-7679-4aad-8f60-91a00ac25bf0.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\88cd9807-1eb2-49db-a4fd-c1453d6266ff.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/88cd9807-1eb2-49db-a4fd-c1453d6266ff#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b7np9fzpja",
+      "Integrity": "t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\88cd9807-1eb2-49db-a4fd-c1453d6266ff.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\8e7d723f-3dfd-4198-aea8-c7c2dd3a1139.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/8e7d723f-3dfd-4198-aea8-c7c2dd3a1139#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b7np9fzpja",
+      "Integrity": "t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8e7d723f-3dfd-4198-aea8-c7c2dd3a1139.png"
     },
     {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\9977d1ac-e827-4c6a-84d9-3f1b74686d90.png",
@@ -731,54 +1172,12 @@
       "OriginalItemSpec": "wwwroot\\images\\a1432aaf-a653-4f91-8a05-377496090c51.png"
     },
     {
-      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a764ccbb-5785-4079-b61a-0da38bef076c.jpg",
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a4057071-980d-4f85-9428-321d5b0134eb.png",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
       "BasePath": "_content/FitnessAppBackend2.",
-      "RelativePath": "images/a764ccbb-5785-4079-b61a-0da38bef076c#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "2mocajvxga",
-      "Integrity": "mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\a764ccbb-5785-4079-b61a-0da38bef076c.jpg"
-    },
-    {
-      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ad0482cb-13ab-4075-be45-6c4371130335.png",
-      "SourceId": "FitnessAppBackend2.",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
-      "BasePath": "_content/FitnessAppBackend2.",
-      "RelativePath": "images/ad0482cb-13ab-4075-be45-6c4371130335#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "skfxateisq",
-      "Integrity": "5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ad0482cb-13ab-4075-be45-6c4371130335.png"
-    },
-    {
-      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ae89bd57-d891-4e5b-afec-e31fe8f1f86e.png",
-      "SourceId": "FitnessAppBackend2.",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
-      "BasePath": "_content/FitnessAppBackend2.",
-      "RelativePath": "images/ae89bd57-d891-4e5b-afec-e31fe8f1f86e#[.{fingerprint}]?.png",
+      "RelativePath": "images/a4057071-980d-4f85-9428-321d5b0134eb#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -791,7 +1190,28 @@
       "Integrity": "JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ae89bd57-d891-4e5b-afec-e31fe8f1f86e.png"
+      "OriginalItemSpec": "wwwroot\\images\\a4057071-980d-4f85-9428-321d5b0134eb.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a894627b-570b-4fba-bd98-78cc53809748.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/a894627b-570b-4fba-bd98-78cc53809748#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ls6bg4yjmo",
+      "Integrity": "JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a894627b-570b-4fba-bd98-78cc53809748.png"
     },
     {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\b018daf4-82cb-4ca1-8331-27305dcf0914.jpg",
@@ -878,6 +1298,27 @@
       "OriginalItemSpec": "wwwroot\\images\\b6d6afb5-d948-4f6b-9336-1372e47aed22.png"
     },
     {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\b86868c0-8e4b-4ba0-91f3-6d3ead892d49.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/b86868c0-8e4b-4ba0-91f3-6d3ead892d49#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b7np9fzpja",
+      "Integrity": "t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b86868c0-8e4b-4ba0-91f3-6d3ead892d49.png"
+    },
+    {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\c2e66363-668c-4789-b1d1-0ab1b0c79078.png",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
@@ -939,6 +1380,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\cef72948-bcb3-4d4e-aea0-ba2826479551.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\cefd1e4e-9e0d-4c86-ab17-06b7f54df086.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/cefd1e4e-9e0d-4c86-ab17-06b7f54df086#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xysksp87a8",
+      "Integrity": "qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cefd1e4e-9e0d-4c86-ab17-06b7f54df086.jpg"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\d18ac417-2609-4ccf-924e-71885ae494af.png",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/d18ac417-2609-4ccf-924e-71885ae494af#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ufpz9ic2t",
+      "Integrity": "bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d18ac417-2609-4ccf-924e-71885ae494af.png"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\d36ae66d-652d-4442-a842-d7227937388a.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/d36ae66d-652d-4442-a842-d7227937388a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "chbe5w3zx7",
+      "Integrity": "YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d36ae66d-652d-4442-a842-d7227937388a.jpg"
     },
     {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\d644d4be-32ba-4fc2-b9aa-392272e5f178.png",
@@ -1025,6 +1529,27 @@
       "OriginalItemSpec": "wwwroot\\images\\ec474329-22a0-4afb-938f-2f7d70706812.png"
     },
     {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ec5db6a1-d5f5-4bc2-8583-526e97ad3649.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/ec5db6a1-d5f5-4bc2-8583-526e97ad3649#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m08dkli0li",
+      "Integrity": "Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ec5db6a1-d5f5-4bc2-8583-526e97ad3649.jpg"
+    },
+    {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\f124046c-661f-4b77-bd86-9668fb5cc38c.jpg",
       "SourceId": "FitnessAppBackend2.",
       "SourceType": "Discovered",
@@ -1044,6 +1569,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\f124046c-661f-4b77-bd86-9668fb5cc38c.jpg"
+    },
+    {
+      "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\f14132a8-83ca-4249-81b9-d58f185d20fe.jpg",
+      "SourceId": "FitnessAppBackend2.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\",
+      "BasePath": "_content/FitnessAppBackend2.",
+      "RelativePath": "images/f14132a8-83ca-4249-81b9-d58f185d20fe#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2mocajvxga",
+      "Integrity": "mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f14132a8-83ca-4249-81b9-d58f185d20fe.jpg"
     },
     {
       "Identity": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\f53b33f7-7314-443e-b00d-b2e0f81927cd.png",
@@ -1788,6 +2334,88 @@
       ]
     },
     {
+      "Route": "images/1a046169-2cc4-4c23-956b-89d4138ed642.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1a046169-2cc4-4c23-956b-89d4138ed642.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw="
+        }
+      ]
+    },
+    {
+      "Route": "images/1a046169-2cc4-4c23-956b-89d4138ed642.m08dkli0li.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1a046169-2cc4-4c23-956b-89d4138ed642.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m08dkli0li"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1a046169-2cc4-4c23-956b-89d4138ed642.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw="
+        }
+      ]
+    },
+    {
       "Route": "images/1ad52cb1-6f5c-41f7-81df-ba733895dc60.jpg",
       "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1ad52cb1-6f5c-41f7-81df-ba733895dc60.jpg",
       "Selectors": [],
@@ -1952,6 +2580,88 @@
       ]
     },
     {
+      "Route": "images/1bd9002d-6e60-4663-8870-77ecf2e363bc.4ufpz9ic2t.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1bd9002d-6e60-4663-8870-77ecf2e363bc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:02:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ufpz9ic2t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1bd9002d-6e60-4663-8870-77ecf2e363bc.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/1bd9002d-6e60-4663-8870-77ecf2e363bc.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1bd9002d-6e60-4663-8870-77ecf2e363bc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:02:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
       "Route": "images/1d6313a2-b2c8-4908-a101-24bbfe72d951.4ufpz9ic2t.png",
       "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1d6313a2-b2c8-4908-a101-24bbfe72d951.png",
       "Selectors": [],
@@ -2030,6 +2740,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/1ecf9db8-e0f4-451f-8ab0-a3fa340e43f5.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1ecf9db8-e0f4-451f-8ab0-a3fa340e43f5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1661"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:05:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U="
+        }
+      ]
+    },
+    {
+      "Route": "images/1ecf9db8-e0f4-451f-8ab0-a3fa340e43f5.skfxateisq.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\1ecf9db8-e0f4-451f-8ab0-a3fa340e43f5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1661"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:05:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "skfxateisq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1ecf9db8-e0f4-451f-8ab0-a3fa340e43f5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U="
         }
       ]
     },
@@ -2362,6 +3154,88 @@
       ]
     },
     {
+      "Route": "images/2aa32b6b-a444-4059-bdb4-e3d871269c7a.ls6bg4yjmo.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\2aa32b6b-a444-4059-bdb4-e3d871269c7a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:00:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ls6bg4yjmo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/2aa32b6b-a444-4059-bdb4-e3d871269c7a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/2aa32b6b-a444-4059-bdb4-e3d871269c7a.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\2aa32b6b-a444-4059-bdb4-e3d871269c7a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:00:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
       "Route": "images/2c6d52a7-09cd-42fe-9f9b-a923c75409f1.chbe5w3zx7.jpg",
       "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\2c6d52a7-09cd-42fe-9f9b-a923c75409f1.jpg",
       "Selectors": [],
@@ -2440,6 +3314,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0="
+        }
+      ]
+    },
+    {
+      "Route": "images/3240683f-635b-4652-abe9-2f3de8c47ce6.ls6bg4yjmo.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\3240683f-635b-4652-abe9-2f3de8c47ce6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ls6bg4yjmo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/3240683f-635b-4652-abe9-2f3de8c47ce6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/3240683f-635b-4652-abe9-2f3de8c47ce6.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\3240683f-635b-4652-abe9-2f3de8c47ce6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
         }
       ]
     },
@@ -2608,6 +3564,170 @@
       ]
     },
     {
+      "Route": "images/391477d0-ef8c-4471-ad2f-871424aef9bc.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\391477d0-ef8c-4471-ad2f-871424aef9bc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:13:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI="
+        }
+      ]
+    },
+    {
+      "Route": "images/391477d0-ef8c-4471-ad2f-871424aef9bc.xysksp87a8.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\391477d0-ef8c-4471-ad2f-871424aef9bc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:13:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xysksp87a8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/391477d0-ef8c-4471-ad2f-871424aef9bc.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI="
+        }
+      ]
+    },
+    {
+      "Route": "images/3f928bb7-afc4-46e9-a2f1-6f27843a6b62.chbe5w3zx7.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\3f928bb7-afc4-46e9-a2f1-6f27843a6b62.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:50:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "chbe5w3zx7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/3f928bb7-afc4-46e9-a2f1-6f27843a6b62.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0="
+        }
+      ]
+    },
+    {
+      "Route": "images/3f928bb7-afc4-46e9-a2f1-6f27843a6b62.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\3f928bb7-afc4-46e9-a2f1-6f27843a6b62.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:50:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0="
+        }
+      ]
+    },
+    {
       "Route": "images/3fa535c7-68b8-4ab1-8b76-5967ea7ab370.jpg",
       "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\3fa535c7-68b8-4ab1-8b76-5967ea7ab370.jpg",
       "Selectors": [],
@@ -2690,6 +3810,88 @@
       ]
     },
     {
+      "Route": "images/4513f8c1-cb76-4327-8b6a-99d750d5644a.ls6bg4yjmo.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4513f8c1-cb76-4327-8b6a-99d750d5644a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:00:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ls6bg4yjmo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4513f8c1-cb76-4327-8b6a-99d750d5644a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/4513f8c1-cb76-4327-8b6a-99d750d5644a.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4513f8c1-cb76-4327-8b6a-99d750d5644a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:00:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
       "Route": "images/46b9ceee-f51b-4461-bf6a-b2a457bf6639.ls6bg4yjmo.png",
       "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\46b9ceee-f51b-4461-bf6a-b2a457bf6639.png",
       "Selectors": [],
@@ -2768,6 +3970,498 @@
         {
           "Name": "integrity",
           "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/47a8d5fa-24ee-444e-b969-107f924bb0ab.4ufpz9ic2t.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\47a8d5fa-24ee-444e-b969-107f924bb0ab.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ufpz9ic2t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/47a8d5fa-24ee-444e-b969-107f924bb0ab.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/47a8d5fa-24ee-444e-b969-107f924bb0ab.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\47a8d5fa-24ee-444e-b969-107f924bb0ab.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/4876776f-0bc3-4a87-b747-bb5e04d2c7ee.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4876776f-0bc3-4a87-b747-bb5e04d2c7ee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI="
+        }
+      ]
+    },
+    {
+      "Route": "images/4876776f-0bc3-4a87-b747-bb5e04d2c7ee.xysksp87a8.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4876776f-0bc3-4a87-b747-bb5e04d2c7ee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xysksp87a8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4876776f-0bc3-4a87-b747-bb5e04d2c7ee.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI="
+        }
+      ]
+    },
+    {
+      "Route": "images/4b617b56-50e6-4c23-915d-e660c2f1b2f4.4ufpz9ic2t.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4b617b56-50e6-4c23-915d-e660c2f1b2f4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ufpz9ic2t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4b617b56-50e6-4c23-915d-e660c2f1b2f4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/4b617b56-50e6-4c23-915d-e660c2f1b2f4.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4b617b56-50e6-4c23-915d-e660c2f1b2f4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/4d2e1386-4afd-40a1-aac2-82d22825a955.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4d2e1386-4afd-40a1-aac2-82d22825a955.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:09:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI="
+        }
+      ]
+    },
+    {
+      "Route": "images/4d2e1386-4afd-40a1-aac2-82d22825a955.xysksp87a8.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4d2e1386-4afd-40a1-aac2-82d22825a955.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:09:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xysksp87a8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4d2e1386-4afd-40a1-aac2-82d22825a955.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI="
+        }
+      ]
+    },
+    {
+      "Route": "images/4e228693-ecb5-4ce4-8542-d9fe747981fa.4ufpz9ic2t.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4e228693-ecb5-4ce4-8542-d9fe747981fa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ufpz9ic2t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4e228693-ecb5-4ce4-8542-d9fe747981fa.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/4e228693-ecb5-4ce4-8542-d9fe747981fa.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4e228693-ecb5-4ce4-8542-d9fe747981fa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/4fd7cc00-658b-4c10-8fdf-f26d0da36ec1.4ufpz9ic2t.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4fd7cc00-658b-4c10-8fdf-f26d0da36ec1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ufpz9ic2t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4fd7cc00-658b-4c10-8fdf-f26d0da36ec1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/4fd7cc00-658b-4c10-8fdf-f26d0da36ec1.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\4fd7cc00-658b-4c10-8fdf-f26d0da36ec1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
         }
       ]
     },
@@ -3264,6 +4958,88 @@
       ]
     },
     {
+      "Route": "images/673f8946-1960-4a5a-a646-389ff5b73d74.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\673f8946-1960-4a5a-a646-389ff5b73d74.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:04:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw="
+        }
+      ]
+    },
+    {
+      "Route": "images/673f8946-1960-4a5a-a646-389ff5b73d74.m08dkli0li.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\673f8946-1960-4a5a-a646-389ff5b73d74.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:04:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m08dkli0li"
+        },
+        {
+          "Name": "label",
+          "Value": "images/673f8946-1960-4a5a-a646-389ff5b73d74.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw="
+        }
+      ]
+    },
+    {
       "Route": "images/68ca6260-e8d2-41f6-80e9-d667a3cc83aa.3inr2dflpk.png",
       "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\68ca6260-e8d2-41f6-80e9-d667a3cc83aa.png",
       "Selectors": [],
@@ -3510,6 +5286,252 @@
       ]
     },
     {
+      "Route": "images/78402c12-5d2d-495f-99a9-89efd7c91991.ls6bg4yjmo.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\78402c12-5d2d-495f-99a9-89efd7c91991.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ls6bg4yjmo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/78402c12-5d2d-495f-99a9-89efd7c91991.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/78402c12-5d2d-495f-99a9-89efd7c91991.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\78402c12-5d2d-495f-99a9-89efd7c91991.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/7ca9b65e-7875-4b7f-ae84-9fc6738abaeb.4ufpz9ic2t.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\7ca9b65e-7875-4b7f-ae84-9fc6738abaeb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ufpz9ic2t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/7ca9b65e-7875-4b7f-ae84-9fc6738abaeb.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/7ca9b65e-7875-4b7f-ae84-9fc6738abaeb.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\7ca9b65e-7875-4b7f-ae84-9fc6738abaeb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/7d020e52-9943-4b34-af73-7a36cee7a2d3.ls6bg4yjmo.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\7d020e52-9943-4b34-af73-7a36cee7a2d3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:46:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ls6bg4yjmo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/7d020e52-9943-4b34-af73-7a36cee7a2d3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/7d020e52-9943-4b34-af73-7a36cee7a2d3.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\7d020e52-9943-4b34-af73-7a36cee7a2d3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:46:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
       "Route": "images/80469b8f-3913-4fae-a078-9d35ff5891a4.png",
       "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\80469b8f-3913-4fae-a078-9d35ff5891a4.png",
       "Selectors": [],
@@ -3670,6 +5692,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI="
+        }
+      ]
+    },
+    {
+      "Route": "images/8503720e-7679-4aad-8f60-91a00ac25bf0.ls6bg4yjmo.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\8503720e-7679-4aad-8f60-91a00ac25bf0.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:10:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ls6bg4yjmo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/8503720e-7679-4aad-8f60-91a00ac25bf0.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/8503720e-7679-4aad-8f60-91a00ac25bf0.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\8503720e-7679-4aad-8f60-91a00ac25bf0.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:10:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/88cd9807-1eb2-49db-a4fd-c1453d6266ff.b7np9fzpja.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\88cd9807-1eb2-49db-a4fd-c1453d6266ff.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "199518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:28:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b7np9fzpja"
+        },
+        {
+          "Name": "label",
+          "Value": "images/88cd9807-1eb2-49db-a4fd-c1453d6266ff.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0="
+        }
+      ]
+    },
+    {
+      "Route": "images/88cd9807-1eb2-49db-a4fd-c1453d6266ff.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\88cd9807-1eb2-49db-a4fd-c1453d6266ff.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "199518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:28:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0="
+        }
+      ]
+    },
+    {
+      "Route": "images/8e7d723f-3dfd-4198-aea8-c7c2dd3a1139.b7np9fzpja.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\8e7d723f-3dfd-4198-aea8-c7c2dd3a1139.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "199518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:19:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b7np9fzpja"
+        },
+        {
+          "Name": "label",
+          "Value": "images/8e7d723f-3dfd-4198-aea8-c7c2dd3a1139.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0="
+        }
+      ]
+    },
+    {
+      "Route": "images/8e7d723f-3dfd-4198-aea8-c7c2dd3a1139.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\8e7d723f-3dfd-4198-aea8-c7c2dd3a1139.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "199518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:19:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0="
         }
       ]
     },
@@ -3920,172 +6188,8 @@
       ]
     },
     {
-      "Route": "images/a764ccbb-5785-4079-b61a-0da38bef076c.2mocajvxga.jpg",
-      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a764ccbb-5785-4079-b61a-0da38bef076c.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "600538"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 17:56:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2mocajvxga"
-        },
-        {
-          "Name": "label",
-          "Value": "images/a764ccbb-5785-4079-b61a-0da38bef076c.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk="
-        }
-      ]
-    },
-    {
-      "Route": "images/a764ccbb-5785-4079-b61a-0da38bef076c.jpg",
-      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a764ccbb-5785-4079-b61a-0da38bef076c.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "600538"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 17:56:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk="
-        }
-      ]
-    },
-    {
-      "Route": "images/ad0482cb-13ab-4075-be45-6c4371130335.png",
-      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ad0482cb-13ab-4075-be45-6c4371130335.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1661"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 17:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U="
-        }
-      ]
-    },
-    {
-      "Route": "images/ad0482cb-13ab-4075-be45-6c4371130335.skfxateisq.png",
-      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ad0482cb-13ab-4075-be45-6c4371130335.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1661"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 17:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "skfxateisq"
-        },
-        {
-          "Name": "label",
-          "Value": "images/ad0482cb-13ab-4075-be45-6c4371130335.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-5PQrI4Wba8H+AGaSNUkPW0UzHr6TxO6grpI0bwuH/1U="
-        }
-      ]
-    },
-    {
-      "Route": "images/ae89bd57-d891-4e5b-afec-e31fe8f1f86e.ls6bg4yjmo.png",
-      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ae89bd57-d891-4e5b-afec-e31fe8f1f86e.png",
+      "Route": "images/a4057071-980d-4f85-9428-321d5b0134eb.ls6bg4yjmo.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a4057071-980d-4f85-9428-321d5b0134eb.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4106,7 +6210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 14:23:32 GMT"
+          "Value": "Tue, 29 Apr 2025 17:00:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4120,7 +6224,7 @@
         },
         {
           "Name": "label",
-          "Value": "images/ae89bd57-d891-4e5b-afec-e31fe8f1f86e.png"
+          "Value": "images/a4057071-980d-4f85-9428-321d5b0134eb.png"
         },
         {
           "Name": "integrity",
@@ -4129,8 +6233,8 @@
       ]
     },
     {
-      "Route": "images/ae89bd57-d891-4e5b-afec-e31fe8f1f86e.png",
-      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ae89bd57-d891-4e5b-afec-e31fe8f1f86e.png",
+      "Route": "images/a4057071-980d-4f85-9428-321d5b0134eb.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a4057071-980d-4f85-9428-321d5b0134eb.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4151,7 +6255,89 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 14:23:32 GMT"
+          "Value": "Tue, 29 Apr 2025 17:00:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/a894627b-570b-4fba-bd98-78cc53809748.ls6bg4yjmo.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a894627b-570b-4fba-bd98-78cc53809748.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ls6bg4yjmo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/a894627b-570b-4fba-bd98-78cc53809748.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/a894627b-570b-4fba-bd98-78cc53809748.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\a894627b-570b-4fba-bd98-78cc53809748.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4494,6 +6680,88 @@
       ]
     },
     {
+      "Route": "images/b86868c0-8e4b-4ba0-91f3-6d3ead892d49.b7np9fzpja.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\b86868c0-8e4b-4ba0-91f3-6d3ead892d49.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "199518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b7np9fzpja"
+        },
+        {
+          "Name": "label",
+          "Value": "images/b86868c0-8e4b-4ba0-91f3-6d3ead892d49.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0="
+        }
+      ]
+    },
+    {
+      "Route": "images/b86868c0-8e4b-4ba0-91f3-6d3ead892d49.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\b86868c0-8e4b-4ba0-91f3-6d3ead892d49.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "199518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/bW+8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0="
+        }
+      ]
+    },
+    {
       "Route": "images/c2e66363-668c-4789-b1d1-0ab1b0c79078.b7np9fzpja.png",
       "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\c2e66363-668c-4789-b1d1-0ab1b0c79078.png",
       "Selectors": [],
@@ -4736,6 +7004,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-JXcBGi/G8dxij0Jy9lRBL8/4/MMOymkLnuxN+orw1RU="
+        }
+      ]
+    },
+    {
+      "Route": "images/cefd1e4e-9e0d-4c86-ab17-06b7f54df086.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\cefd1e4e-9e0d-4c86-ab17-06b7f54df086.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI="
+        }
+      ]
+    },
+    {
+      "Route": "images/cefd1e4e-9e0d-4c86-ab17-06b7f54df086.xysksp87a8.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\cefd1e4e-9e0d-4c86-ab17-06b7f54df086.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:57:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xysksp87a8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cefd1e4e-9e0d-4c86-ab17-06b7f54df086.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qa+cRJYK+gQsBoWU0M3eY10LucRc+zsvLKx2dQR+WmI="
+        }
+      ]
+    },
+    {
+      "Route": "images/d18ac417-2609-4ccf-924e-71885ae494af.4ufpz9ic2t.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\d18ac417-2609-4ccf-924e-71885ae494af.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ufpz9ic2t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/d18ac417-2609-4ccf-924e-71885ae494af.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/d18ac417-2609-4ccf-924e-71885ae494af.png",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\d18ac417-2609-4ccf-924e-71885ae494af.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:14:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAMjjQVN/aVO6Tl5BcEC/lEhDG1FEpzFCqxLfdW5Pzw="
+        }
+      ]
+    },
+    {
+      "Route": "images/d36ae66d-652d-4442-a842-d7227937388a.chbe5w3zx7.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\d36ae66d-652d-4442-a842-d7227937388a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:50:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "chbe5w3zx7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/d36ae66d-652d-4442-a842-d7227937388a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0="
+        }
+      ]
+    },
+    {
+      "Route": "images/d36ae66d-652d-4442-a842-d7227937388a.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\d36ae66d-652d-4442-a842-d7227937388a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:50:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YDkkoYIS2M29dyWH63ufEcctBb0/UTaP+Ca3Zy9K5N0="
         }
       ]
     },
@@ -5068,6 +7582,88 @@
       ]
     },
     {
+      "Route": "images/ec5db6a1-d5f5-4bc2-8583-526e97ad3649.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ec5db6a1-d5f5-4bc2-8583-526e97ad3649.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw="
+        }
+      ]
+    },
+    {
+      "Route": "images/ec5db6a1-d5f5-4bc2-8583-526e97ad3649.m08dkli0li.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\ec5db6a1-d5f5-4bc2-8583-526e97ad3649.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 16:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m08dkli0li"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ec5db6a1-d5f5-4bc2-8583-526e97ad3649.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw="
+        }
+      ]
+    },
+    {
       "Route": "images/f124046c-661f-4b77-bd86-9668fb5cc38c.jpg",
       "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\f124046c-661f-4b77-bd86-9668fb5cc38c.jpg",
       "Selectors": [],
@@ -5146,6 +7742,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Km5KjKKV/NfjG9ylmGsqw5B/uvnG5CZdZdtliszkMbw="
+        }
+      ]
+    },
+    {
+      "Route": "images/f14132a8-83ca-4249-81b9-d58f185d20fe.2mocajvxga.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\f14132a8-83ca-4249-81b9-d58f185d20fe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "600538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:05:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2mocajvxga"
+        },
+        {
+          "Name": "label",
+          "Value": "images/f14132a8-83ca-4249-81b9-d58f185d20fe.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk="
+        }
+      ]
+    },
+    {
+      "Route": "images/f14132a8-83ca-4249-81b9-d58f185d20fe.jpg",
+      "AssetFile": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\f14132a8-83ca-4249-81b9-d58f185d20fe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "600538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 17:05:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mq2k1YMp0u5tTFZnxoGYpMDpB0IAOmsPRuk9eGEE3vk="
         }
       ]
     },

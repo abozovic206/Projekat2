@@ -108,7 +108,7 @@ const Home = () => {
           {/* BMI Calculator */}
           <div className="home-card bmi-card" >
             <i className="fa fa-weight icon"></i> {/* Ikonica za BMI */}
-            <button onClick={handleBMIClick}>BMI Izracun</button>
+            <button name='btnBMI' onClick={handleBMIClick}>BMI Izracun</button>
             <h2>BMI Calculator</h2>
             {isBMICalculatorVisible && <BMIKalkulator />} {/* Prikazuje BMI kalkulator ako je true */}
           </div>
@@ -116,7 +116,7 @@ const Home = () => {
           {/* Workout Tracker */}
           <div className="home-card workout-card" >
             <i className="fa fa-heartbeat icon"></i> {/* Ikonica za Workout */}
-            <button onClick={handleBMRClick}BMR Kalkulator>BMR Izracun</button>
+            <button name='btnBMR' onClick={handleBMRClick}BMR Kalkulator>BMR Izracun</button>
             <h2>BMR Kalkulator</h2>
             {isBMRCalculatorVisible && <BMRKalkulator/>}
             
