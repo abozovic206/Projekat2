@@ -14,12 +14,13 @@ const BMRKalkulator=()=>{
 
         if(gender==="Ž"){
             calculatedBMR=(655+(9.6*weight)+(1.8*height)-(4.7*age));
-        } else if(gender==="M")
-            {
+        } else if(gender==="M"){
                 calculatedBMR=66+(13.7*weight)+(5*height)-(6.8*age);
+            }else{
+                return "Invalid gender"
             }
 
-            return calculatedBMR;
+            return parseFloat(calculatedBMR.toFixed(2));
 
             
     };

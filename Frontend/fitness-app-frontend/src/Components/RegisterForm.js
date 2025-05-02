@@ -8,12 +8,26 @@ const RegisterForm = ({ onCancel }) => {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
+
+
+  //MORACU PARSIRATI
+  const[weight, setWeight]=useState('');
+  const[height,setHeight]=useState('');
+  const[age, setAge]=useState('');
+  const[gender, setGender]=useState('');
+
   const [error, setError] = useState('');
 
   const [firstNameError, setFirstNameError] = useState(false);
   const [lastNameError, setLastNameError] = useState(false);
   const [userNameError, setUserNameError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
+
+  const[weightError, setWeightError]=useState(false);
+  const[heightError, setHeightError]=useState(false);
+  const[ageError,setAgeError]=useState(false);
+  const[genderError, setGenderError]=useState(false);
+
   const [emailError, setEmailError] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -57,6 +71,38 @@ const RegisterForm = ({ onCancel }) => {
       setEmailError(false);
     }
 
+    if(!weight || isNaN(parseFloat(weight)) || parseFloat(weight)<=0){
+      setWeightError(true);
+      formValid=false;
+    }else{
+      setWeightError(false);
+    }
+
+    if(!height || isNaN(parseFloat(height)) || parseFloat(height)<=0){
+      setHeightError(true);
+      formValid=false;
+    }else{
+      setHeightError(false);
+    }
+
+    if(!age || isNaN(parseInt(age)) || parseInt(age)<=0){
+      setAgeError(true);
+      formValid=false;
+    }else{
+      setAgeError(false);
+    }
+
+    if (!gender) {
+      setGenderError(true);
+      formValid = false;
+    } else {
+      setGenderError(false);
+    }
+
+
+
+
+
     if (!formValid) {
       setError('All fields are required!');
       return;
@@ -68,6 +114,10 @@ const RegisterForm = ({ onCancel }) => {
       userName,
       password,
       email,
+      weight,
+      height,
+      age,
+      gender
     };
 
     try {
@@ -80,6 +130,10 @@ const RegisterForm = ({ onCancel }) => {
       setUserName('');
       setPassword('');
       setEmail('');
+      setWeight('');
+      setHeight('');
+      setAge('');
+      setGender('');
     } catch (error) {
       setError('There was an error with registration');
       console.error('There was an error!', error);
@@ -128,6 +182,38 @@ const RegisterForm = ({ onCancel }) => {
           onChange={(e)=>setEmail(e.target.value)}
           className={emailError?'input-error':'input'}
           />
+           <input
+          type="number"
+          placeholder='Weight'
+          step="any"
+          value={weight}
+          onChange={(e)=>setWeight(e.target.value)}
+          className={weightError?'input-error':'input'}
+          />
+           <input
+          type="number"
+          step="any"
+          placeholder='Height'
+          value={height}
+          onChange={(e)=>setHeight(e.target.value)}
+          className={heightError?'input-error':'input'}
+          />
+           <input
+          type="number"
+          placeholder='Age'
+          value={age}
+          onChange={(e)=>setAge(e.target.value)}
+          className={ageError?'input-error':'input'}
+          />
+           <select 
+          value={gender}
+          onChange={(e)=>setGender(e.target.value)}
+          className={genderError?'input-error':'input'}
+          >
+            <option value="">Select gender</option>
+            <option value="M">M</option>
+            <option value="Z">Ž</option>
+          </select>
 
         <button type="submit" className="buttonRegister">Regiser</button>
         <button type="button"  onClick={onCancel} className="ButtonCancelRegister">Cancel</button>

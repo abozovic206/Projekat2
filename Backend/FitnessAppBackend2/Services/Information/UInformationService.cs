@@ -45,13 +45,21 @@ namespace FitnessAppBackend2_.Services.Information
       }
 
       // Ručno ažuriraj samo ono što treba iz DTO-a
+      if(userParameterDTO.Weight.HasValue)
       user.Weight = userParameterDTO.Weight;
+      if(userParameterDTO.Height.HasValue)
       user.Height = userParameterDTO.Height;
+      if(userParameterDTO.Age.HasValue)
       user.Age = userParameterDTO.Age;
+      if(!string.IsNullOrEmpty(userParameterDTO.Gender))
       user.Gender = userParameterDTO.Gender;
+      if(userParameterDTO.BodyFatPercentage.HasValue)
       user.BodyFatPercentage = userParameterDTO.BodyFatPercentage;
+      if(userParameterDTO.Waist.HasValue)
       user.Waist = userParameterDTO.Waist;
+      if(userParameterDTO.Hips.HasValue)
       user.Hips = userParameterDTO.Hips;
+      if(!string.IsNullOrEmpty(userParameterDTO.Goal))
       user.Goal = userParameterDTO.Goal;
       
 

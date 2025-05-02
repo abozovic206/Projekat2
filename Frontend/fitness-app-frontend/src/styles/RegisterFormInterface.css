@@ -25,7 +25,7 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);/*Sjenka oko elementa*/
     width: 100%; /*Postavlja sirinu elementa na sirinu roditeljskog elementa*/
     max-width: 400px;/*Ovaj stil predstavlja maksimalnu sirinu elementa cak iako roditeljski element siri od 400px*/
-    height: 550px;
+    height: 720px;
     backdrop-filter: blur(10px); /*Bluruje sve iza ovog kontenjera*/
 }
 
@@ -61,6 +61,13 @@
     color: rgb(202, 202, 202);
 }
 
+/*!!!!!!!!!!!!!!!!!!!!*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #020202 inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  
 .input-error
 {
     background-color: rgb(0, 0, 0, 0.8);

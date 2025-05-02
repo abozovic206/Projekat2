@@ -10,6 +10,8 @@ import { FaSave } from 'react-icons/fa';
 import '../styles/HomeInterface.css';
 import { useEffect } from 'react';
 //mport {BMIKalkulator} from '../kalkulator/BMIKalkulator';
+import { FaUserCircle } from 'react-icons/fa';
+
 
 
 const MyProfile = () => {
@@ -362,21 +364,23 @@ const handleSaveHeight = async () => {
             <div className="profile-page-scroll">
             
                 <div className="profile-picture-preview" onClick={handleClickProfilePicture}>
-                    {profileData.profilePicture ? (
-                        <img
-                            src={URL.createObjectURL(profileData.profilePicture)}
-                            alt="Profile"
-                            className="profile-picture"
-                        />
-                    ) : profilePicture ? (
-                        <img
-                            src={`http://localhost:5063/${profilePicture}`} 
-                            alt="Profile"
-                            className="profile-picture"
-                        />
-                    ) : (
-                        <div className="profile-picture-placeholder">Profile Picture</div>
-                    )}
+                {profileData.profilePicture ? (
+    <img
+        src={URL.createObjectURL(profileData.profilePicture)}
+        alt="Profile"
+        className="profile-picture"
+    />
+) : profilePicture ? (
+    <img
+        src={`http://localhost:5063/${profilePicture}`} 
+        alt="Profile"
+        className="profile-picture"
+    />
+) : (
+    <div className="profile-picture-placeholder">
+        <FaUserCircle size={100} />
+    </div>
+)}
                     <input
                         type="file"
                         name="profilePicture"

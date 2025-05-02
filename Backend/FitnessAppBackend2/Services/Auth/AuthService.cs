@@ -65,7 +65,7 @@ namespace FitnessAppBackend2_.Services.Auth
 
 
 
-        //METODA ZA REGISTRACIJU KORISNIKA
+        //ENDPOINT ZA REGISTRACIJU KORISNIKA
 
         public async Task<User> RegisterAsync(RegisterDTO registerDTO)
         {
@@ -77,7 +77,14 @@ namespace FitnessAppBackend2_.Services.Auth
                 LastName = registerDTO.LastName,
                 UserName = registerDTO.UserName,
                 //sve osim password jer se valjda on nesto hashira ko ce  mu znati
-                Email = registerDTO.Email
+                Email = registerDTO.Email,
+
+
+                //NOVO DODAVANJE
+                Weight=registerDTO.Weight,
+                Height=registerDTO.Height,
+                Age=registerDTO.Age,
+                Gender=registerDTO.Gender
 
 
 

@@ -16,4 +16,11 @@ public class RegisterDTO
   [Required]
   public required string Email { get; set; }
 
+  //Stavicu sva polja kao obaveznaa
+  public required float Weight { get; set; }
+
+  public required float Height { get; set; }
+  public required int Age { get; set; }
+  public required string Gender { get; set; }
+
 }
