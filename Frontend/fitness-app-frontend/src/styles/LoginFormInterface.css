@@ -25,7 +25,7 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);/*Sjenka oko elementa*/
     width: 100%; /*Postavlja sirinu elementa na sirinu roditeljskog elementa*/
     max-width: 400px;/*Ovaj stil predstavlja maksimalnu sirinu elementa cak iako roditeljski element siri od 400px*/
-    height: 400px;
+    height: 300px;
     backdrop-filter: blur(3px);
     
 }

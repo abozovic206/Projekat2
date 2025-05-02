@@ -25,8 +25,10 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);/*Sjenka oko elementa*/
     width: 100%; /*Postavlja sirinu elementa na sirinu roditeljskog elementa*/
     max-width: 400px;/*Ovaj stil predstavlja maksimalnu sirinu elementa cak iako roditeljski element siri od 400px*/
-    height: 720px;
+    height: 680px;
     backdrop-filter: blur(10px); /*Bluruje sve iza ovog kontenjera*/
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 .titleRegister
@@ -63,7 +65,7 @@
 
 /*!!!!!!!!!!!!!!!!!!!!*/
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px #020202 inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px #221f1f inset !important;
     -webkit-text-fill-color: white !important;
     transition: background-color 5000s ease-in-out 0s;
   }
@@ -117,6 +119,8 @@ input:-webkit-autofill {
     
 }
 
+
+
 .ButtonCancelRegister:hover
 {
     background-color:#242323;
@@ -131,3 +135,61 @@ input:-webkit-autofill {
 input.filled {
     background-color: #e6f7ff; /* svetloplava, možeš šta hoćeš */
   }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #530018;
+    font-weight: bold;
+  }
+  .close-button:hover {
+    color: #a00030;
+  }
+
+
+
+  /*NOVOOO*/
+  .password-container {
+
+    /*Prostor izmedju sadrzaja unutar elementa i ivica*/
+    border-radius: 10px;
+    width: 100%; /*Postavlja sirinu elementa na sirinu roditeljskog elementa*/
+    max-width: 400px;/*Ovaj stil predstavlja maksimalnu sirinu elementa cak iako roditeljski element siri od 400*/
+  }
+
+  .password-container input{
+    background-color: rgba(0, 0, 0, 0.8);
+
+    padding: 10px;/*Prostor izmedju sadrzaja i ivica elementa*/
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 350px;
+    color: rgb(202, 202, 202);
+
+
+  }
+  .fa-eye, .fa-eye-slash {
+    position: absolute;
+    right: 25px; /* Razmak od desne ivice */
+    transform: translateY(-150%); /* Centriranje dugmeta vertikalno */
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 20px;
+    z-index: 1;
+    cursor: pointer;
+
+  
+  }
+  
+    .fa-eye, .fa-eye-slash:hover {
+    color: white;
+  }
+  
+

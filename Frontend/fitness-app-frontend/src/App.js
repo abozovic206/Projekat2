@@ -10,6 +10,8 @@ import ProtectedRoute from './protected/ProtectedRoute';
 import TrainingHomePage from './training/TrainingHomePage';
 import MyProfile from './button/MyProfile';
 
+import SlideShow from './slide/SlideShow';//DODALA SAM OVO
+
 import { useDispatch } from 'react-redux';  // Treba da importujete useDispatch
 import { loginSuccess } from './redux/authSlice';  // Treba da importujete loginSuccess
 
@@ -63,6 +65,7 @@ const App = () => {
                 </button>
               </div>
             </div>
+            <SlideShow/>
             <div className="containter"></div>
 
             {/* Prikazivanje formi za registraciju ili login ako su aktivna */}

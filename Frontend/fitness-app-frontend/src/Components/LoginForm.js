@@ -6,6 +6,7 @@ import { loginSuccess } from '../redux/authSlice';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Weight } from 'lucide-react';
 
+
 const LoginForm = ({ onCancel }) => {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
@@ -17,6 +18,12 @@ const LoginForm = ({ onCancel }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation(); // Ispravno pozivanje useLocation()
+
+    const [showPassword, setShowPassword] = useState(false);
+  
+    const togglePasswordVisibility = () => {
+      setShowPassword(prevState => !prevState);
+    };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -88,6 +95,9 @@ const LoginForm = ({ onCancel }) => {
   return (
     <div className="overlay-login" onClick={onCancel}>
       <div className="form-containter-login" onClick={(e) => e.stopPropagation()}>
+      <button type="button" className="close-button" onClick={onCancel}>
+            X
+          </button>
         <h2 className="title-login">Login</h2>
         {error && <p className="error">{error}</p>}
         <form onSubmit={handleSubmit} className="form-login">
@@ -98,19 +108,26 @@ const LoginForm = ({ onCancel }) => {
             onChange={(e) => setUserName(e.target.value)}
             className={userNameError ? 'input-error-login' : 'input-login'}
           />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className={passwordError ? 'input-error-login' : 'input-login'}
-          />
+                  <div className='password-container'>
+  <input
+    type={showPassword ? 'text' : 'password'}
+    placeholder='Password'
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
+    className={passwordError ? 'input-error password-input' : 'input password-input'}
+  />
+  <span className='toggle-password' onClick={togglePasswordVisibility}>
+    {showPassword ? (
+      <i className="fas fa-eye-slash"></i>  // Ikona za sakrivanje lozinke
+    ) : (
+      <i className="fas fa-eye"></i>  // Ikona za prikazivanje lozinke
+    )}
+  </span>
+</div>
           <button type="submit" className="submit-login">
             Login
           </button>
-          <button type="button" className="cancel-login" onClick={onCancel}>
-            Cancel
-          </button>
+         
         </form>
       </div>
     </div>
