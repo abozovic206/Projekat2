@@ -13,6 +13,7 @@
 .app {
     background: linear-gradient(to right, #530018, #190000); /* Plavi i ljubičasti gradijent */
     height: 100vh;
+    background-size: cover; /* Pozadina se širi da pokrije celu površinu */
   }
   
   /* Navigaciona linija */

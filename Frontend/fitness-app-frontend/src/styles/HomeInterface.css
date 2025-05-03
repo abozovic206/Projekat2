@@ -10,7 +10,10 @@
     height: 50px;
 }
 
-
+.appHome{
+  background: linear-gradient(to right, #530018, #190000); /* Plavi i ljubičasti gradijent */
+  background-size: cover; /* Pozadina se širi da pokrije celu površinu */
+}
 
 .option-container
 {
@@ -272,3 +275,10 @@ h1 {
     transform: translateY(-5px);
     background-color: #720021;
   }
+
+  .home-card {
+    min-height: 250px;  /* Dodaj minimalnu visinu */
+    background-size: cover;
+  }
+  
+ 
