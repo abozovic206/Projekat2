@@ -11,6 +11,7 @@ public class MappingProfile:Profile
         CreateMap<RegisterDTO, User>();
         CreateMap<User, AuthResult>();
         CreateMap<User, UserParameterDTO>();
+        CreateMap<WeightRecord,WeightRecordDTO>();
 
     }
 }

@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SQLitePCL;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace FitnessAppBackend2_.Services.Information
 {
@@ -42,6 +44,19 @@ namespace FitnessAppBackend2_.Services.Information
       {
         Console.WriteLine(">>>>>>>User not found<<<<<<<");
         throw new Exception("User not found");
+      }
+
+      //Ako je korisnik poslao novu tezinu i ona se razlikuje od prethodne
+      if(userParameterDTO.Weight.HasValue && user.Weight!=userParameterDTO.Weight)
+      {
+        var weightRecord=new WeightRecord
+        {
+          UserId=user.Id,
+          Weight=userParameterDTO.Weight.Value,
+          Date=DateTime.Now
+        };
+
+        _context.WeightRecords.Add(weightRecord);
       }
 
       // Ručno ažuriraj samo ono što treba iz DTO-a
@@ -109,6 +124,24 @@ namespace FitnessAppBackend2_.Services.Information
 
       return true;
     }
+
+
+    //GET ZA DOHVACANJE IZ WEIGHTRECORD
+    public async Task<List<WeightRecordDTO>> GetAllWeightRecordsAsync(string userId)
+{
+    // Dohvatamo sve zapise težine za određenog korisnika (filtriramo po UserId)
+    var weightRecords = await _context.WeightRecords
+                                       .Where(w => w.UserId == userId)  // Filtriramo zapise po userId
+                                       .ToListAsync();  // Dohvatamo sve rezultate
+
+    // Mapiramo dobijene zapise u DTO (Data Transfer Object) format
+    var weightRecordDTOs = _mapper.Map<List<WeightRecordDTO>>(weightRecords);
+
+    // Vraćamo mapirane DTO podatke
+    return weightRecordDTOs;
+}
+
+   
 
 
 

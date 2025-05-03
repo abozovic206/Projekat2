@@ -6,6 +6,8 @@ using FitnessAppBackend2_.Services.Information;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using FitnessAppBackend2_.Models;
+using System.IdentityModel.Tokens.Jwt;
+using FitnessAppBackend2_.Services;
 
 namespace FitnessAppBackend2_.Controllers
 {
@@ -17,11 +19,16 @@ namespace FitnessAppBackend2_.Controllers
         private readonly IUInformationService _userInfoService;
         private readonly UserManager<User> _userManager;
 
+        private readonly TokenService _tokenService;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
         // Konstruktor OBAVEZAN
-        public UserProfileController(IUInformationService userInfoService, UserManager<User> userManager)
+        public UserProfileController(IUInformationService userInfoService, UserManager<User> userManager, TokenService tokenService, IHttpContextAccessor httpContextAccessor)
         {
             _userInfoService = userInfoService;
             _userManager = userManager;
+            _tokenService=tokenService;
+            _httpContextAccessor=httpContextAccessor;
         }
 
         // Endpoint za ažuriranje informacija o korisniku
@@ -57,6 +64,31 @@ namespace FitnessAppBackend2_.Controllers
                 // Ako je došlo do greške, vraćamo 500 sa detaljima greške
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
+        }
+
+
+
+
+        [HttpGet("weightrecords")]
+        public async Task<ActionResult<List<WeightRecordDTO>>>GetWeightRecords(){
+
+            var token = _httpContextAccessor.HttpContext?.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");//cuva string token
+
+            var userId = _tokenService.GetUserIdFromToken(token); //userId cita id user-a iz tokena
+            if(string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(new{message="User not authenticated."});
+            }
+
+            //Poziv servisa da se dobiju svi zapisi
+            var weightRecords=await _userInfoService.GetAllWeightRecordsAsync(userId);
+
+            if(weightRecords==null || weightRecords.Count==0)
+            {
+                return NotFound(new {message="No weights records found for user."});
+            }
+
+            return Ok(weightRecords);
         }
 
        

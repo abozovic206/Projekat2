@@ -16,13 +16,12 @@ namespace FitnessAppBackend2_.Data
         }
         //dodati dbSet za druge modele ako su potrebni
         //prop za to
+        public DbSet<WeightRecord> WeightRecords { get; set; }
 
 
         //Role seed-ujem preko OnModelCreating metode ali ja necu tako 
 
-       
-
-}
+       }
 }
 
 

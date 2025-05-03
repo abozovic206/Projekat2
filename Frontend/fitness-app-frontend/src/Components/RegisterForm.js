@@ -223,7 +223,7 @@ const RegisterForm = ({ onCancel }) => {
           >
             <option value="">Select gender</option>
             <option value="M">M</option>
-            <option value="Z">Ž</option>
+            <option value="Ž">Ž</option>
           </select>
 
           <button type="submit" className="buttonRegister">Register</button>

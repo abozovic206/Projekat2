@@ -9,6 +9,7 @@ namespace FitnessAppBackend2_.Services.Information
     public interface IUInformationService
 {
      Task<bool>PutInformationAsync(UserParameterDTO userParameterDTO);
+     Task<List<WeightRecordDTO>> GetAllWeightRecordsAsync(string userId);
     
 
     /*Ono sto je deklarisano u interfejsu mora biti implementirano u klasi koja ga nasljedjuje*/

@@ -15,7 +15,7 @@ public class User:IdentityUser
     public float? Weight { get; set; }
     public float? Height{get; set;}
 
-    public int? Age { get; set; }=0;
+    public int? Age { get; set; }
     public string? Gender { get; set; }
     public double? BodyFatPercentage { get; set; }
     public double? Waist { get; set; }
@@ -23,6 +23,7 @@ public class User:IdentityUser
     public string?  Goal{get; set;}
 
     public string? ProfilePicture {get; set;} //Cuva putanju do slike i to je string 
+    public ICollection<WeightRecord>? WeightRecors{get; set;}
 
     
     
