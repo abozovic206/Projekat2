@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FitnessAppBackend2.")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6042c85ee9e881bd7977fcda2f1486e019cff3b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c261bbb757a65cbd28673c63539b4cf9a61362f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FitnessAppBackend2.")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FitnessAppBackend2.")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
