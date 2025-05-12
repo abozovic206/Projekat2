@@ -89,7 +89,7 @@ const Home = () => {
         <div className="option-container">
           <button className="profile-button" onClick={() => navigate('/home')}><i className="fa fa-home"></i></button>
           <button className="training-button" onClick={() => navigate('/training/TrainingHomePage')}><i className="fas fa-dumbbell"></i></button>
-          <button className="motivation-button"><i className="fa fa-apple-alt icon"></i></button>
+          <button className="motivation-button" onClick={()=>navigate('/nutrition/NutritionForm')}><i className="fa fa-apple-alt icon"></i></button>
         </div>
         <div className="nav-buttons">
           <button onClick={handleLogout} className="LRButton RButton">Logout</button>

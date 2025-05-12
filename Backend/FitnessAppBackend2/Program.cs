@@ -11,6 +11,7 @@ using FitnessAppBackend.AutoMapper;
 using Microsoft.Extensions.FileProviders;
 using FitnessAppBackend2_.Controllers;
 using FitnessAppBackend2_.Services.Information;
+using FitnessAppBackend2_.Services.Nutrition;
 using Microsoft.OpenApi.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -41,6 +42,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 // Dodavanje drugih servisa
 builder.Services.AddScoped<TokenService>();
+
+//Dodavanje nutrition servisa
+builder.Services.AddScoped<INutritionService, NutritionService>();
+
+builder.Services.AddScoped<NutritionService>();
+
+
 // Registrovanje AuthService direktno
 
 builder.Services.AddScoped<IAuthService, AuthService>();

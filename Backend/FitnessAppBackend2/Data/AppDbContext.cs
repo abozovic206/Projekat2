@@ -18,6 +18,8 @@ namespace FitnessAppBackend2_.Data
         //prop za to
         public DbSet<WeightRecord> WeightRecords { get; set; }
 
+        public DbSet<NutritionItem>NutritionItems{get; set; }
+
 
         //Role seed-ujem preko OnModelCreating metode ali ja necu tako 
 

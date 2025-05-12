@@ -5,15 +5,12 @@ import {
   LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer
 } from 'recharts';
 
-// This component receives setShowChart from its parent
 const WeightChart = ({ setShowChart }) => {
   const [data, setData] = React.useState([]);
 
-
   const onCancel = () => {
-    setShowChart(false); // Zatvara chart kada se pritisne X
+    setShowChart(false);
   };
-
 
   useEffect(() => {
     const fetchWeightRecords = async () => {
@@ -41,19 +38,25 @@ const WeightChart = ({ setShowChart }) => {
     fetchWeightRecords();
   }, []);
 
-
-
   return (
     <div className='modal-overlay'>
       <div className='modal-content'>
-        <button className="close-button" onClick={onCancel}>X</button>
         <div style={{ width: '100%', height: 400 }}>
           <h2 className="text-xl font-semibold mb-4">Praćenje kilaže</h2>
+          <button className="close-button" onClick={onCancel}>X</button>
           <ResponsiveContainer>
             <LineChart data={data}>
-              <CartesianGrid stroke="#ccc" />
-              <XAxis dataKey="date" />
-              <YAxis label={{ value: 'kg', angle: -90, position: 'insideLeft' }} />
+              <CartesianGrid stroke="#000"  />
+              <XAxis dataKey="date" stroke="#000" />
+              <YAxis
+                stroke="#000"
+                label={{
+                  value: 'kg',
+                  angle: -90,
+                  position: 'insideLeft',
+                  fill: '#000'
+                }}
+              />
               <Tooltip />
               <Line type="monotone" dataKey="weight" stroke="#530018" strokeWidth={2} />
             </LineChart>
@@ -65,20 +68,3 @@ const WeightChart = ({ setShowChart }) => {
 };
 
 export default WeightChart;
-
-// Example parent component:
-// import React, { useState } from 'react';
-// import WeightChart from './WeightChart';
-//
-// const ProfilePage = () => {
-//   const [showChart, setShowChart] = useState(false);
-//
-//   return (
-//     <div>
-//       <button onClick={() => setShowChart(true)}>Prikaži grafikon</button>
-//       {showChart && <WeightChart setShowChart={setShowChart} />}
-//     </div>
-//   );
-// };
-//
-// export default ProfilePage;
