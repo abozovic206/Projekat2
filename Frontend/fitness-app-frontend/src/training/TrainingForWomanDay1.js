@@ -11,7 +11,7 @@ const TrainingDay1 = () => {
   const navigate = useNavigate();
 
   const [trainings, setTrainings] = useState([]);
-  const [showForm, setShowForm] = useState(false); // Za prikaz forme
+  const [showForm, setShowForm] = useState(false);
 
   const handleLogout = () => {
     dispatch(logout());
@@ -27,11 +27,21 @@ const TrainingDay1 = () => {
   const fetchTrainings = () => {
     axios.get('http://localhost:5063/api/Training')
       .then(response => {
-        setTrainings(response.data);
+        const day1Trainings = response.data.filter(t => t.dayOfWeek === 1);
+        setTrainings(day1Trainings);
       })
       .catch(error => {
         console.error("Greška prilikom dohvatanja podataka:", error);
       });
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:5063/api/Training/${id}`);
+      fetchTrainings(); // osvežavanje liste
+    } catch (error) {
+      console.error("Greška prilikom brisanja:", error);
+    }
   };
 
   return (
@@ -57,7 +67,12 @@ const TrainingDay1 = () => {
         </button>
       </div>
 
-      {showForm && <AddTraining onTrainingAdded={fetchTrainings} />}
+      {showForm && (
+        <AddTraining
+          onTrainingAdded={fetchTrainings}
+          onClose={() => setShowForm(false)}
+        />
+      )}
 
       <div className="training-section">
         {trainings.map(training => (
@@ -68,6 +83,9 @@ const TrainingDay1 = () => {
               <source src={`http://localhost:5063${training.videoUrl}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <button className="delete-button" onClick={() => handleDelete(training.id)}>
+              Obriši
+            </button>
           </div>
         ))}
       </div>
