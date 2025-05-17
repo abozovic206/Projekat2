@@ -15,6 +15,9 @@ using FitnessAppBackend2_.Services.Nutrition;
 using Microsoft.OpenApi.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Http.Features;
+using FitnessAppBackend2_.Services.TrainingWithVideo;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +26,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Registracija Identity
+
+
+builder.Services.AddScoped<ITrainingService, TrainingService>();
+
 
 
 // JWT autentifikacija
@@ -47,6 +54,21 @@ builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<INutritionService, NutritionService>();
 
 builder.Services.AddScoped<NutritionService>();
+
+//Dodavanje Training servisa
+
+
+
+//Za video 
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 100_000_000; // Postavi na odgovarajuću veličinu
+});
+
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 100 * 1024 * 1024; // 100MB
+});
 
 
 // Registrovanje AuthService direktno

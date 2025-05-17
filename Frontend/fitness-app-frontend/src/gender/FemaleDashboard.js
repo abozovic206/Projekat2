@@ -39,7 +39,7 @@ const FemaleDashboard=()=>
       {/*Ovde dodajem button-e na koje kad se klikne on mi otvori formu u kojoj su slike vjezbi plus objasnjenja */}
      <div className='female-dashboard-wrapper'>
      <div className='exercises-button'>
-        <button className='day1-button woman'><span>DAY1</span></button>
+        <button className='day1-button woman' onClick={() => navigate('/training/TrainingForWomanDay1')}><span>DAY1</span></button>
         <button className='day2-button woman'><span>DAY2</span></button>
         <button className='day3-button woman'><span>DAY3</span></button>
         <button className='day4-button woman'><span>DAY4</span></button>

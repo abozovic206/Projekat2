@@ -40,6 +40,32 @@ namespace FitnessAppBackend2_.Migrations
                     b.ToTable("NutritionItems");
                 });
 
+            modelBuilder.Entity("FitnessAppBackend2_.Models.TrainingVideo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("DayOfWeek")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("VideoUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Trainings");
+                });
+
             modelBuilder.Entity("FitnessAppBackend2_.Models.User", b =>
                 {
                     b.Property<string>("Id")

@@ -11,6 +11,7 @@ const AddNutritionForm = ({ onClose, onAdd, nutrition }) => {
     if (nutrition) {
       setMealType(nutrition.mealType);
       setDescription(nutrition.description);
+       setImage(null); // resetuje input da ne sadrzi prethodnu sliku
     }
   }, [nutrition]);
 

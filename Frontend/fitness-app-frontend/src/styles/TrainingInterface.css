@@ -1,0 +1,94 @@
+/* trainingInterface.css */
+
+.training-section {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.training-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.training-card:hover {
+  transform: scale(1.02);
+}
+
+.training-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e2b33;
+  margin-bottom: 1rem;
+}
+
+.training-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+.training-video {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+
+
+.training-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.training-form input {
+  margin: 0.5rem;
+  padding: 0.6rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.training-form button {
+  padding: 0.6rem 1.2rem;
+  background-color: #530018;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.training-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.delete-btn, .update-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #e63946;
+}
+
+.update-btn {
+  background-color: #1e90ff;
+}

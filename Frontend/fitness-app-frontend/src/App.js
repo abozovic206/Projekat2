@@ -12,6 +12,9 @@ import MyProfile from './button/MyProfile';
 import NutritionForm from './nutrition/NutritionForm';
 import AddNutritionForm from './nutrition/AddNutritionForm';
 
+import Day1Training from './training/TrainingForWomanDay1';
+
+
 
 import SlideShow from './slide/SlideShow';//DODALA SAM OVO
 
@@ -86,6 +89,8 @@ const App = () => {
       <Route path="button/MyProfile" element={<ProtectedRoute><MyProfile /></ProtectedRoute>} />
       <Route path="/nutrition/NutritionForm" element={<ProtectedRoute><NutritionForm /></ProtectedRoute>}/>
       <Route path="/nutrition/add" element={<AddNutritionForm />} />
+       <Route path="/training/TrainingForWomanDay1" element={<Day1Training />} />
+
 
       
     </Routes>
