@@ -1,51 +1,68 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../styles/AddTrainingInterface.css';
+import '../styles/NutritionForm.css';
 
-const EditNutrition = ({ nutrition, onClose, onNutritionUpdated }) => {
-  const [name, setName] = useState('');
+const NutritionEdit = ({ nutritionId, onClose, onSaved }) => {
+  const [mealType, setMealType] = useState('');
   const [description, setDescription] = useState('');
-  const [imageFile, setImageFile] = useState(null);
+  const [image, setImage] = useState(null);
+  const [existingImageUrl, setExistingImageUrl] = useState('');
+  const [id, setId] = useState(null);
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    if (nutrition) {
-      setName(nutrition.name);
-      setDescription(nutrition.description);
+    const fetchNutrition = async () => {
+      try {
+        const response = await axios.get(`http://localhost:5063/api/Nutrition/${nutritionId}`);
+        const data = response.data;
+        console.log(response);
+        setMealType(data.mealType);
+        setDescription(data.description);
+        setExistingImageUrl(data.imageUrl); 
+        setId(data.id);// Pod pretpostavkom da backend vraća imageUrl
+        console.log(id);
+      } catch (error) {
+        console.error("Greška pri dohvatanju podataka:", error);
+        setMessage("❌ Greška pri učitavanju obroka.");
+      }
+    };
+
+    if (nutritionId) {
+      fetchNutrition();
     }
-  }, [nutrition]);
+  }, [nutritionId]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = new FormData();
-    formData.append('Id', nutrition.id); // ako ti backend traži id
-    formData.append('Name', name);
-    formData.append('Description', description);
-    if (imageFile) {
-      formData.append('Image', imageFile);
+    formData.append('mealType', mealType);
+    formData.append('description', description);
+    formData.append('id', id);
+    if (image) {
+      formData.append('image', image);
     }
 
     try {
-      const response = await axios.put(`http://localhost:5063/api/Nutrition/${nutrition.id}`, formData, {
+      const response = await axios.put(`http://localhost:5063/api/Nutrition/${nutritionId}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       });
 
       if (response.status === 200) {
-        setMessage('✅ Obrok je uspješno izmijenjen.');
-        onNutritionUpdated(); // obavještava parent da osvježi listu
+        setMessage("✅ Uspešno izmenjen obrok.");
         setTimeout(() => {
           setMessage('');
-          onClose();
+          onSaved();
+          if (onClose) onClose();
         }, 1500);
       } else {
-        setMessage('❌ Neuspješna izmjena obroka.');
+        setMessage("❌ Desila se greška (nije 200).");
       }
     } catch (error) {
-      console.error('Greška:', error);
-      setMessage('❌ Došlo je do greške prilikom izmjene.');
+      console.error("Greška:", error);
+      setMessage("❌ Došlo je do greške prilikom izmene.");
     }
   };
 
@@ -53,12 +70,23 @@ const EditNutrition = ({ nutrition, onClose, onNutritionUpdated }) => {
     <div className="modal-overlay">
       <div className="modal-content">
         <button className="close-button" onClick={onClose}>×</button>
-        <h2>Izmijeni obrok</h2>
+        <h2>Izmeni obrok</h2>
         <form onSubmit={handleSubmit} className="form-layout">
-          <input type="text" placeholder="Naziv" value={name} onChange={e => setName(e.target.value)} required />
-          <textarea placeholder="Opis" value={description} onChange={e => setDescription(e.target.value)} required />
-          <input type="file" onChange={e => setImageFile(e.target.files[0])} accept="image/*" />
-          <button type="submit" className="submit-button">Sačuvaj izmjene</button>
+          <select value={mealType} onChange={(e) => setMealType(e.target.value)} required>
+            <option value="">Izaberi tip obroka</option>
+            <option value="dorucak">Doručak</option>
+            <option value="rucak">Ručak</option>
+            <option value="vecera">Večera</option>
+            <option value="id">{id}</option>
+          </select>
+          <textarea
+            placeholder="Opis"
+            value={description}
+            onChange={e => setDescription(e.target.value)}
+            required
+          />
+          
+          <button type="submit" className="submit-button">Sačuvaj izmene</button>
         </form>
         {message && <p className="message">{message}</p>}
       </div>
@@ -66,4 +94,4 @@ const EditNutrition = ({ nutrition, onClose, onNutritionUpdated }) => {
   );
 };
 
-export default EditNutrition;
+export default NutritionEdit;

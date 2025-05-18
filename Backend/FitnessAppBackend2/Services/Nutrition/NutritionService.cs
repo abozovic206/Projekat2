@@ -15,62 +15,62 @@ using System.Linq.Expressions;
 
 namespace FitnessAppBackend2_.Services.Nutrition;
 
-public class NutritionService:INutritionService
+public class NutritionService : INutritionService
 {
     private readonly AppDbContext _context; //baza
     private readonly IWebHostEnvironment _enviroment;
 
     public NutritionService(AppDbContext context, IWebHostEnvironment environment)
     {
-        _context=context;
-        _enviroment=environment;
+        _context = context;
+        _enviroment = environment;
     }
 
 
     //POST
 
-   public async Task<NutritionItem> AddNutritionItemAsync(NutritionDTO dto)
-{
-    try
+    public async Task<NutritionItem> AddNutritionItemAsync(NutritionDTO dto)
     {
-        if (dto.Image == null || dto.Image.Length == 0)
-            throw new ArgumentException("Image is required");
-
-        var imageName = Guid.NewGuid().ToString() + Path.GetExtension(dto.Image.FileName);
-        var imageFolder = Path.Combine(_enviroment.WebRootPath, "images", "nutrition");
-
-        if (!Directory.Exists(imageFolder))
-            Directory.CreateDirectory(imageFolder);
-
-        var imagePath = Path.Combine(imageFolder, imageName);
-
-        using (var stream = new FileStream(imagePath, FileMode.Create))
+        try
         {
-            await dto.Image.CopyToAsync(stream);
+            if (dto.Image == null || dto.Image.Length == 0)
+                throw new ArgumentException("Image is required");
+
+            var imageName = Guid.NewGuid().ToString() + Path.GetExtension(dto.Image.FileName);
+            var imageFolder = Path.Combine(_enviroment.WebRootPath, "images", "nutrition");
+
+            if (!Directory.Exists(imageFolder))
+                Directory.CreateDirectory(imageFolder);
+
+            var imagePath = Path.Combine(imageFolder, imageName);
+
+            using (var stream = new FileStream(imagePath, FileMode.Create))
+            {
+                await dto.Image.CopyToAsync(stream);
+            }
+
+            var item = new NutritionItem
+            {
+                MealType = dto.MealType,
+                Description = dto.Description,
+                ImageUrl = "images/nutrition/" + imageName
+            };
+
+            _context.NutritionItems.Add(item);
+            await _context.SaveChangesAsync();
+
+            return item;
         }
-
-        var item = new NutritionItem
+        catch (Exception ex)
         {
-            MealType = dto.MealType,
-            Description = dto.Description,
-            ImageUrl = "images/nutrition/" + imageName
-        };
-
-        _context.NutritionItems.Add(item);
-        await _context.SaveChangesAsync();
-
-        return item;
+            Console.WriteLine("Greška u servisu:" + ex.Message);
+            return null; // ← NE BACAJ DALJE
+        }
     }
-    catch (Exception ex)
-    {
-        Console.WriteLine("Greška u servisu:" + ex.Message);
-        return null; // ← NE BACAJ DALJE
-    }
-}
 
 
     //GET
-    public async Task<List<NutritionItem>>GetAllNutritionItemsAsync()
+    public async Task<List<NutritionItem>> GetAllNutritionItemsAsync()
     {
         return await _context.NutritionItems.ToListAsync();
     }
@@ -78,66 +78,39 @@ public class NutritionService:INutritionService
 
 
     //GetByMealType
-    public async Task<List<NutritionItem>>GetByMealTypeAsync(string mealType)
+    public async Task<List<NutritionItem>> GetByMealTypeAsync(string mealType)
     {
-         return await _context.NutritionItems
-                         .Where(n => n.MealType.ToLower() == mealType.ToLower())
-                         .ToListAsync();
+        return await _context.NutritionItems
+                        .Where(n => n.MealType.ToLower() == mealType.ToLower())
+                        .ToListAsync();
     }
 
 
     //UPDATE
-    public async Task<NutritionItem>UpdateNutritionItemAsync(int id, NutritionDTO nutritionDto)
+    public async Task<NutritionItem> UpdateNutritionItemAsync(int id, UpdateNutritionDTO updateNutritionDTO)
     {
-        var item=await _context.NutritionItems.FindAsync(id);
-        if(item==null)
-        {
-            throw new Exception("Nutrition item not found");
-        }
+        var item = await _context.NutritionItems.FindAsync(id);
+    if (item == null)
+    {
+        throw new Exception("Nutrition item not found");
+    }
 
-        //Azuriraju se polja
-        item.MealType=nutritionDto.MealType;
-        item.Description=nutritionDto.Description;
-        item.Description=nutritionDto.Image!.ToString()!;
+        // Ažuriranje samo teksta
+        item.MealType = updateNutritionDTO.MealType;
+        item.Description = updateNutritionDTO.Description;
 
-        //za sliku
-        if (nutritionDto.Image != null)
-        {
-            //Putanja gdje se cuva slika
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "nutrition", nutritionDto.Image.FileName);
+    _context.NutritionItems.Update(item);
+    await _context.SaveChangesAsync();
 
-            //Provjerava da li direktorijum postoji ako ne kreira ga
-            var directoryPath = Path.GetDirectoryName(filePath);
-            if (directoryPath != null && !Directory.Exists(directoryPath))
-            {
-                Directory.CreateDirectory(directoryPath);
-            }
-
-            //Sacuvaj sliku na disku
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                await nutritionDto.Image.CopyToAsync(stream);
-            }
-
-            //upisivanje putanje do slike u bazi
-            item.ImageUrl = "/images/nutrition/" + nutritionDto.Image.FileName;
-        }
-
-        
-
-        _context.NutritionItems.Update(item);
-        await _context.SaveChangesAsync();
-
-
-        return item;
+    return item;
     }
 
 
     //DELETE
-    public async Task<bool>DeleteNutritionItemAsync(int id)
+    public async Task<bool> DeleteNutritionItemAsync(int id)
     {
-        var item=await _context.NutritionItems.FindAsync(id);
-        if(item==null)
+        var item = await _context.NutritionItems.FindAsync(id);
+        if (item == null)
         {
             throw new Exception("Nutrition item not found");
         }
@@ -147,6 +120,12 @@ public class NutritionService:INutritionService
 
 
         return true;
+    }
+
+    //GET ID
+     public async Task<NutritionItem> GetNutritionByIdAsync(int id)
+    {
+        return await _context.NutritionItems.FindAsync(id);
     }
 
 

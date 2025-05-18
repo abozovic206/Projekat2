@@ -489,6 +489,10 @@
       "PackagePath": "staticwebassets\\images\\nutrition\\1d9b751e-f264-46c1-8bd1-b51c94088f75.jpg"
     },
     {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\23656638-2ada-48ca-b77d-1741f6208587.png",
+      "PackagePath": "staticwebassets\\images\\nutrition\\23656638-2ada-48ca-b77d-1741f6208587.png"
+    },
+    {
       "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\2381f726-4810-469b-83e5-a89b5aefd21c.jpg",
       "PackagePath": "staticwebassets\\images\\nutrition\\2381f726-4810-469b-83e5-a89b5aefd21c.jpg"
     },
@@ -601,6 +605,10 @@
       "PackagePath": "staticwebassets\\images\\nutrition\\738bdb4d-943c-4fc5-bf86-acfe9a78058f.jpg"
     },
     {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\79bd0516-44fc-4a1b-86ac-b86870cd38b6.png",
+      "PackagePath": "staticwebassets\\images\\nutrition\\79bd0516-44fc-4a1b-86ac-b86870cd38b6.png"
+    },
+    {
       "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\8411dd91-8f56-40c5-b633-48dca42ad809.jpg",
       "PackagePath": "staticwebassets\\images\\nutrition\\8411dd91-8f56-40c5-b633-48dca42ad809.jpg"
     },
@@ -693,6 +701,10 @@
       "PackagePath": "staticwebassets\\images\\nutrition\\c5f0bc91-30bb-4955-9934-3f8ad654f1e0.png"
     },
     {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\c824a2ce-82c0-44c3-bd91-30d9ed97c3b3.png",
+      "PackagePath": "staticwebassets\\images\\nutrition\\c824a2ce-82c0-44c3-bd91-30d9ed97c3b3.png"
+    },
+    {
       "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\cf1308e1-8c40-4404-a597-9ec088e0e5ac.png",
       "PackagePath": "staticwebassets\\images\\nutrition\\cf1308e1-8c40-4404-a597-9ec088e0e5ac.png"
     },
@@ -749,8 +761,20 @@
       "PackagePath": "staticwebassets\\images\\nutrition\\fc26e96f-8070-4c58-adc9-35eccf1b6f43.jpg"
     },
     {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\fitnessMan.jpg",
+      "PackagePath": "staticwebassets\\images\\nutrition\\fitnessMan.jpg"
+    },
+    {
       "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\fitnessMan2.jpg",
       "PackagePath": "staticwebassets\\images\\nutrition\\fitnessMan2.jpg"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\fitnessMan3.jpg",
+      "PackagePath": "staticwebassets\\images\\nutrition\\fitnessMan3.jpg"
+    },
+    {
+      "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\fitnessWoman.jpg",
+      "PackagePath": "staticwebassets\\images\\nutrition\\fitnessWoman.jpg"
     },
     {
       "Id": "C:\\FitnessAppAndreja\\Backend\\FitnessAppBackend2\\wwwroot\\images\\nutrition\\ovsena_kasa.jpg",

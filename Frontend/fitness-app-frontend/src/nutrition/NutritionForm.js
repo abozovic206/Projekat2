@@ -5,9 +5,12 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logout } from '../redux/authSlice';
 import AddNutritionForm from './AddNutritionForm';
+import EditNutrition from './EditNutrition';
 import '../styles/NutritionForm.css';
 
-const NutritionForm = () => {
+
+
+const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -61,7 +64,7 @@ const NutritionForm = () => {
   };
 
   const handleOpenModal = (nutrition) => {
-    setNutritionToEdit(nutrition);
+    setNutritionToEdit(nutrition.id);
     setShowModal(true);
   };
 
@@ -135,8 +138,8 @@ const NutritionForm = () => {
             filteredNutritions.map(nutrition => (
               <div key={nutrition.id} className="nutrition-item">
                 <p className="meal-type">{nutrition.mealType}</p>
-                <img src={`http://localhost:5063/${nutrition.imageUrl}`} alt={nutrition.name} className="nutrition-image" 
-                style={{ width: "100%", height: "160px", objectFit: "cover" }}
+                <img src={`http://localhost:5063/${nutrition.imageUrl}`} alt="haha" className="nutrition-image" 
+                  style={{ width: "100%", height: "160px", objectFit: "cover" }}
                 />
                 <p className="nutrition-description">{nutrition.description}</p>
                 <div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
@@ -168,12 +171,22 @@ const NutritionForm = () => {
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
+         
             <button className="modal-close" onClick={handleCloseModal}>×</button>
+            {nutritionToEdit ? (
+            <EditNutrition 
+              onClose={handleCloseModal} 
+              onSaved={handleNutritionSaved}
+              nutritionId={nutritionToEdit}
+            />
+          ) : (
             <AddNutritionForm 
               onClose={handleCloseModal} 
               onSaved={handleNutritionSaved}
-              nutrition={nutritionToEdit}
             />
+          )}
+
+
           </div>
         </div>
       )}
