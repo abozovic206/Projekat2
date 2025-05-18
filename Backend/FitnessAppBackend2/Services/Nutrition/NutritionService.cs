@@ -29,48 +29,45 @@ public class NutritionService:INutritionService
 
     //POST
 
-    public async Task<NutritionItem>AddNutritionItemAsync(NutritionDTO dto)
+   public async Task<NutritionItem> AddNutritionItemAsync(NutritionDTO dto)
+{
+    try
     {
-        try{
-            
-        if(dto.Image==null || dto.Image.Length==0)
-        throw new ArgumentException("Image is required");
+        if (dto.Image == null || dto.Image.Length == 0)
+            throw new ArgumentException("Image is required");
 
-        var imageName=Guid.NewGuid().ToString()+Path.GetExtension(dto.Image.FileName);
-        var imageFolder=Path.Combine(_enviroment.WebRootPath, "images","nutrition");
+        var imageName = Guid.NewGuid().ToString() + Path.GetExtension(dto.Image.FileName);
+        var imageFolder = Path.Combine(_enviroment.WebRootPath, "images", "nutrition");
 
-        if(!Directory.Exists(imageFolder))
-        Directory.CreateDirectory(imageFolder);
+        if (!Directory.Exists(imageFolder))
+            Directory.CreateDirectory(imageFolder);
 
-        var imagePath=Path.Combine(imageFolder,imageName);
+        var imagePath = Path.Combine(imageFolder, imageName);
 
-        using (var stream=new FileStream(imagePath, FileMode.Create))
+        using (var stream = new FileStream(imagePath, FileMode.Create))
         {
             await dto.Image.CopyToAsync(stream);
         }
 
-        var item=new NutritionItem
+        var item = new NutritionItem
         {
-            MealType=dto.MealType,
-            Description=dto.Description,
-            ImageUrl="images/nutrition/"+imageName
+            MealType = dto.MealType,
+            Description = dto.Description,
+            ImageUrl = "images/nutrition/" + imageName
         };
 
         _context.NutritionItems.Add(item);
         await _context.SaveChangesAsync();
 
         return item;
-        }
-
-        catch(Exception ex)
-        {
-            Console.WriteLine("Greska u servisu:"+ex);
-            throw;
-        }
-
-        
-
     }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Greška u servisu:" + ex.Message);
+        return null; // ← NE BACAJ DALJE
+    }
+}
+
 
     //GET
     public async Task<List<NutritionItem>>GetAllNutritionItemsAsync()

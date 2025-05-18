@@ -46,8 +46,8 @@ const AddTraining = ({ onClose, onTrainingAdded }) => {
   };
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
+    <div className="modal-overlay-T">
+      <div className="modal-content-T">
         <button className="close-button" onClick={onClose}>×</button>
         <h2>Dodaj novi trening</h2>
         <form onSubmit={handleSubmit} className="form-layout">
@@ -55,7 +55,7 @@ const AddTraining = ({ onClose, onTrainingAdded }) => {
           <textarea placeholder="Opis" value={description} onChange={e => setDescription(e.target.value)} required />
           <input type="number" placeholder="Dan u nedelji (1-7)" value={dayOfWeek} onChange={e => setDayOfWeek(e.target.value)} min="1" max="7" required />
           <input type="file" onChange={e => setVideoFile(e.target.files[0])} accept="video/*" required />
-          <button type="submit" className="submit-button">Dodaj trening</button>
+          <button type="submit" className="submit-button-T">Dodaj trening</button>
         </form>
         {message && <p className="message">{message}</p>}
       </div>

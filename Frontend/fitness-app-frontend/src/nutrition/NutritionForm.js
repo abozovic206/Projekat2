@@ -4,42 +4,24 @@ import axios from "axios";
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logout } from '../redux/authSlice';
-import AddNutritionForm from './AddNutritionForm'; // Ovaj import ostaje
+import AddNutritionForm from './AddNutritionForm';
 import '../styles/NutritionForm.css';
 
 const NutritionForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    dispatch(logout());
-    localStorage.removeItem('token');
-    localStorage.removeItem('userName');
-    navigate('/');
-  };
-
   const [nutritions, setNutritions] = useState([]);
   const [filteredNutritions, setFilteredNutritions] = useState([]);
   const [mealType, setMealType] = useState('');
   const [showModal, setShowModal] = useState(false);
-  const [nutritionToEdit, setNutritionToEdit] = useState(null); // Za izmenu obroka
-
-  const handleOpenModal = (nutrition) => {
-    setNutritionToEdit(nutrition); // Popunjava podatke za izmenu
-    setShowModal(true); // Otvara modal
-  };
-
-  const handleCloseModal = () => {
-    setNutritionToEdit(null); // Resetuje podatke
-    setShowModal(false); // Zatvara modal
-  };
-
-  const handleAddNewMeal = () => {
-    setNutritionToEdit(null); // Za dodavanje novog obroka, postavljamo stanje na null
-    setShowModal(true); // Otvori modal za dodavanje novog obroka
-  };
+  const [nutritionToEdit, setNutritionToEdit] = useState(null);
 
   useEffect(() => {
+    fetchNutritions();
+  }, []);
+
+  const fetchNutritions = () => {
     axios.get('http://localhost:5063/api/nutrition')
       .then(response => {
         setNutritions(response.data);
@@ -48,7 +30,14 @@ const NutritionForm = () => {
       .catch(error => {
         console.error("Greška prilikom dohvacanja podataka:", error);
       });
-  }, []);
+  };
+
+  const handleLogout = () => {
+    dispatch(logout());
+    localStorage.removeItem('token');
+    localStorage.removeItem('userName');
+    navigate('/');
+  };
 
   const handleFilter = (mealType) => {
     setMealType(mealType);
@@ -61,12 +50,46 @@ const NutritionForm = () => {
 
   const handleDelete = (id) => {
     axios.delete(`http://localhost:5063/api/nutrition/${id}`)
-      .then(response => {
-        setNutritions(nutritions.filter(nutrition => nutrition.id !== id));
-        setFilteredNutritions(filteredNutritions.filter(nutrition => nutrition.id !== id));
+      .then(() => {
+        const updatedNutritions = nutritions.filter(nutrition => nutrition.id !== id);
+        setNutritions(updatedNutritions);
+        setFilteredNutritions(updatedNutritions);
       })
       .catch(error => {
         console.error("Greška prilikom brisanja:", error);
+      });
+  };
+
+  const handleOpenModal = (nutrition) => {
+    setNutritionToEdit(nutrition);
+    setShowModal(true);
+  };
+
+  const handleAddNewMeal = () => {
+    setNutritionToEdit(null);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setNutritionToEdit(null);
+    setShowModal(false);
+  };
+
+  const handleNutritionSaved = () => {
+    axios.get('http://localhost:5063/api/nutrition')
+      .then(response => {
+        setNutritions(response.data);
+        if (mealType === 'all' || mealType === '') {
+          setFilteredNutritions(response.data);
+        } else {
+          setFilteredNutritions(response.data.filter(nutrition => 
+            nutrition.mealType.toLowerCase() === mealType.toLowerCase()
+          ));
+        }
+        handleCloseModal();
+      })
+      .catch(error => {
+        console.error("Greška prilikom osvežavanja nakon dodavanja:", error);
       });
   };
 
@@ -101,7 +124,7 @@ const NutritionForm = () => {
           <Button 
             variant="contained" 
             color="primary" 
-            onClick={handleAddNewMeal} // Otvorimo formu za dodavanje novog obroka
+            onClick={handleAddNewMeal}
           >
             Dodaj Novi Obrok
           </Button>
@@ -127,7 +150,7 @@ const NutritionForm = () => {
                   <Button 
                     variant="outlined" 
                     color="primary" 
-                    onClick={() => handleOpenModal(nutrition)} // Otvorimo modal za izmenu
+                    onClick={() => handleOpenModal(nutrition)}
                   >
                     Izmjeni Obrok
                   </Button>
@@ -140,14 +163,14 @@ const NutritionForm = () => {
         </div>
       </div>
 
-      {/* Modal za dodavanje ili izmenu obroka */}
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
             <button className="modal-close" onClick={handleCloseModal}>×</button>
             <AddNutritionForm 
               onClose={handleCloseModal} 
-              nutrition={nutritionToEdit} // Prosleđujemo podatke za izmenu ili prazna polja za novi obrok
+              onSaved={handleNutritionSaved}
+              nutrition={nutritionToEdit}
             />
           </div>
         </div>

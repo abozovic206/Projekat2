@@ -17,22 +17,22 @@ namespace FitnessAppBackend2_.Controllers
         _nutritionService=nutritionService;
     }
 
-    [HttpPost]
-    public async Task<IActionResult>AddNutritionItem([FromForm] NutritionDTO dto)
-    {
-        try
-        {
-            var item=await _nutritionService.AddNutritionItemAsync(dto);
-            return Ok(item);
-        }
+[HttpPost]
+public async Task<IActionResult> Add([FromForm] NutritionDTO dto)
+{
+    Console.WriteLine($"🟢 POST zahtev primljen. MealType: {dto.MealType}, Opis: {dto.Description}, Slika: {dto.Image?.FileName}");
 
-        catch(System.Exception ex)
-        {
-            return BadRequest(new {error=ex.Message, details = ex.InnerException?.Message});
-            
-            
-        }
+    var item = await _nutritionService.AddNutritionItemAsync(dto);
+    if (item == null)
+    {
+        Console.WriteLine("🔴 Dodavanje obroka nije uspelo.");
+        return BadRequest("Greška prilikom dodavanja obroka.");
     }
+
+    Console.WriteLine("✅ Obrok dodat uspešno.");
+    return Ok(item);
+}
+
 
     
 

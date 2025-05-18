@@ -1,70 +1,158 @@
-.modal-overlay {
+.appTraining {
+  min-height: 100vh;
+  background: linear-gradient(to right, #1e2b33, #530018);
+  color: #fff; /* da se vidi tekst na tamnoj pozadini */
+  padding-bottom: 40px;
+}
+
+.training-section {
+  background: linear-gradient(to right, #1e2b33, #530018);
+  color: #fff;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.training-card {
+  background: rgba(255, 255, 255, 0.05); /* poluprovidna kartica */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.training-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.training-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffb6c1; /* svetloroze za isticanje naslova */
+}
+
+.training-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.training-video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+}
+
+
+
+
+/*ZA ADDTRAINING*/
+
+.modal-overlay-T {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 1000;
 }
 
-.modal-content {
-  background-color: white;
-  padding: 30px;
-  border-radius: 12px;
+.modal-content-T {
+  background: linear-gradient(145deg, #1e2b33, #530018);
+  color: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
   width: 420px;
   position: relative;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .close-button {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
+  top: 12px;
+  right: 12px;
+  background: transparent;
   border: none;
   font-size: 24px;
-  font-weight: bold;
+  color: #fff;
   cursor: pointer;
-  color: #333;
+  transition: color 0.2s ease;
+}
+
+.close-button:hover {
+  color: #ffb6c1;
+}
+
+h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ffb6c1;
+}
+.form-layout-T {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
 }
 
 .form-layout input,
-.form-layout textarea {
+.submit-button-T,
+.form-layout textarea,
+.form-layout input[type="file"] {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  box-sizing: border-box; /* važno za poravnanje */
+  padding: 10px 12px;
+  background-color: #a39898;
+  border: 1px solid #a39898;
+  border-radius: 8px;
   font-size: 14px;
+  color: #fff;
+  transition: border-color 0.2s ease;
+  margin-bottom: 10px;
 }
 
-textarea {
-  resize: vertical;
-  min-height: 80px;
+.submit-button-T{
+  background-color:  #1e2b33;
 }
 
-.submit-button {
-  padding: 10px;
-  background-color: #530018;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-.submit-button:hover {
-  background-color: #77002b;
-}
-
-.message {
-  margin-top: 10px;
-  font-weight: bold;
-  text-align: center;
-}

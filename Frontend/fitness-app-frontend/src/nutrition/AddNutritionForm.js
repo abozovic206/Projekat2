@@ -1,73 +1,75 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/NutritionForm.css';
 
-const AddNutritionForm = ({ onClose, onAdd, nutrition }) => {
-  const [mealType, setMealType] = useState(nutrition ? nutrition.mealType : '');
-  const [description, setDescription] = useState(nutrition ? nutrition.description : '');
+const AddNutritionForm = ({ onClose,onSaved, onNutritionAdded }) => {
+  const [mealType, setMealType] = useState('');
+  const [description, setDescription] = useState('');
   const [image, setImage] = useState(null);
-
-  useEffect(() => {
-    if (nutrition) {
-      setMealType(nutrition.mealType);
-      setDescription(nutrition.description);
-       setImage(null); // resetuje input da ne sadrzi prethodnu sliku
-    }
-  }, [nutrition]);
+  const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!image) {
+      setMessage('❌ Molimo dodajte sliku.');
+      return;
+    }
 
     const formData = new FormData();
-    formData.append('mealType', mealType);
-    formData.append('description', description);
-    if (image) {
-      formData.append('image', image);
-    }
+   formData.append('mealType', mealType);
+formData.append('description', description);
+formData.append('image', image);
 
-    try {
-      if (nutrition) {
-        await axios.put(`http://localhost:5063/api/nutrition/${nutrition.id}`, formData, {
-          headers: { 'Content-Type': 'multipart/form-data' }
-        });
-        alert('Obrok uspešno izmenjen!');
-      } else {
-        const response = await axios.post('http://localhost:5063/api/nutrition', formData, {
-          headers: { 'Content-Type': 'multipart/form-data' }
-        });
-        alert('Obrok uspešno dodat!');
-        if (onAdd) {
-          onAdd(response.data); // pošalji novi obrok roditeljskoj komponenti
-        }
-      }
-      onClose();
-    } catch (error) {
-      console.error('Greška pri dodavanju ili izmeni:', error);
+try {
+  const response = await axios.post("http://localhost:5063/api/Nutrition", formData, {
+    headers: {
+      "Content-Type": "multipart/form-data"
     }
+  });
+
+  console.log("✅ Response:", response); // Dodaj ovo
+
+  if (response.status === 200) {
+    setMessage("✅ Uspešno dodat obrok.");
+    
+     setTimeout(() => {
+    setMessage('');
+    onSaved();
+    if (onClose) onClose();
+  }, 1500); // forma se zatvara nakon 1.5 sekundi
+
+    
+  } else {
+    setMessage("❌ Desila se greška (nije 200).");
+  }
+} catch (error) {
+  console.error("Greška:", error);
+  if (error.response) {
+    console.log("Response status:", error.response.status);
+    console.log("Response data:", error.response.data);
+  }
+  setMessage("❌ Došlo je do greške prilikom slanja.");
+}
+
   };
 
   return (
     <div className="modal-overlay">
-      <div className="modal-form">
+      <div className="modal-content">
         <button className="close-button" onClick={onClose}>×</button>
-        <h2>{nutrition ? 'Izmeni Obrok' : 'Dodaj Novi Obrok'}</h2>
-        <form onSubmit={handleSubmit} className="nutrition-form">
-          <label>Tip obroka:</label>
+        <h2>Dodaj novi obrok</h2>
+        <form onSubmit={handleSubmit} className="form-layout">
           <select value={mealType} onChange={(e) => setMealType(e.target.value)} required>
-            <option value="">Izaberi</option>
-            <option value="dorucak">Dorucak</option>
-            <option value="rucak">Rucak</option>
-            <option value="vecera">Vecera</option>
+            <option value="">Izaberi tip obroka</option>
+            <option value="dorucak">Doručak</option>
+            <option value="rucak">Ručak</option>
+            <option value="vecera">Večera</option>
           </select>
-
-          <label>Opis:</label>
-          <textarea value={description} onChange={(e) => setDescription(e.target.value)} required />
-
-          <label>Slika:</label>
-          <input type="file" onChange={(e) => setImage(e.target.files[0])} />
-
-          <button type="submit" className="submit-button">{nutrition ? 'Izmjeni Obrok' : 'Dodaj Obrok'}</button>
+          <textarea placeholder="Opis" value={description} onChange={e => setDescription(e.target.value)} required />
+          <input type="file" onChange={e => setImage(e.target.files[0])} accept="image/*" required />
+          <button type="submit" className="submit-button">Dodaj obrok</button>
         </form>
+        {message && <p className="message">{message}</p>}
       </div>
     </div>
   );
