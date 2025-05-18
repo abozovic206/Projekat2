@@ -98,29 +98,32 @@ public class NutritionService:INutritionService
         //Azuriraju se polja
         item.MealType=nutritionDto.MealType;
         item.Description=nutritionDto.Description;
+        item.Description=nutritionDto.Image!.ToString()!;
 
         //za sliku
-        if(nutritionDto.Image!=null)
+        if (nutritionDto.Image != null)
         {
             //Putanja gdje se cuva slika
-            var filePath=Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images","nutrition",nutritionDto.Image.FileName);
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "nutrition", nutritionDto.Image.FileName);
 
             //Provjerava da li direktorijum postoji ako ne kreira ga
-            var directoryPath=Path.GetDirectoryName(filePath);
-            if(directoryPath!=null && !Directory.Exists(directoryPath))
+            var directoryPath = Path.GetDirectoryName(filePath);
+            if (directoryPath != null && !Directory.Exists(directoryPath))
             {
                 Directory.CreateDirectory(directoryPath);
             }
 
             //Sacuvaj sliku na disku
-            using(var stream=new FileStream(filePath, FileMode.Create))
+            using (var stream = new FileStream(filePath, FileMode.Create))
             {
                 await nutritionDto.Image.CopyToAsync(stream);
             }
 
             //upisivanje putanje do slike u bazi
-            item.ImageUrl="/images/nutrition/"+nutritionDto.Image.FileName;
+            item.ImageUrl = "/images/nutrition/" + nutritionDto.Image.FileName;
         }
+
+        
 
         _context.NutritionItems.Update(item);
         await _context.SaveChangesAsync();

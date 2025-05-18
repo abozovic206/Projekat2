@@ -135,7 +135,9 @@ const NutritionForm = () => {
             filteredNutritions.map(nutrition => (
               <div key={nutrition.id} className="nutrition-item">
                 <p className="meal-type">{nutrition.mealType}</p>
-                <img src={`http://localhost:5063/${nutrition.imageUrl}`} alt={nutrition.name} className="nutrition-image" />
+                <img src={`http://localhost:5063/${nutrition.imageUrl}`} alt={nutrition.name} className="nutrition-image" 
+                style={{ width: "100%", height: "160px", objectFit: "cover" }}
+                />
                 <p className="nutrition-description">{nutrition.description}</p>
                 <div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
                   <Button 

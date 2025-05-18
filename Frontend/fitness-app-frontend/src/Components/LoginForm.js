@@ -76,7 +76,8 @@ const LoginForm = ({ onCancel }) => {
           weight:dataToken.weight,
           height:dataToken.height,
           age:dataToken.age,
-          gender:dataToken.gender
+          gender:dataToken.gender,
+          role:dataToken.role
         })); // Cuva token u reduxu
           //AKO NEKAD BUDU VRIJEDNOSTI NULL OVDE POGLEDAJJJJ DA LI SI DODALA
         //OVDE SAM MIJENJALA

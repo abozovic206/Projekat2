@@ -22,7 +22,8 @@ const authSlice=createSlice({
         weight:null,
         height:null,
         age:null,
-        gender:null
+        gender:null,
+        role: null
 
         //ZNACI INICIJALNA STANJA SU NA NULL NA POCETKU
     },
@@ -42,6 +43,7 @@ const authSlice=createSlice({
             state.height=action.payload.height;
             state.age=action.payload.age;
             state.gender=action.payload.gender;
+            state.role = action.payload.role;
 
             //Dodjeljuju im se neke vrijednosti
 
@@ -55,6 +57,7 @@ const authSlice=createSlice({
             localStorage.setItem('height',action.payload.height);
             localStorage.setItem('age',action.payload.age);
             localStorage.setItem('gender',action.payload.gender);
+             localStorage.setItem('role',action.payload.role);
         },
 
         //Za odjavljivanje
@@ -64,6 +67,7 @@ const authSlice=createSlice({
                 state.userName=null;
                 state.firstName=null;
                 state.lastName=null;
+                state.role=null;
                 //Prilikom logout-a se brisu te vrijednosti koje su dodjeljenje a prilikom logina se postavljaju logicno
             },
 

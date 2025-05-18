@@ -68,17 +68,19 @@ namespace FitnessAppBackend2_.Controllers{
         { //OVDE SAM MIJENJALA
             var token=await _authService.LoginAsync(loginDTO);//RESULT
 
-             return Ok(new{
-                token=token.Token,
-                userName=token.UserName, //Kljucevi koje vracam iz kontrolera
-                //znaci vraca se token:... i userName:... na backendu
-                firstName=token.FirstName,
-                lastName=token.LastName,
-                profilePicture=token.ProfilePicture,
-                weight=token.Weight,
-                height=token.Height,
-                age=token.Age,
-                gender=token.Gender
+                return Ok(new
+                {
+                    token = token.Token,
+                    userName = token.UserName, //Kljucevi koje vracam iz kontrolera
+                                               //znaci vraca se token:... i userName:... na backendu
+                    firstName = token.FirstName,
+                    lastName = token.LastName,
+                    profilePicture = token.ProfilePicture,
+                    weight = token.Weight,
+                    height = token.Height,
+                    age = token.Age,
+                    gender = token.Gender,
+                   role = token.Role
                 
              });
             

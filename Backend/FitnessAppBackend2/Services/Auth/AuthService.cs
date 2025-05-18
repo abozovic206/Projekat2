@@ -106,6 +106,7 @@ namespace FitnessAppBackend2_.Services.Auth
             //Hasiranje lozinke i kreiranje korisnika
             //succeeded boolean pokazuje da li je operacija bila uspjesna
             var result = await _userManager.CreateAsync(user, registerDTO.Password);
+            await _userManager.AddToRoleAsync(user, "Member");
             if (!result.Succeeded)
             {
                 throw new Exception("User creation failed.");
@@ -155,19 +156,20 @@ namespace FitnessAppBackend2_.Services.Auth
             var Token = _tokenService.CreateToken(user, roles);
 
 
+
             return new AuthResult
             {
                 Token = Token,
                 UserName = user.UserName,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
-                ProfilePicture=user.ProfilePicture,
-                Weight=user.Weight,
-                Height=user.Height,
-                Age=user.Age,
-                Gender=user.Gender
+                ProfilePicture = user.ProfilePicture,
+                Weight = user.Weight,
+                Height = user.Height,
+                Age = user.Age,
+                Gender = user.Gender,   
+                Role = roles[0]
 
-                
             };
 
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logout } from '../redux/authSlice';
 import '../styles/TrainingInterface.css';
@@ -9,6 +9,7 @@ import AddTraining from './AddTraining';
 const TrainingDay1 = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const role = useSelector((state) => state.auth.role);
 
   const [trainings, setTrainings] = useState([]);
   const [showForm, setShowForm] = useState(false);
@@ -61,11 +62,11 @@ const TrainingDay1 = () => {
         </div>
       </div>
 
-      <div className="add-training-button-container">
+      {role === 'Admin' && (<div className="add-training-button-container">
         <button className="add-training-button" onClick={() => setShowForm(!showForm)}>
           {showForm ? 'Zatvori formu' : 'Dodaj trening'}
         </button>
-      </div>
+      </div>)}
 
       {showForm && (
         <AddTraining
@@ -83,9 +84,9 @@ const TrainingDay1 = () => {
               <source src={`http://localhost:5063${training.videoUrl}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <button className="delete-button" onClick={() => handleDelete(training.id)}>
+           {role === "Admin" && ( <button className="delete-button" onClick={() => handleDelete(training.id)}>
               Obriši
-            </button>
+            </button>)}
           </div>
         ))}
       </div>
