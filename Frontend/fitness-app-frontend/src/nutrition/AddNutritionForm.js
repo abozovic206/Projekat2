@@ -54,9 +54,9 @@ try {
   };
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
-        <button className="close-button" onClick={onClose}>×</button>
+    <div className="modal-overlay-U">
+      <div className="modal-content-U">
+        <button className="close-button-U" onClick={onClose}>×</button>
         <h2>Dodaj novi obrok</h2>
         <form onSubmit={handleSubmit} className="form-layout">
           <select value={mealType} onChange={(e) => setMealType(e.target.value)} required>
@@ -67,7 +67,7 @@ try {
           </select>
           <textarea placeholder="Opis" value={description} onChange={e => setDescription(e.target.value)} required />
           <input type="file" onChange={e => setImage(e.target.files[0])} accept="image/*" required />
-          <button type="submit" className="submit-button">Dodaj obrok</button>
+          <button type="submit" className="submit-button-U">Dodaj obrok</button>
         </form>
         {message && <p className="message">{message}</p>}
       </div>

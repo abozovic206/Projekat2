@@ -67,17 +67,15 @@ const NutritionEdit = ({ nutritionId, onClose, onSaved }) => {
   };
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
-        <button className="close-button" onClick={onClose}>×</button>
-        <h2>Izmeni obrok</h2>
-        <form onSubmit={handleSubmit} className="form-layout">
+    <div className="modal-overlay-U">
+      <div className="modal-content-U">
+        <button className="close-button-U" onClick={onClose}>×</button>
+        <h2>Izmijeni obrok</h2>
+        <form onSubmit={handleSubmit} className="form-layout-U">
           <select value={mealType} onChange={(e) => setMealType(e.target.value)} required>
-            <option value="">Izaberi tip obroka</option>
             <option value="dorucak">Doručak</option>
             <option value="rucak">Ručak</option>
             <option value="vecera">Večera</option>
-            <option value="id">{id}</option>
           </select>
           <textarea
             placeholder="Opis"
@@ -86,7 +84,7 @@ const NutritionEdit = ({ nutritionId, onClose, onSaved }) => {
             required
           />
           
-          <button type="submit" className="submit-button">Sačuvaj izmene</button>
+          <button type="submit" className="submit-button-U">Sačuvaj izmjene</button>
         </form>
         {message && <p className="message">{message}</p>}
       </div>

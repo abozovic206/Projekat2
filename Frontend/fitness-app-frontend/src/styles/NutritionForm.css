@@ -1,7 +1,5 @@
 .appNutrition {
-  background-image: url('../Images/HealthFood.jpg');
-  background-size: cover;
-  background-position: center;
+   background: linear-gradient(145deg, #d4fc79, #96e6a1); /* ili neka druga boja po želji */
   height: 150vh;
 }
 
@@ -58,4 +56,103 @@
 }
 
 
+
+/*ZA UPDATE FORMUUUUU*/
+/*ZA ADDTRAINING*/
+
+.modal-overlay-U {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content-U {
+ background: linear-gradient(145deg, #a2c437, #5a8e3e);
+
+  color: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 420px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: fadeIn 0.3s ease-in-out;
+    align-items: center;
+  justify-content: center; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close-button-U {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-button-U:hover {
+  color: #ffb6c1;
+}
+
+h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ffb6c1;
+}
+.form-layout-U {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5); /* 0.5 znači 50% prozirnosti */
+
+
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  width: 400px;
+}
+
+.form-layout-U input,
+.submit-button-U,
+.form-layout-U textarea,
+select,
+.form-layout-U input[type="file"] {
+  width: 100%;
+  box-sizing: border-box; /* važno za poravnanje */
+  padding: 10px 12px;
+  background-color: #a39898;
+  border: 1px solid #a39898;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #fff;
+  transition: border-color 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.submit-button-U{
+  background-color:  #1e2b33;
+}
 

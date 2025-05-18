@@ -157,7 +157,7 @@ const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
                     color="primary" 
                     onClick={() => handleOpenModal(nutrition)}
                   >
-                    Izmjeni Obrok
+                    Izmijeni Obrok
                   </Button>
                 </div>
               </div>
