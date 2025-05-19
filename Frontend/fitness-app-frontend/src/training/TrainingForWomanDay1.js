@@ -102,7 +102,7 @@ const TrainingDay1 = () => {
                   Obriši
                 </button>
                 <button className="edit-button" onClick={() => setEditingTraining(training)}>
-                  Izmjena treninga
+                  Izmjena 
                 </button>
               </div>
             )}
