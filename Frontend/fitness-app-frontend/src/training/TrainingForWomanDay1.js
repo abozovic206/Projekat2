@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { logout } from '../redux/authSlice';
 import '../styles/TrainingInterface.css';
 import AddTraining from './AddTraining';
+import EditTraining from './EditTraining';
 
 const TrainingDay1 = () => {
   const dispatch = useDispatch();
@@ -13,6 +14,7 @@ const TrainingDay1 = () => {
 
   const [trainings, setTrainings] = useState([]);
   const [showForm, setShowForm] = useState(false);
+  const [editingTraining, setEditingTraining] = useState(null);
 
   const handleLogout = () => {
     dispatch(logout());
@@ -39,7 +41,7 @@ const TrainingDay1 = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:5063/api/Training/${id}`);
-      fetchTrainings(); // osvežavanje liste
+      fetchTrainings();
     } catch (error) {
       console.error("Greška prilikom brisanja:", error);
     }
@@ -62,16 +64,26 @@ const TrainingDay1 = () => {
         </div>
       </div>
 
-      {role === 'Admin' && (<div className="add-training-button-container">
-        <button className="add-training-button" onClick={() => setShowForm(!showForm)}>
-          {showForm ? 'Zatvori formu' : 'Dodaj trening'}
-        </button>
-      </div>)}
+      {role === 'Admin' && (
+        <div className="add-training-button-container">
+          <button className="add-training-button" onClick={() => setShowForm(!showForm)}>
+            {showForm ? 'Zatvori formu' : 'Dodaj trening'}
+          </button>
+        </div>
+      )}
 
       {showForm && (
         <AddTraining
           onTrainingAdded={fetchTrainings}
           onClose={() => setShowForm(false)}
+        />
+      )}
+
+      {editingTraining && (
+        <EditTraining
+          training={editingTraining}
+          onClose={() => setEditingTraining(null)}
+          onTrainingUpdated={fetchTrainings}
         />
       )}
 
@@ -84,9 +96,16 @@ const TrainingDay1 = () => {
               <source src={`http://localhost:5063${training.videoUrl}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-           {role === "Admin" && ( <button className="delete-button" onClick={() => handleDelete(training.id)}>
-              Obriši
-            </button>)}
+            {role === "Admin" && (
+              <div className="admin-buttons">
+                <button className="delete-button" onClick={() => handleDelete(training.id)}>
+                  Obriši
+                </button>
+                <button className="edit-button" onClick={() => setEditingTraining(training)}>
+                  Izmjena treninga
+                </button>
+              </div>
+            )}
           </div>
         ))}
       </div>

@@ -55,7 +55,7 @@ try {
 
   return (
     <div className="modal-overlay-U">
-      <div className="modal-content-U">
+      <div className="modal-contentt-U">
         <button className="close-button-U" onClick={onClose}>×</button>
         <h2>Dodaj novi obrok</h2>
         <form onSubmit={handleSubmit} className="form-layout">

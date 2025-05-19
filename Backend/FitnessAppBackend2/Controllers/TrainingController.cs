@@ -32,13 +32,13 @@ public class TrainingController : ControllerBase
     }
 
 
-    [HttpPut]
+    [HttpPut("{id}")]
     [Consumes("multipart/form-data")]
-    public async Task<IActionResult> UpdateTraining([FromForm] TraininUpdateDTO dto)
+    public async Task<IActionResult> UpdateTraining(int id, [FromForm] TraininUpdateDTO dto)
     {
         try
         {
-            await _trainingService.UpdateTrainingAsync(dto);
+            await _trainingService.UpdateTrainingAsync(id, dto);
             return Ok(new { message = "Training updated successfully" });
         }
         catch (Exception ex)

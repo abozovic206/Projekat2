@@ -66,9 +66,9 @@ public class TrainingService : ITrainingService
 
 
     //UPDATE
-    public async Task UpdateTrainingAsync(TraininUpdateDTO dto)
+    public async Task UpdateTrainingAsync(int id, TraininUpdateDTO dto)
     {
-        var training = await _context.Trainings.FindAsync(dto.Id);
+        var training = await _context.Trainings.FindAsync(id);
         if (training == null)
             throw new Exception("Training not found");
 
@@ -76,41 +76,29 @@ public class TrainingService : ITrainingService
         training.Description = dto.Description;
         training.DayOfWeek = dto.DayOfWeek;
 
-        if (dto.Video != null)
-        {
-            var videosPath = Path.Combine(_enviroment.WebRootPath, "videos");
-            if (!Directory.Exists(videosPath))
-                Directory.CreateDirectory(videosPath);
-
-            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(dto.Video.FileName);
-            var fullPath = Path.Combine(videosPath, fileName);
-
-            using (var stream = new FileStream(fullPath, FileMode.Create))
-            {
-                await dto.Video.CopyToAsync(stream);
-            }
-
-            training.VideoUrl = $"/videos/{fileName}";
-        }
 
         await _context.SaveChangesAsync();
     }
 
 
+    //DELETE
     public async Task DeleteTrainingAsync(int id)
-{
-    var training = await _context.Trainings.FindAsync(id);
-    if (training == null)
-        throw new Exception("Training not found");
+    {
+        var training = await _context.Trainings.FindAsync(id);
+        if (training == null)
+            throw new Exception("Training not found");
 
-    // Obrisi video fajl ako postoji
-    var videoPath = Path.Combine(_enviroment.WebRootPath, training.VideoUrl.TrimStart('/'));
-    if (System.IO.File.Exists(videoPath))
-        System.IO.File.Delete(videoPath);
+        // Obrisi video fajl ako postoji
+        var videoPath = Path.Combine(_enviroment.WebRootPath, training.VideoUrl.TrimStart('/'));
+        if (System.IO.File.Exists(videoPath))
+            System.IO.File.Delete(videoPath);
 
-    _context.Trainings.Remove(training);
-    await _context.SaveChangesAsync();
-}
+        _context.Trainings.Remove(training);
+        await _context.SaveChangesAsync();
+    }
+
+
+    
 
 
 

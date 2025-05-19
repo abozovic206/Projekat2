@@ -1,5 +1,5 @@
 .appNutrition {
-   background: linear-gradient(145deg, #d4fc79, #96e6a1); /* ili neka druga boja po želji */
+  background: linear-gradient(120deg, #1e2b33, #34495e, #5d6d7e); /* tamnoplave nijanse */ /* svetloplava ka tamnoplavoj */ /* ili neka druga boja po želji */
   height: 150vh;
 }
 
@@ -48,10 +48,10 @@
     color: wheat;
     font-weight: bold;
       text-shadow: 
-    2px 2px 0px green,   /* Gornji levi kut */
-    -2px -2px 0px green,  /* Donji desni kut */
-    2px -2px 0px green,   /* Gornji desni kut */
-    -2px 2px 0px green;   /* Donji levi kut */
+    2px 2px 0px #1e2b33,   /* Gornji levi kut */
+    -2px -2px 0px #1e2b33,  /* Donji desni kut */
+    2px -2px 0px #1e2b33,   /* Gornji desni kut */
+    -2px 2px 0px #1e2b33;   /* Donji levi kut */
     font-size: 40px;
 }
 
@@ -73,8 +73,8 @@
   z-index: 1000;
 }
 
-.modal-content-U {
- background: linear-gradient(145deg, #a2c437, #5a8e3e);
+.modal-contentt-U {
+ background: linear-gradient(120deg, #1e2b33, #34495e, #5d6d7e); /* tamnoplave nijanse */
 
   color: #fff;
   padding: 30px 25px;
@@ -126,7 +126,7 @@ h2 {
 .form-layout-U {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.5); /* 0.5 znači 50% prozirnosti */
+  background-color: white;/* 0.5 znači 50% prozirnosti */
 
 
   gap: 14px;

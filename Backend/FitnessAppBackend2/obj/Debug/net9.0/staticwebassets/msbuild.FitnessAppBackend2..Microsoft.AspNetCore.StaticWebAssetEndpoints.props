@@ -1668,6 +1668,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-h890t0WRh9Op1gTIH4PaUBzBMwbvFJjLzfibJZQ/brg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"162027"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022h890t0WRh9Op1gTIH4PaUBzBMwbvFJjLzfibJZQ/brg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 10:35:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/58a6d3ff-4a08-4f88-b675-7e0e7b1fe0c9.6c8qj52fr0.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\58a6d3ff-4a08-4f88-b675-7e0e7b1fe0c9.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6c8qj52fr0"},{"Name":"integrity","Value":"sha256-SkwCSnTWhsftbvLVx\u002Bynpfc5ho7Kc9pTC5ffnKABXR8="},{"Name":"label","Value":"_content/FitnessAppBackend2./images/nutrition/58a6d3ff-4a08-4f88-b675-7e0e7b1fe0c9.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"328924"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022SkwCSnTWhsftbvLVx\u002Bynpfc5ho7Kc9pTC5ffnKABXR8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 20:32:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/58a6d3ff-4a08-4f88-b675-7e0e7b1fe0c9.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\58a6d3ff-4a08-4f88-b675-7e0e7b1fe0c9.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SkwCSnTWhsftbvLVx\u002Bynpfc5ho7Kc9pTC5ffnKABXR8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"328924"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022SkwCSnTWhsftbvLVx\u002Bynpfc5ho7Kc9pTC5ffnKABXR8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 20:32:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/58ada188-efba-479f-a64b-46aabab67130.9qf1ses627.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\58ada188-efba-479f-a64b-46aabab67130.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1811,6 +1823,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-h890t0WRh9Op1gTIH4PaUBzBMwbvFJjLzfibJZQ/brg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"162027"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022h890t0WRh9Op1gTIH4PaUBzBMwbvFJjLzfibJZQ/brg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 15:40:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/7603959d-0a21-4777-95c8-6e8b595cd25e.chbe5w3zx7.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\7603959d-0a21-4777-95c8-6e8b595cd25e.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"chbe5w3zx7"},{"Name":"integrity","Value":"sha256-YDkkoYIS2M29dyWH63ufEcctBb0/UTaP\u002BCa3Zy9K5N0="},{"Name":"label","Value":"_content/FitnessAppBackend2./images/nutrition/7603959d-0a21-4777-95c8-6e8b595cd25e.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"36856"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YDkkoYIS2M29dyWH63ufEcctBb0/UTaP\u002BCa3Zy9K5N0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 19:31:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/7603959d-0a21-4777-95c8-6e8b595cd25e.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\7603959d-0a21-4777-95c8-6e8b595cd25e.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YDkkoYIS2M29dyWH63ufEcctBb0/UTaP\u002BCa3Zy9K5N0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"36856"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YDkkoYIS2M29dyWH63ufEcctBb0/UTaP\u002BCa3Zy9K5N0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 19:31:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/79bd0516-44fc-4a1b-86ac-b86870cd38b6.6c8qj52fr0.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\79bd0516-44fc-4a1b-86ac-b86870cd38b6.png'))</AssetFile>
@@ -2028,6 +2052,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YDkkoYIS2M29dyWH63ufEcctBb0/UTaP\u002BCa3Zy9K5N0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"36856"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YDkkoYIS2M29dyWH63ufEcctBb0/UTaP\u002BCa3Zy9K5N0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 15:46:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/bebdcb7e-f745-451c-872d-0afe75878785.i18ahdfgzm.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\bebdcb7e-f745-451c-872d-0afe75878785.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"i18ahdfgzm"},{"Name":"integrity","Value":"sha256-ysPpvmTyDmSQhFrTyEm\u002BtqwVd3rFAoXc1OcFyW7ip08="},{"Name":"label","Value":"_content/FitnessAppBackend2./images/nutrition/bebdcb7e-f745-451c-872d-0afe75878785.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"225349"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ysPpvmTyDmSQhFrTyEm\u002BtqwVd3rFAoXc1OcFyW7ip08=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 21:09:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/bebdcb7e-f745-451c-872d-0afe75878785.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\bebdcb7e-f745-451c-872d-0afe75878785.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ysPpvmTyDmSQhFrTyEm\u002BtqwVd3rFAoXc1OcFyW7ip08="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"225349"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ysPpvmTyDmSQhFrTyEm\u002BtqwVd3rFAoXc1OcFyW7ip08=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 21:09:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/becfa106-091f-4483-9af6-14ed7b9e62cf.i18ahdfgzm.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\becfa106-091f-4483-9af6-14ed7b9e62cf.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -2063,6 +2099,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-t/bW\u002B8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"199518"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022t/bW\u002B8KpIRhrSuyYbCfws3rxkEOUSHNfhN3nTh/KdM0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 11:56:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/c433ff3a-ec1c-49fb-ad95-e3a7cf5a65ad.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\c433ff3a-ec1c-49fb-ad95-e3a7cf5a65ad.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5PQrI4Wba8H\u002BAGaSNUkPW0UzHr6TxO6grpI0bwuH/1U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1661"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00225PQrI4Wba8H\u002BAGaSNUkPW0UzHr6TxO6grpI0bwuH/1U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 05:57:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/c433ff3a-ec1c-49fb-ad95-e3a7cf5a65ad.skfxateisq.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\c433ff3a-ec1c-49fb-ad95-e3a7cf5a65ad.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"skfxateisq"},{"Name":"integrity","Value":"sha256-5PQrI4Wba8H\u002BAGaSNUkPW0UzHr6TxO6grpI0bwuH/1U="},{"Name":"label","Value":"_content/FitnessAppBackend2./images/nutrition/c433ff3a-ec1c-49fb-ad95-e3a7cf5a65ad.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1661"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00225PQrI4Wba8H\u002BAGaSNUkPW0UzHr6TxO6grpI0bwuH/1U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 05:57:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./images/nutrition/c5f0bc91-30bb-4955-9934-3f8ad654f1e0.d6mfps7a52.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nutrition\c5f0bc91-30bb-4955-9934-3f8ad654f1e0.png'))</AssetFile>
@@ -2364,18 +2412,6 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-I4XSqexzvVCIZMyTY9DfViYfnxvWXia8sUAojzUNKwg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"43833942"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022I4XSqexzvVCIZMyTY9DfViYfnxvWXia8sUAojzUNKwg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 12:48:13 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./videos/38ec84bf-bb20-4815-bb52-af92e0c3b8a7.mp4">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\videos\38ec84bf-bb20-4815-bb52-af92e0c3b8a7.mp4'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wbiAatQH54EbY77YJZYcl6wmek0gCpSI\u002Btuv1rrefTk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28590242"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022wbiAatQH54EbY77YJZYcl6wmek0gCpSI\u002Btuv1rrefTk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 17 May 2025 14:46:40 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./videos/38ec84bf-bb20-4815-bb52-af92e0c3b8a7.tt554igklp.mp4">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\videos\38ec84bf-bb20-4815-bb52-af92e0c3b8a7.mp4'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tt554igklp"},{"Name":"integrity","Value":"sha256-wbiAatQH54EbY77YJZYcl6wmek0gCpSI\u002Btuv1rrefTk="},{"Name":"label","Value":"_content/FitnessAppBackend2./videos/38ec84bf-bb20-4815-bb52-af92e0c3b8a7.mp4"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28590242"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022wbiAatQH54EbY77YJZYcl6wmek0gCpSI\u002Btuv1rrefTk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 17 May 2025 14:46:40 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./videos/6899a727-9cfd-4128-9c39-dd98b76a74a8.lq2ci835qh.mp4">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\videos\6899a727-9cfd-4128-9c39-dd98b76a74a8.mp4'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -2411,6 +2447,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-31K8FUvjuNQuIsZbs\u002BV3jRMvPxS4rdFMxprrhXkx57E="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"20055672"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u002231K8FUvjuNQuIsZbs\u002BV3jRMvPxS4rdFMxprrhXkx57E=\u0022"},{"Name":"Last-Modified","Value":"Sat, 17 May 2025 14:50:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./videos/f82cdf18-8b8c-47fd-a88e-e4c44cd875be.lq2ci835qh.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\videos\f82cdf18-8b8c-47fd-a88e-e4c44cd875be.mp4'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lq2ci835qh"},{"Name":"integrity","Value":"sha256-I4XSqexzvVCIZMyTY9DfViYfnxvWXia8sUAojzUNKwg="},{"Name":"label","Value":"_content/FitnessAppBackend2./videos/f82cdf18-8b8c-47fd-a88e-e4c44cd875be.mp4"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"43833942"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022I4XSqexzvVCIZMyTY9DfViYfnxvWXia8sUAojzUNKwg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 21:11:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitnessAppBackend2./videos/f82cdf18-8b8c-47fd-a88e-e4c44cd875be.mp4">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\videos\f82cdf18-8b8c-47fd-a88e-e4c44cd875be.mp4'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-I4XSqexzvVCIZMyTY9DfViYfnxvWXia8sUAojzUNKwg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"43833942"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022I4XSqexzvVCIZMyTY9DfViYfnxvWXia8sUAojzUNKwg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 21:11:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

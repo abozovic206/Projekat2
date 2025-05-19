@@ -40,7 +40,7 @@ const WeightChart = ({ setShowChart }) => {
 
   return (
     <div className='modal-overlay'>
-      <div className='modal-content'>
+      <div className='modal-contentC'>
         <div style={{ width: '100%', height: 400 }}>
           <h2 className="text-xl font-semibold mb-4">Praćenje kilaže</h2>
           <button className="close-button" onClick={onCancel}>X</button>
