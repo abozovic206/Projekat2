@@ -99,7 +99,10 @@
   justify-content: center;
 }
 
-
+.add-training-button {
+  color: white;
+  font-weight: bold;
+}
 
 
 

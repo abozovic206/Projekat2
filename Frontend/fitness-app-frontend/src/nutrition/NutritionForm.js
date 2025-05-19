@@ -7,6 +7,8 @@ import { logout } from '../redux/authSlice';
 import AddNutritionForm from './AddNutritionForm';
 import EditNutrition from './EditNutrition';
 import '../styles/NutritionForm.css';
+import { useSelector } from 'react-redux';
+
 
 
 
@@ -19,6 +21,10 @@ const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
   const [mealType, setMealType] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [nutritionToEdit, setNutritionToEdit] = useState(null);
+
+   const role = useSelector((state) => state.auth.role);
+
+   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     fetchNutritions();
@@ -107,6 +113,16 @@ const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
           <button className="profile-button" onClick={() => navigate('/home')}><i className="fa fa-home"></i></button>
           <button className="training-button" onClick={() => navigate('/training/TrainingHomePage')}><i className="fas fa-dumbbell"></i></button>
           <button className="motivation-button" onClick={() => navigate('/nutrition/NutritionForm')}><i className="fa fa-apple-alt icon"></i></button>
+          {role === 'Admin' && (
+  <div className="add-training-button-container">
+    <button
+      className="add-training-button"
+      onClick={handleAddNewMeal}
+    >
+      {showForm ? 'Zatvori formu' : 'ADD'}
+    </button>
+  </div>
+)}
         </div>
         <div className="nav-buttons">
           <button onClick={handleLogout} className="LRButton RButton">Logout</button>
@@ -114,24 +130,16 @@ const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
       </div>
 
       <div className="nutrition-filter">
-        <Button variant="outlined" onClick={() => handleFilter('all')} style={{ margin: '0 10px' }}>Sve</Button>
+        <Button variant="outlined" onClick={() => handleFilter('all')} style={{ margin: ' 10px 10px' }}>Sve</Button>
         <Button variant="outlined" onClick={() => handleFilter('dorucak')} style={{ margin: '0 10px' }}>Dorucak</Button>
         <Button variant="outlined" onClick={() => handleFilter('rucak')} style={{ margin: '0 10px' }}>Rucak</Button>
         <Button variant="outlined" onClick={() => handleFilter('vecera')} style={{ margin: '0 10px' }}>Vecera</Button>
       </div>
 
       <div className="nutrition-container">
-        <h2 className='preporucena-ishrana'>Preporučena Ishrana</h2>
+        <h2 className='preporucena-ishrana'>Preporučeni obroci</h2>
 
-        <div style={{ marginBottom: '20px' }}>
-          <Button 
-            variant="contained" 
-            color="primary" 
-            onClick={handleAddNewMeal}
-          >
-            Dodaj Novi Obrok
-          </Button>
-        </div>
+      
 
         <div className="nutrition-grid">
           {filteredNutritions.length > 0 ? (
@@ -142,7 +150,7 @@ const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
                   style={{ width: "100%", height: "160px", objectFit: "cover" }}
                 />
                 <p className="nutrition-description">{nutrition.description}</p>
-                <div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
+                {role === 'Admin' &&(<div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
                   <Button 
                     className='button-delete'
                     variant="outlined" 
@@ -159,7 +167,7 @@ const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
                   >
                     Izmijeni Obrok
                   </Button>
-                </div>
+                </div>)}
               </div>
             ))
           ) : (

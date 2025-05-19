@@ -11,6 +11,7 @@ import '../styles/HomeInterface.css';
 import { useEffect } from 'react';
 //mport {BMIKalkulator} from '../kalkulator/BMIKalkulator';
 import { FaUserCircle } from 'react-icons/fa';
+import WeightChart from '../kalkulator/WeightChart'; // ako je u istom folderu
 
 
 
@@ -24,6 +25,14 @@ const MyProfile = () => {
     const age = useSelector((state) => state.auth.age);
     const gender = useSelector((state) => state.auth.gender);
     const username = useSelector((state) => state.auth.username);
+
+
+    //Dodavanje za 
+     const [showChart, setShowChart] = useState(false);
+
+  const handleShowChart = () => {
+    setShowChart(true);
+  };
 
 
     const formData = new FormData();
@@ -414,6 +423,7 @@ const handleSaveHeight = async () => {
                                 <span onClick={handleWeightClick}>{newWeight?newWeight:0}(kg)</span>
                             )}
                         </h2>
+                        
                         <h2>Tezina</h2>
                     </div>
 
@@ -432,6 +442,7 @@ const handleSaveHeight = async () => {
                                 <span onClick={handleHeightClick}>{newHeight?newHeight:0}(cm)</span>
                             )}
                         </h2>
+                        
                         
                         <h2>Visina</h2>
                     </div>

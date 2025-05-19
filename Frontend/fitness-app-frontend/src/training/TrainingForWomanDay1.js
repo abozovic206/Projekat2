@@ -58,19 +58,20 @@ const TrainingDay1 = () => {
           <button className="profile-button" onClick={() => navigate('/home')}><i className="fa fa-home"></i></button>
           <button className="training-button" onClick={() => navigate('/training/TrainingHomePage')}><i className="fas fa-dumbbell"></i></button>
           <button className="motivation-button" onClick={() => navigate('/nutrition/NutritionForm')}><i className="fa fa-apple-alt icon"></i></button>
+           {role === 'Admin' && (
+        <div className="add-training-button-container">
+          <button className="add-training-button" onClick={() => setShowForm(!showForm)}>
+            {showForm ? 'Zatvori formu' : 'ADD'}
+          </button>
+        </div>
+      )}
         </div>
         <div className="nav-buttons">
           <button onClick={handleLogout} className="LRButton RButton">Logout</button>
         </div>
       </div>
 
-      {role === 'Admin' && (
-        <div className="add-training-button-container">
-          <button className="add-training-button" onClick={() => setShowForm(!showForm)}>
-            {showForm ? 'Zatvori formu' : 'Dodaj trening'}
-          </button>
-        </div>
-      )}
+     
 
       {showForm && (
         <AddTraining
