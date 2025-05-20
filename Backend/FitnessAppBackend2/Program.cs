@@ -21,6 +21,7 @@ using FitnessAppBackend2_.Services.TrainingWithVideo;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Registracija DbContext-a i Identity
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));

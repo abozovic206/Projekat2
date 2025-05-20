@@ -40,12 +40,12 @@ const FemaleDashboard=()=>
      <div className='female-dashboard-wrapper'>
      <div className='exercises-button'>
         <button className='day1-button woman' onClick={() => navigate('/training/TrainingForWomanDay1')}><span>DAY1</span></button>
-        <button className='day2-button woman'><span>DAY2</span></button>
-        <button className='day3-button woman'><span>DAY3</span></button>
-        <button className='day4-button woman'><span>DAY4</span></button>
-        <button className='day5-button woman'><span>DAY5</span></button>
-        <button className='day6-button woman'><span>DAY6</span></button>
-        <button className='day7-button woman'><span>DAY7</span></button>
+        <button className='day2-button woman'onClick={() => navigate('/training/TrainingForWomanDay2')}><span>DAY2</span></button>
+        <button className='day3-button woman'onClick={() => navigate('/training/TrainingForWomanDay3')}><span>DAY3</span></button>
+        <button className='day4-button woman'onClick={() => navigate('/training/TrainingForWomanDay4')}><span>DAY4</span></button>
+        <button className='day5-button woman'onClick={() => navigate('/training/TrainingForWomanDay5')}><span>DAY5</span></button>
+        <button className='day6-button woman'onClick={() => navigate('/training/TrainingForWomanDay6')}><span>DAY6</span></button>
+        <button className='day7-button woman'onClick={() => navigate('/training/TrainingForWomanDay7')}><span>DAY7</span></button>
       </div>
      </div>
      

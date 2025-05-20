@@ -77,6 +77,7 @@ const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
   const handleAddNewMeal = () => {
     setNutritionToEdit(null);
     setShowModal(true);
+    setShowForm(true);
   };
 
   const handleCloseModal = () => {

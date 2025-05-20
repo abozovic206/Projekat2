@@ -1,6 +1,7 @@
 .appNutrition {
   background: linear-gradient(120deg, #1e2b33, #34495e, #5d6d7e); /* tamnoplave nijanse */ /* svetloplava ka tamnoplavoj */ /* ili neka druga boja po želji */
-  height: 150vh;
+  min-height: 100vh; /* pokriva ceo ekran, ali raste ako treba */
+  height: auto; /* dozvoljava da raste po potrebi */
 }
 
 

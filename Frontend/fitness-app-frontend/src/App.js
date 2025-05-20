@@ -13,6 +13,13 @@ import NutritionForm from './nutrition/NutritionForm';
 import AddNutritionForm from './nutrition/AddNutritionForm';
 
 import Day1Training from './training/TrainingForWomanDay1';
+import Day2Training from './training/TrainingForWomanDay2';
+import Day3Training from './training/TrainingForWomanDay3';
+import Day4Training from './training/TrainingForWomanDay4';
+import Day5Training from './training/TrainingForWomanDay5';
+import Day6Training from './training/TrainingForWomanDay6';
+import Day7Training from './training/TrainingForWomanDay7';
+
 
 
 
@@ -90,7 +97,12 @@ const App = () => {
       <Route path="/nutrition/NutritionForm" element={<ProtectedRoute><NutritionForm /></ProtectedRoute>}/>
       <Route path="/nutrition/add" element={<AddNutritionForm />} />
        <Route path="/training/TrainingForWomanDay1" element={<Day1Training />} />
-
+       <Route path="/training/TrainingForWomanDay2" element={<Day2Training />} />
+       <Route path="/training/TrainingForWomanDay3" element={<Day3Training />} />
+        <Route path="/training/TrainingForWomanDay4" element={<Day4Training />} />
+        <Route path="/training/TrainingForWomanDay5" element={<Day5Training />} />
+         <Route path="/training/TrainingForWomanDay6" element={<Day6Training />} />
+         <Route path="/training/TrainingForWomanDay7" element={<Day7Training />} />
 
       
     </Routes>

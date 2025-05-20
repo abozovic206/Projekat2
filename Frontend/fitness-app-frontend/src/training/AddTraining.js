@@ -53,7 +53,7 @@ const AddTraining = ({ onClose, onTrainingAdded }) => {
         <form onSubmit={handleSubmit} className="form-layout">
           <input type="text" placeholder="Naziv" value={name} onChange={e => setName(e.target.value)} required />
           <textarea placeholder="Opis" value={description} onChange={e => setDescription(e.target.value)} required />
-          <input type="number" placeholder="Dan u nedelji (1-7)" value={dayOfWeek} onChange={e => setDayOfWeek(e.target.value)} min="1" max="7" required />
+          <input type="number" placeholder="Dan u nedelji (1-7)" value={dayOfWeek} onChange={e => setDayOfWeek(Number(e.target.value))} min="1" max="7" required />
           <input type="file" onChange={e => setVideoFile(e.target.files[0])} accept="video/*" required />
           <button type="submit" className="submit-button-T">Dodaj trening</button>
         </form>

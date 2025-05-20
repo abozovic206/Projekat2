@@ -89,10 +89,6 @@ namespace FitnessAppBackend2_.Services.Auth
 
 
             };
-
-
-
-
             //Normalizacija korisnickog imena
             user.NormalizedUserName = user.UserName.ToUpper();
 
