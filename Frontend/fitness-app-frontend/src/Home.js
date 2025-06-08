@@ -137,8 +137,8 @@ const Home = () => {
 
           {/* WeightChart */}
           <div className="home-card weightChart-card" onClick={handleWeightChartClick}>
-            <i className="fas fa-weight-scale text-[#530018]"></i> {/* Ikonica za Weight Chart */}
-            <h2>Praćenje kilaze</h2>
+          <i className="fas fa-chart-line fa-2x text-[#530018]"></i>{/* Ikonica za Weight Chart */}
+            <h2 className="text-[30px] font-bold text-[#530018] flex items-center gap-2">Pracenje kilaze </h2>
           </div>
 
           {/* Prikaz forme (WeightChart) ako je aktivna */}

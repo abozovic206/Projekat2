@@ -19,12 +19,18 @@
 }
 
 .nutrition-item {
-  background-color:white;
+  background-color:rgba(234, 235, 239, 0.1);
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
   padding: 15px;
+  color: white;
+}
+
+
+.admin-nutrition-button{
+   margin-top: auto; /* gura dugmad na dno kartice */
 }
 
 .nutrition-image {
@@ -41,7 +47,7 @@
 
 .nutrition-description {
   font-size: 1rem;
-  color: #555;
+  color: #f6f1f1;
   margin-top: 10px;
 }
 
@@ -159,4 +165,36 @@ select,
 
 .preporucena-ishrana{
   margin-top: 10px;
+}
+
+
+
+
+/*NOVOOOO*/
+.nutrition-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(30, 43, 51, 0.7); /* blaga tamnija pozadina da se tekst bolje vidi */
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  padding: 30px 20px;
+}
+
+.preporucena-ishrana {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: wheat;
+  text-shadow:
+    3px 3px 5px #1e2b33,
+    -3px -3px 5px #1e2b33;
+}
+
+.nutrition-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nutrition-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 16px rgba(255, 255, 255, 0.2);
 }

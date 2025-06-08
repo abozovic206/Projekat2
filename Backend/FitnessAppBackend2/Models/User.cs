@@ -7,10 +7,8 @@ public class User:IdentityUser
 {
 
     //Poslije svakog dodatog polja treba izvrsiti migraciju!!!!
-    
     public required  string FirstName { get; set; }
     public required  string LastName { get; set; }
-
     //UserParameters
     public float? Weight { get; set; }
     public float? Height{get; set;}
@@ -24,9 +22,6 @@ public class User:IdentityUser
 
     public string? ProfilePicture {get; set;} //Cuva putanju do slike i to je string 
     public ICollection<WeightRecord>? WeightRecors{get; set;}
-
-    
-    
 }
 
 //Dodala sam polja u tabelu User samo cu trebati staviti da su required i onda to implementirati

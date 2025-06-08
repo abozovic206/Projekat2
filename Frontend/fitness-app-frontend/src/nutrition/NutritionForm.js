@@ -151,7 +151,8 @@ const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
                   style={{ width: "100%", height: "160px", objectFit: "cover" }}
                 />
                 <p className="nutrition-description">{nutrition.description}</p>
-                {role === 'Admin' &&(<div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
+                <div className='admin-nutrition-button'>
+                  {role === 'Admin' &&(<div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
                   <Button 
                     className='button-delete'
                     variant="outlined" 
@@ -169,6 +170,7 @@ const NutritionForm = ({ nutritionId, onClose, onSaved }) => {
                     Izmijeni Obrok
                   </Button>
                 </div>)}
+                </div>
               </div>
             ))
           ) : (

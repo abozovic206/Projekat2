@@ -43,7 +43,7 @@ const WeightChart = ({ setShowChart }) => {
       <div className='modal-contentC'>
         <div style={{ width: '100%', height: 400 }}>
           <h2 className="text-xl font-semibold mb-4">Praćenje kilaže</h2>
-          <button className="close-button" onClick={onCancel}>X</button>
+          <button className="close-button-weight" onClick={onCancel}>X</button>
           <ResponsiveContainer>
             <LineChart data={data}>
               <CartesianGrid stroke="#000"  />

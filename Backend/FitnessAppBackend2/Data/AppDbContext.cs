@@ -20,9 +20,8 @@ namespace FitnessAppBackend2_.Data
         public DbSet<NutritionItem> NutritionItems { get; set; }
 
         public DbSet<TrainingVideo> Trainings { get; set; }
+        public DbSet<TrainingVideosMan> TrainingsMan { get; set; }
 
-
-        //Role seed-ujem preko OnModelCreating metode ali ja necu tako 
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
